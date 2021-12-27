@@ -1,0 +1,162 @@
+.carousel {
+  min-height: 100vh;
+
+  &__container {
+    position: relative;
+    .carousel__front {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+
+      &-content {
+        max-width: 650px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding-left: 30px;
+        color: $text-main;
+
+        .carousel__title {
+          font-size: 2.6rem;
+          line-height: 3rem;
+          font-weight: 600;
+
+          span {
+            font-family: "DomaineDisplay";
+            font-style: italic;
+            font-weight: 500;
+          }
+        }
+
+        .carousel__search {
+          form {
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            margin: 1.6rem 0;
+            .search-icon {
+              position: absolute;
+              top: 0.7rem;
+              left: 1rem;
+              width: 1rem;
+              height: 1rem;
+              fill: #7a7d85;
+            }
+            input {
+              height: 2.5rem;
+              width: 80%;
+              padding: 7px 7px 7px 28px;
+              padding-left: 44px;
+              margin: 0;
+              border: none;
+              border-radius: 4px 0 0 4px;
+              box-sizing: border-box;
+              outline: none;
+            }
+          }
+        }
+
+        .carousel__popular {
+          display: flex;
+          align-items: center;
+
+          &-list {
+            margin-left: 6px;
+            .carousel__popular-item {
+              display: inline;
+              margin: 0 6px;
+
+              a {
+                color: $text-main;
+                background-color: transparent;
+                line-height: 24px;
+                font-weight: 600;
+                padding: 10px 12px;
+                border: 1px solid $text-main;
+                border-radius: 40px;
+                cursor: pointer;
+                transition: all 0.5s;
+
+                &:hover {
+                  background-color: $text-main;
+                  color: black;
+                  text-decoration: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .carousel-inner {
+      min-height: 680px;
+
+      .carousel-item {
+        height: 700px;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        background-size: cover;
+        position: relative;
+
+        &:nth-child(1) {
+          background-image: url("../../images/home/carousel-andrea.jfif");
+
+          ul {
+            visibility: hidden;
+          }
+        }
+
+        &:nth-child(2) {
+          background-image: url("../../images/home/carousel-moon.jfif");
+        }
+
+        &:nth-child(3) {
+          background-image: url("../../images/home/carousel-ritika.jfif");
+          ul {
+            visibility: hidden;
+          }
+        }
+
+        &:nth-child(4) {
+          background-image: url("../../images/home/carousel-zach.jfif");
+          ul {
+            visibility: hidden;
+          }
+        }
+
+        &:nth-child(5) {
+          background-image: url("../../images/home/carousel-gabrielle.jfif");
+        }
+
+        .carousel__caption {
+          width: fit-content;
+          position: absolute;
+          right: 30px;
+          top: 90%;
+          color: $text-main;
+          ul {
+            margin-bottom: 0.5rem;
+            li {
+              display: inline;
+
+              i {
+                font-size: 14px;
+                color: #ffc100;
+              }
+            }
+          }
+
+          p {
+            font-size: 18px;
+            font-weight: 500;
+            span {
+              font-weight: 600;
+            }
+          }
+        }
+      }
+    }
+  }
+}

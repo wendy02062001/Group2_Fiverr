@@ -1,0 +1,19 @@
+.btn {
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: $hover-button;
+    color: inherit;
+  }
+}
+
+.btn--submit {
+  background-color: $primary-main;
+  color: white;
+  border-radius: 0 4px 4px 0;
+  height: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+  width: 18%;
+}
