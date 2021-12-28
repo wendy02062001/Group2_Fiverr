@@ -569,6 +569,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 24px;
 }
 
+.about__container .about__txt ul li:last-child {
+  padding-bottom: 0;
+}
+
 .about__container .about__txt ul li h6 {
   font-size: 1.1rem;
   line-height: 140%;
@@ -602,7 +606,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 70px 30px 0;
+  padding: 60px 30px 0;
 }
 
 .category__container ul li {
@@ -634,8 +638,8 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0 0 8px;
   width: 3rem;
   border-bottom: 2px solid #c5c6c9;
-  -webkit-transition: all .3s;
-  transition: all .3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .category__container ul li:hover a {
@@ -643,8 +647,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .category__container ul li:hover a::after {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 0 40px 8px;
   border-color: #1dbf73;
 }
 /*# sourceMappingURL=style.css.map */
