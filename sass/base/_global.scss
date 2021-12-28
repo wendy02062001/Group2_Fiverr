@@ -57,8 +57,7 @@ body {
 }
 
 .container {
-  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
   padding: 24px 24px 48px;
-  margin: 0;
-  box-sizing: border-box;
 }
