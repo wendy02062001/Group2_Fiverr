@@ -221,7 +221,6 @@ h1, h2, h3, h4, h5, h6 {
           transform: translateY(-50%);
   width: 48px;
   height: 48px;
-  margin-top: -24px;
   text-align: center;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -236,10 +235,6 @@ h1, h2, h3, h4, h5, h6 {
   background: white;
 }
 
-.slick-prev {
-  left: -5px;
-}
-
 .slick-prev::before {
   content: "\f053";
   display: inline-block;
@@ -250,10 +245,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 16px;
   line-height: 16px;
   margin-top: 17px;
-}
-
-.slick-next {
-  right: -5px;
 }
 
 .slick-next::before {
@@ -273,6 +264,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   line-height: 120%;
   color: #404145;
+  margin-left: 13px;
 }
 
 .carousel {
@@ -498,10 +490,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 3rem;
 }
 
-.service__container .service__title {
-  margin-left: 13px;
-}
-
 .service__container .service__slider .slider-content {
   width: 100%;
   margin: 0 auto;
@@ -561,7 +549,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__container {
-  padding: 0 96px;
+  padding: 96px 13px;
 }
 
 .about__container .about__txt {
@@ -571,6 +559,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .about__container .about__txt .about__title {
   padding-bottom: 1.4rem;
+}
+
+.about__container .about__txt ul {
+  padding-left: 13px;
 }
 
 .about__container .about__txt ul li {
@@ -598,5 +590,61 @@ h1, h2, h3, h4, h5, h6 {
 .about__container .about__video {
   padding-left: 9%;
   margin-top: 90px;
+}
+
+.category {
+  margin: 70px 0 10px;
+}
+
+.category__container ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 70px 30px 0;
+}
+
+.category__container ul li {
+  padding-bottom: 60px;
+  width: 20%;
+}
+
+.category__container ul li a {
+  color: #222325;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+
+.category__container ul li a img {
+  display: block;
+  width: 48px;
+  height: 48px;
+  margin: 0 auto 15px;
+}
+
+.category__container ul li a::after {
+  content: "";
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 0 0 8px;
+  width: 3rem;
+  border-bottom: 2px solid #c5c6c9;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.category__container ul li:hover a {
+  text-decoration: none;
+}
+
+.category__container ul li:hover a::after {
+  padding-left: 40px;
+  padding-right: 40px;
+  border-color: #1dbf73;
 }
 /*# sourceMappingURL=style.css.map */
