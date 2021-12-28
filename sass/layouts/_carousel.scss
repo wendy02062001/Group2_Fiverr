@@ -72,7 +72,8 @@
                 background-color: transparent;
                 line-height: 24px;
                 font-weight: 600;
-                padding: 10px 12px;
+                font-size: 14px;
+                padding: 5px 12px;
                 border: 1px solid $text-main;
                 border-radius: 40px;
                 cursor: pointer;
@@ -101,7 +102,7 @@
         position: relative;
 
         &:nth-child(1) {
-          background-image: url("../../images/home/carousel-andrea.jfif");
+          background-image: url("../images/home/carousel-andrea.jfif");
 
           ul {
             visibility: hidden;
@@ -109,25 +110,25 @@
         }
 
         &:nth-child(2) {
-          background-image: url("../../images/home/carousel-moon.jfif");
+          background-image: url("../images/home/carousel-moon.jfif");
         }
 
         &:nth-child(3) {
-          background-image: url("../../images/home/carousel-ritika.jfif");
+          background-image: url("../images/home/carousel-ritika.jfif");
           ul {
             visibility: hidden;
           }
         }
 
         &:nth-child(4) {
-          background-image: url("../../images/home/carousel-zach.jfif");
+          background-image: url("../images/home/carousel-zach.jfif");
           ul {
             visibility: hidden;
           }
         }
 
         &:nth-child(5) {
-          background-image: url("../../images/home/carousel-gabrielle.jfif");
+          background-image: url("../images/home/carousel-gabrielle.jfif");
         }
 
         .carousel__caption {

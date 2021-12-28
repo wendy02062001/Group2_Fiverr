@@ -1,11 +1,11 @@
 .trusted {
-  margin-bottom: 6rem;
+  background-color: #fafafa;
+  margin-bottom: 4rem;
 
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 32px;
 
     .trusted__text {
       padding-right: 20px;
@@ -14,12 +14,12 @@
     }
 
     .trusted__list {
-      height: 95px;
+      height: 70px;
       display: flex;
       align-items: center;
       justify-content: center;
       margin-left: 1rem;
-      gap: 4rem;
+      gap: 3rem;
     }
   }
 }
