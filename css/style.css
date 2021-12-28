@@ -180,6 +180,11 @@ body {
   font-family: "Macan", Arial, Helvetica, sans-serif;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #404145;
+}
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
@@ -264,8 +269,9 @@ body {
 }
 
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  line-height: 120%;
   color: #404145;
 }
 
@@ -298,6 +304,7 @@ body {
   font-size: 2.6rem;
   line-height: 3rem;
   font-weight: 600;
+  color: white;
 }
 
 .carousel__container .carousel__front-content .carousel__title span {
@@ -492,7 +499,7 @@ body {
 }
 
 .service__container .service__title {
-  margin-left: 15px;
+  margin-left: 13px;
 }
 
 .service__container .service__slider .slider-content {
@@ -502,7 +509,7 @@ body {
 
 .service__container .service__slider .slider-content .slider-item {
   height: 345px;
-  margin: 15px;
+  margin: 13px;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
@@ -518,7 +525,6 @@ body {
   color: #fff;
   padding: 5px 18px 0;
   font-size: 1.3rem;
-  font-weight: 700;
   line-height: 1.8rem;
 }
 
@@ -548,5 +554,49 @@ body {
 
 .service__container .service__slider .slider-content .slider-item:hover a {
   text-decoration: none;
+}
+
+.about {
+  background-color: #f1fdf7;
+}
+
+.about__container {
+  padding: 0 96px;
+}
+
+.about__container .about__txt {
+  padding-right: 11%;
+  padding-left: 13px;
+}
+
+.about__container .about__txt .about__title {
+  padding-bottom: 1.4rem;
+}
+
+.about__container .about__txt ul li {
+  padding-bottom: 24px;
+}
+
+.about__container .about__txt ul li h6 {
+  font-size: 1.1rem;
+  line-height: 140%;
+  padding-bottom: 0.5rem;
+}
+
+.about__container .about__txt ul li h6 i {
+  color: #7a7d85;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.about__container .about__txt ul li p {
+  font-size: 18px;
+  line-height: 26px;
+  color: #62646a;
+}
+
+.about__container .about__video {
+  padding-left: 9%;
+  margin-top: 90px;
 }
 /*# sourceMappingURL=style.css.map */

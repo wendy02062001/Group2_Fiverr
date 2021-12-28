@@ -1,7 +1,7 @@
 .service {
   &__container {
     .service__title {
-      margin-left: 15px;
+      margin-left: 13px;
     }
     .service__slider {
       .slider-content {
@@ -10,7 +10,7 @@
 
         .slider-item {
           height: 345px;
-          margin: 15px;
+          margin: 13px;
           border-radius: 4px;
           position: relative;
           cursor: pointer;
@@ -26,7 +26,6 @@
               color: #fff;
               padding: 5px 18px 0;
               font-size: 1.3rem;
-              font-weight: 700;
               line-height: 1.8rem;
             }
           }
