@@ -17,3 +17,23 @@
   font-weight: 600;
   width: 18%;
 }
+
+.btn--standard {
+  color: $text-main;
+  background-color: $primary-main;
+  font-size: 1rem;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  padding: 15px 35px;
+  margin: 0;
+  display: inline-block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $text-main;
+    background-color: $color-standard--hover;
+  }
+}
