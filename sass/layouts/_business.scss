@@ -1,0 +1,72 @@
+.business {
+  background-color: #0d084d;
+  .business__container {
+    padding: 90px 45px;
+    .business__content {
+        padding-right: 1rem;
+      &-logo {
+        margin-bottom: 50px;
+        svg {
+          width: 178px;
+          height: 22px;
+        }
+
+        .fiver-logo-new {
+          color: white;
+          font-size: 10px;
+          font-weight: 700;
+          background: #584aff;
+          border: solid 1px #584aff;
+          border-radius: 35px;
+          padding: 3px 7px 2px;
+        }
+      }
+
+      .section-title {
+        color: white;
+        margin-left: 0;
+        max-width: 450px;
+        padding-bottom: 24px;
+
+        span {
+          font-family: DomaineDisplay;
+          font-style: italic;
+        }
+      }
+
+      .section-p {
+        color: white;
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        padding-bottom: 30px;
+        max-width: 450px;
+      }
+
+      ul {
+        margin-bottom: 28px;
+        
+        li {
+            color: white;
+            padding-bottom: .8rem;
+            line-height: 1.5rem;
+
+            i {
+                color: #7a7d85;
+                font-size: 20px;
+                padding-right: 5px;
+            }
+        }
+      }
+
+      button {
+          a {
+              color: white;
+          }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}

@@ -4,7 +4,7 @@
   outline: none;
   &:hover {
     background-color: $hover-button;
-    color: inherit;
+    color: white;
   }
 }
 
@@ -15,7 +15,6 @@
   height: 2.5rem;
   margin: 0;
   font-weight: 600;
-  width: 18%;
 }
 
 .slick-arrow {
