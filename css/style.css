@@ -137,6 +137,10 @@ a:hover {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 @font-face {
   font-family: "Macan";
   src: url("../../fonts/macan-light.9b72a31.woff2") format("woff2");
@@ -179,17 +183,23 @@ a:hover {
   font-display: swap;
 }
 
-body {
+html {
   font-size: 16px;
   font-family: "Macan", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-weight: 700;
   color: #404145;
 }
 
-.container {
+.wrapper--index {
   max-width: 1400px;
   margin: 0 auto;
   padding: 24px 24px 48px;
@@ -208,7 +218,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .btn:hover {
   background-color: #19a463;
-  color: inherit;
+  color: white;
 }
 
 .btn--submit {
@@ -218,18 +228,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 2.5rem;
   margin: 0;
   font-weight: 600;
-  width: 18%;
 }
 
 .slick-arrow {
   background-color: white;
   position: absolute;
-  z-index: 999;
+  z-index: 10;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 48px;
-  height: 48px;
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
   text-align: center;
   -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
           box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
@@ -521,9 +531,8 @@ h1, h2, h3, h4, h5, h6 {
   gap: 3rem;
 }
 
-.service__container .service__slider .slider-content {
-  width: 100%;
-  margin: 0 auto;
+.service__container .service__slider {
+  max-width: 100%;
 }
 
 .service__container .service__slider .slider-content .slider-item {
@@ -573,6 +582,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .service__container .service__slider .slider-content .slider-item:hover a {
   text-decoration: none;
+}
+
+.service__container .service__slider .slider-content .slick-prev {
+  left: -10px;
+}
+
+.service__container .service__slider .slider-content .slick-next {
+  right: -10px;
 }
 
 .about {
@@ -680,6 +697,126 @@ h1, h2, h3, h4, h5, h6 {
 .category__container ul li:hover a::after {
   padding: 0 40px 8px;
   border-color: #1dbf73;
+}
+
+.business {
+  background-color: #0d084d;
+}
+
+.business .business__container {
+  padding: 90px 45px;
+}
+
+.business .business__container .business__content {
+  padding-right: 1rem;
+}
+
+.business .business__container .business__content-logo {
+  margin-bottom: 50px;
+}
+
+.business .business__container .business__content-logo svg {
+  width: 178px;
+  height: 22px;
+}
+
+.business .business__container .business__content-logo .fiver-logo-new {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  background: #584aff;
+  border: solid 1px #584aff;
+  border-radius: 35px;
+  padding: 3px 7px 2px;
+}
+
+.business .business__container .business__content .section-title {
+  color: white;
+  margin-left: 0;
+  max-width: 450px;
+  padding-bottom: 24px;
+}
+
+.business .business__container .business__content .section-title span {
+  font-family: DomaineDisplay;
+  font-style: italic;
+}
+
+.business .business__container .business__content .section-p {
+  color: white;
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+  padding-bottom: 30px;
+  max-width: 450px;
+}
+
+.business .business__container .business__content ul {
+  margin-bottom: 28px;
+}
+
+.business .business__container .business__content ul li {
+  color: white;
+  padding-bottom: .8rem;
+  line-height: 1.5rem;
+}
+
+.business .business__container .business__content ul li i {
+  color: #7a7d85;
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.business .business__container .business__content button a {
+  color: white;
+}
+
+.business .business__container img {
+  width: 100%;
+}
+
+.client {
+  margin-top: 90px;
+  padding: 0 15px;
+}
+
+.client__container .client__slider {
+  max-width: 100%;
+}
+
+.client__container .client__slider .client__item img {
+  border-radius: 4px;
+}
+
+.client__container .client__slider .client__item .client__info {
+  padding-left: 3rem;
+}
+
+.client__container .client__slider .client__item .client__info h5 {
+  font-weight: 400;
+  color: #7a7d85;
+  padding-bottom: 16px;
+  font-size: 1.4rem;
+  line-height: 140%;
+}
+
+.client__container .client__slider .client__item .client__info h5 span {
+  border-left: 1px solid #c5c6c9;
+  height: 2rem;
+  margin-left: 16px;
+}
+
+.client__container .client__slider .client__item .client__info h5 span img {
+  height: 2rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.8rem;
+}
+
+.client__container .client__slider .client__item .client__info blockquote {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  font-size: 2rem;
+  line-height: 2.7rem;
 }
 
 .carouselVideo {

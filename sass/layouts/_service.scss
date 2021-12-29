@@ -1,10 +1,8 @@
 .service {
   &__container {
     .service__slider {
+      max-width: 100%;
       .slider-content {
-        width: 100%;
-        margin: 0 auto;
-
         .slider-item {
           height: 345px;
           margin: 13px;
@@ -54,6 +52,14 @@
               text-decoration: none;
             }
           }
+        }
+
+        .slick-prev {
+          left: -10px;
+        }
+
+        .slick-next {
+          right: -10px;
         }
       }
     }
