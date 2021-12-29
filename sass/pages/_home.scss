@@ -1,8 +1,13 @@
 .section-title {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 700;
+  line-height: 120%;
   color: $section-title;
+  margin-left: 13px;
 }
 
 @import "../layouts/carousel";
 @import "../layouts/trusted";
+@import "../layouts/service";
+@import "../layouts/about";
+@import "../layouts/category";

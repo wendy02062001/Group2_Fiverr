@@ -18,6 +18,56 @@
   width: 18%;
 }
 
+.slick-arrow {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 100%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background: white;
+  }
+}
+
+.slick-prev {
+  &::before {
+    content: "\f053";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 17px;
+  }
+}
+
+.slick-next {
+  &::before {
+    content: "\f054";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 17px;
+  }
+}
+
 .btn--standard {
   color: $text-main;
   background-color: $primary-main;
