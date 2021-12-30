@@ -2,8 +2,12 @@
   font-size: 1.8rem;
   font-weight: 700;
   line-height: 120%;
+  margin-left: 15px;
   color: $section-title;
-  margin-left: 13px;
+}
+
+.slider__container {
+  padding: 15px
 }
 
 @import "../layouts/carousel";
@@ -14,3 +18,4 @@
 @import "../layouts/business";
 @import "../layouts/client";
 @import "../layouts/logomaker";
+@import "../layouts/freelancer";
