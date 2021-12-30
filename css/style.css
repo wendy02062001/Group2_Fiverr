@@ -202,7 +202,7 @@ h6 {
 .wrapper--index {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 24px 24px 48px;
+  padding: 0 32px;
 }
 
 .wrapper {
@@ -224,7 +224,7 @@ h6 {
 .btn--submit {
   background-color: #1dbf73;
   color: white;
-  border-radius: 0 4px 4px 0;
+  border-radius: 4px;
   height: 2.5rem;
   margin: 0;
   font-weight: 600;
@@ -378,6 +378,10 @@ h6 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   outline: none;
+}
+
+.carousel__container .carousel__front-content .carousel__search form button {
+  border-radius: 0 4px 4px 0;
 }
 
 .carousel__container .carousel__front-content .carousel__popular {
@@ -597,12 +601,11 @@ h6 {
 }
 
 .about__container {
-  padding: 96px 13px;
+  padding: 96px 0;
 }
 
 .about__container .about__txt {
   padding-right: 11%;
-  padding-left: 13px;
 }
 
 .about__container .about__txt .about__title {
@@ -704,7 +707,7 @@ h6 {
 }
 
 .business .business__container {
-  padding: 90px 45px;
+  padding: 90px 0;
 }
 
 .business .business__container .business__content {
@@ -712,7 +715,7 @@ h6 {
 }
 
 .business .business__container .business__content-logo {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .business .business__container .business__content-logo svg {
@@ -734,7 +737,7 @@ h6 {
   color: white;
   margin-left: 0;
   max-width: 450px;
-  padding-bottom: 24px;
+  padding: 14px 0;
 }
 
 .business .business__container .business__content .section-title span {
@@ -751,7 +754,7 @@ h6 {
 }
 
 .business .business__container .business__content ul {
-  margin-bottom: 28px;
+  margin-bottom: 14px;
 }
 
 .business .business__container .business__content ul li {
@@ -776,7 +779,6 @@ h6 {
 
 .client {
   margin-top: 90px;
-  padding: 0 15px;
 }
 
 .client__container .client__slider {
@@ -817,6 +819,75 @@ h6 {
   font-style: italic;
   font-size: 2rem;
   line-height: 2.7rem;
+}
+
+.logomaker {
+  margin-top: 90px;
+}
+
+.logomaker__container {
+  background-color: #4a73e8;
+  color: #fff;
+  position: relative;
+}
+
+.logomaker__container .logomaker__content {
+  padding: 36px 0 36px 32px;
+  padding-left: 76px;
+  z-index: 1;
+}
+
+.logomaker__container .logomaker__content-logo {
+  margin-bottom: 10px;
+}
+
+.logomaker__container .logomaker__content-logo svg {
+  width: 188px;
+  height: 26px;
+}
+
+.logomaker__container .logomaker__content .section-title {
+  color: white;
+  margin-left: 0;
+  max-width: 450px;
+  padding: 14px 0;
+}
+
+.logomaker__container .logomaker__content .section-title span {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.logomaker__container .logomaker__content .section-p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-bottom: 24px;
+}
+
+.logomaker__container .logomaker__content button {
+  color: #4a73e8;
+  background-color: white;
+}
+
+.logomaker__container .logomaker__content button:hover {
+  background-color: #d4defb;
+}
+
+.logomaker__container .logomaker__content-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.logomaker__container .logomaker__content-img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .carouselVideo {
