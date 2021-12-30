@@ -1,3 +1,4 @@
+@import url(http://fonts.cdnfonts.com/css/helvetica-neue-9);
 html,
 body,
 div,
@@ -177,6 +178,127 @@ a {
 
 body {
   font-size: 16px;
-  font-family: "Macan", Arial, Helvetica, sans-serif;
+  font-family: "Macan", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0px auto;
+}
+
+header {
+  color: black;
+  width: 100%;
+  padding: 15px;
+}
+
+header .header__container {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+header .header__container .header__content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header__container .header__content .trigger-menu-icon {
+  border: 0;
+  margin-right: 15px;
+  margin-top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+header .header__container .header__content .main-logo {
+  height: auto;
+  min-width: 121px;
+}
+
+header .header__container .header__content .header__search {
+  position: relative;
+}
+
+header .header__container .header__content .header__search .header__search-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+header .header__container .header__content .header__search .header__search-box form .search-icon {
+  position: absolute;
+  z-index: 5;
+  left: 6px;
+  color: rgba(162, 163, 163, 0.747);
+}
+
+header .header__container .header__content .header__search .header__search-box form input {
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 8px 7px 7px 28px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 3;
+  border: 1px solid #c5c6c9;
+  width: 280px;
+  resize: none;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+header .header__container .header__content .navbar ul.navbar__list {
+  margin: 0;
+}
+
+header .header__container .header__content .navbar ul.navbar__list li {
+  list-style: none;
+}
+
+header .header__container .header__content .navbar ul.navbar__list li a {
+  text-decoration: none;
+}
+
+#navArea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#navArea ul li a {
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
+#navArea.is-sticky {
+  background: #000;
+}
+
+#navArea.is-sticky a {
+  color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
