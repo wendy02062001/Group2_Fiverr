@@ -1,0 +1,139 @@
+.community {
+  padding: 30px 0;
+  background-color: $text-main;
+  position: relative;
+
+  &__title {
+    h2 {
+      font-size: 32px;
+      line-height: 120%;
+      text-align: center;
+      text-transform: capitalize;
+      padding-bottom: 30px;
+      color: #222325;
+    }
+  }
+
+  &__item {
+    height: 305px;
+    margin-bottom: 30px;
+    .community__thumbnail {
+      width: 100%;
+      height: 100%;
+      position: relative;
+      cursor: pointer;
+      transition: all 1s;
+      background-repeat: no-repeat;
+      h6 {
+        font-size: 24px;
+        line-height: 25px;
+        font-weight: 700;
+        color: $text-main;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        z-index: 1;
+        transition: all 0.3s;
+      }
+    }
+
+    .community__designer {
+      background-image: url(../../images/selling/designer.jpg);
+      background-position: 0 0;
+      background-size: 100%;
+      &:hover {
+        background-size: 105%;
+      }
+    }
+
+    .community__developer {
+      background-image: url(../../images/selling/developer.jpg);
+      background-position: 50% 50%;
+      background-size: cover;
+      &:hover {
+        background-position: 10% 0;
+        transition: all 1s;
+      }
+    }
+
+    .community__writer {
+      background-image: url(../../images/selling/writer.jpg);
+      background-position: 50% 50%;
+      background-size: cover;
+      &:hover {
+        background-position: 45% 0;
+        transition: all 1s;
+      }
+    }
+
+    .community__editor {
+      background-image: url(../../images/selling/video.jpg);
+      background-position: 0 0;
+      background-size: 100%;
+      &:hover {
+        background-size: 105%;
+      }
+    }
+
+    .community__musician {
+      background-image: url(../../images/selling/musician.jpg);
+      background-position: 0 0;
+      background-size: 100%;
+      &:hover {
+        background-size: 105%;
+      }
+    }
+
+    .community__voiceover {
+      background-image: url(../../images/selling/voiceover.jpg);
+      background-position: 0 0;
+      background-size: 100%;
+      &:hover {
+        background-size: 105%;
+      }
+    }
+
+    .community__social {
+      background-image: url(../../images/selling/analyst.jpg);
+      background-position: 50% 50%;
+      background-size: cover;
+      &:hover {
+        background-position: 45% 0;
+        transition: all 1s;
+      }
+    }
+
+    .community__you {
+      background-color: #eee;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &-cover {
+        text-align: center;
+        h3 {
+          font-size: 32px;
+          line-height: 34px;
+          font-weight: 400;
+          color: #555;
+
+          &::before {
+            content: "";
+            background: transparent
+              url(../../images/selling/sprite-start-selling.svg) no-repeat -300px
+              0;
+            background-size: 350px;
+            display: block;
+            width: 50px;
+            height: 36px;
+            margin: 0 auto;
+          }
+        }
+
+        a {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
