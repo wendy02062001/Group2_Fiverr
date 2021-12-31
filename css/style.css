@@ -974,6 +974,64 @@ h6 {
   color: #95979d;
 }
 
+.guide {
+  margin-top: 90px;
+}
+
+.guide__container .guide__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guide__container .guide__header .see-more {
+  color: #4a73e8;
+  padding-right: 15px;
+}
+
+.guide__container .guide__header .see-more:hover {
+  color: #4a73e8;
+}
+
+.guide__container .guide__content {
+  padding: 15px;
+}
+
+.guide__container .card {
+  border: none;
+}
+
+.guide__container .card .card-img-top {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.guide__container .card .card-img-top:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+.guide__container .card-body {
+  padding: 1.25rem 0;
+}
+
+.guide__container .card-body .card-title {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 2px;
+}
+
+.guide__container .card-body .card-text {
+  color: #7a7d85;
+  line-height: 24px;
+}
+
 .carouselVideo {
   height: 580px;
   background-color: #1f1f1f;
