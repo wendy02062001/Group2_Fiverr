@@ -1,0 +1,49 @@
+.guide {
+  &__container {
+    .guide__header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .see-more {
+        color: #4a73e8;
+        padding-right: 15px;
+
+        &:hover {
+          color: #4a73e8;
+        }
+      }
+    }
+
+    .guide__content {
+      padding: 15px;
+    }
+
+    .card {
+      border: none;
+      .card-img-top {
+          transition: all .5s;
+
+          &:hover {
+              opacity: .85;
+              cursor: pointer;
+          }
+      }
+      &-body {
+        padding: 1.25rem 0 0;
+
+        .card-title {
+          font-size: 18px;
+          line-height: 140%;
+          margin-bottom: 2px;
+        }
+
+        .card-text {
+          color: #7a7d85;
+          line-height: 24px;
+          padding-bottom: 0;
+        }
+      }
+    }
+  }
+}

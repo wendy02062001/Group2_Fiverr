@@ -206,6 +206,10 @@ h6 {
   padding: 0 15px;
 }
 
+.section--index {
+  margin-top: 90px;
+}
+
 .wrapper--selling {
   max-width: 1920px;
   margin: 0px auto;
@@ -229,6 +233,7 @@ h6 {
   height: 2.5rem;
   margin: 0;
   font-weight: 600;
+  padding: 0 20px;
 }
 
 .slick-arrow {
@@ -319,6 +324,18 @@ h6 {
 
 .slider__container {
   padding: 15px;
+}
+
+.banner-title {
+  color: white;
+  margin-left: 0;
+  padding: 14px 0;
+}
+
+.domaine-font {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  font-weight: 500;
 }
 
 #main-header {
@@ -583,12 +600,6 @@ h6 {
   color: white;
 }
 
-.carousel__container .carousel__front-content .carousel__title span {
-  font-family: "DomaineDisplay";
-  font-style: italic;
-  font-weight: 500;
-}
-
 .carousel__container .carousel__front-content .carousel__search form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -743,7 +754,6 @@ h6 {
 
 .trusted {
   background-color: #fafafa;
-  margin-bottom: 4rem;
 }
 
 .trusted__container {
@@ -844,7 +854,7 @@ h6 {
 }
 
 .about__container {
-  padding: 96px 0;
+  padding: 90px 0;
 }
 
 .about__container .about__txt {
@@ -888,10 +898,6 @@ h6 {
 .about__container .about__video {
   padding-left: 9%;
   margin-top: 90px;
-}
-
-.category {
-  margin: 70px 0 10px;
 }
 
 .category__container ul {
@@ -946,6 +952,7 @@ h6 {
 }
 
 .business {
+  margin-top: 40px;
   background-color: #0d084d;
 }
 
@@ -1020,10 +1027,6 @@ h6 {
   width: 100%;
 }
 
-.client {
-  margin-top: 90px;
-}
-
 .client__container .client__slider {
   max-width: 100%;
 }
@@ -1065,7 +1068,8 @@ h6 {
 }
 
 .logomaker {
-  margin: 90px 15px;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 .logomaker__container {
@@ -1090,16 +1094,7 @@ h6 {
 }
 
 .logomaker__container .logomaker__content .section-title {
-  color: white;
-  margin-left: 0;
   max-width: 450px;
-  padding: 14px 0;
-}
-
-.logomaker__container .logomaker__content .section-title span {
-  font-family: DomaineDisplay;
-  font-style: italic;
-  font-weight: 500;
 }
 
 .logomaker__container .logomaker__content .section-p {
@@ -1203,6 +1198,80 @@ h6 {
 
 .freelancer__container .freelancer__slider .freelancer__slider-item .card .card-body .card-text .card-name a {
   color: #95979d;
+}
+
+.guide__container .guide__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.guide__container .guide__header .see-more {
+  color: #4a73e8;
+  padding-right: 15px;
+}
+
+.guide__container .guide__header .see-more:hover {
+  color: #4a73e8;
+}
+
+.guide__container .guide__content {
+  padding: 15px;
+}
+
+.guide__container .card {
+  border: none;
+}
+
+.guide__container .card .card-img-top {
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.guide__container .card .card-img-top:hover {
+  opacity: .85;
+  cursor: pointer;
+}
+
+.guide__container .card-body {
+  padding: 1.25rem 0 0;
+}
+
+.guide__container .card-body .card-title {
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 2px;
+}
+
+.guide__container .card-body .card-text {
+  color: #7a7d85;
+  line-height: 24px;
+  padding-bottom: 0;
+}
+
+.banner {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.banner__container {
+  padding: 90px;
+  background-image: url("../images/home/bg-signup-1400-x2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner__container .banner__content .section-title {
+  max-width: 650px;
+  font-size: 3rem;
+  padding-bottom: 40px;
 }
 
 .carouselVideo {
