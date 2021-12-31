@@ -1,0 +1,224 @@
+#main-header {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    transition: .5s;
+
+    header {
+        width: 100%;
+        padding: 16px;
+        width: 100%;
+        transition: .7s;
+
+        .header__container {
+            padding: 0 0;
+
+            .header__content {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: space-between;
+
+                .trigger-menu-icon {
+                    border: 0;
+                    margin-right: 15px;
+                    margin-top: 5px;
+                    font-size: 25px;
+                    cursor: pointer;
+                    color: $text-main;
+                }
+
+                .main-logo {
+                    height: auto;
+                    min-width: 121px;
+                }
+
+                #header__search {
+                    position: relative;
+                    visibility: hidden;
+                    transition: .15s ease-in-out;
+
+                    .header__search-box {
+                        form {
+                            display: flex;
+                            align-items: center;
+                            position: relative;
+
+                            .search-icon {
+                                position: absolute;
+                                z-index: 4;
+                                left: 8px;
+                            }
+
+                            input {
+                                border-right: 0;
+                                border-radius: 3px 0 0 3px;
+                                font-size: 15px;
+                                flex: 1 1 auto;
+                                padding: 8px 8px 7px 28px;
+                                box-shadow: none;
+                                z-index: 3;
+                                border: 1px solid rgb(197, 198, 201);
+                                width: 280px;
+                                outline: none;
+                            }
+
+                            .btn--submit {
+                                padding: 5px 16px;
+                                height: 32px;
+                                display: block;
+                                font-size: 14px;
+                                font-weight: 700;
+                                border-radius: 0 3px 3px 0;
+                            }
+                        }
+                    }
+
+                }
+
+
+                nav.navbar {
+
+                    ul.navbar__list {
+                        list-style: none;
+                        display: block;
+
+                        li {
+                            display: inline-block;
+                            margin-right: 20px;
+
+                            a {
+                                text-decoration: none;
+                                line-height: 24px;
+                                font-weight: 600;
+                                color: $text-main;
+                                transition: .3s;
+                            }
+                        }
+
+                        li:nth-child(3) {
+                            i {
+                                padding-right: 8px;
+                            }
+                        }
+
+                        li:nth-child(7) {
+                            a {
+                                border-color: $primary-main;
+                                display: inline-block;
+                                position: relative;
+                                padding: 6px 20px;
+                                border: 1px solid rgba(243, 240, 240, 0.945);
+                                border-radius: 4px;
+                                font-weight: 600;
+                                font-size: 15px;
+                                line-height: 100%;
+                                text-align: center;
+
+                                &:hover {
+                                    color: $text-main;
+                                    background-color: $primary-main;
+                                    border: 1px solid $primary-main !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+#categories__menu {
+    display: block;
+    position: relative;
+    width: 100%;
+    transition: .2s;
+    border-top: 1px solid #999ca150;
+    transform: rotateX(90deg);
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        overflow: hidden;
+        z-index: 10;
+        width: 100%;
+        top: 0px;
+        background-color: #fff;
+        padding: 2px 0px;
+
+        ul.categories {
+            li {
+                display: inline-block;
+                padding: 0 18px;
+
+                a {
+                    display: block;
+                    position: relative;
+                    font-size: 16px;
+                    line-height: 35px;
+                    color: #999ca1 !important;
+                    text-decoration: none;
+                    font-weight: 400;
+
+                    &:hover {
+                        color: #999ca1 !important;
+                    }
+
+                    &:hover::after {
+                        content: "";
+                        width: 100%;
+                        height: 3px;
+                        display: block;
+                        background: $primary-main;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+#main-header.is-sticky {
+    background: #fff;
+
+    .main-logo .first-path path {
+        fill: black !important
+    }
+
+    nav.navbar {
+        li:nth-child(7) {
+            a {
+                border: 1px solid $primary-main !important;
+                color: $primary-main !important;
+
+                &:hover {
+                    background-color: $primary-main !important;
+                    color: $text-main !important;
+                }
+            }
+        }
+    }
+
+
+    a {
+        color: $text-nav !important;
+
+        &:hover {
+            color: $primary-main !important;
+        }
+    }
+}
+
+#categories__menu.is-sticky {
+    background-color: #fff;
+    transform: rotateX(0deg);
+}
+
+#header__search.is-sticky {
+    visibility: visible !important;
+}

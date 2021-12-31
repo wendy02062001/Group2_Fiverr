@@ -1,7 +1,9 @@
 .about {
   background-color: #f1fdf7;
+
   &__container {
     padding: 90px 0;
+
     .about__txt {
       padding-right: 11%;
 
@@ -11,8 +13,10 @@
 
       ul {
         padding-left: 13px;
+
         li {
           padding-bottom: 24px;
+
           &:last-child {
             padding-bottom: 0;
           }

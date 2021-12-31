@@ -3,6 +3,7 @@
 
   &__container {
     position: relative;
+
     .carousel__front {
       position: absolute;
       width: 100%;
@@ -30,6 +31,7 @@
             flex-direction: row;
             position: relative;
             margin: 1.6rem 0;
+
             .search-icon {
               position: absolute;
               top: 0.7rem;
@@ -38,6 +40,7 @@
               height: 1rem;
               fill: #7a7d85;
             }
+
             input {
               height: 2.5rem;
               width: 80%;
@@ -62,6 +65,7 @@
 
           &-list {
             margin-left: 6px;
+
             .carousel__popular-item {
               display: inline;
               margin: 0 6px;
@@ -114,6 +118,7 @@
 
         &:nth-child(3) {
           background-image: url("../images/home/carousel-ritika.jfif");
+
           ul {
             visibility: hidden;
           }
@@ -121,6 +126,7 @@
 
         &:nth-child(4) {
           background-image: url("../images/home/carousel-zach.jfif");
+
           ul {
             visibility: hidden;
           }
@@ -136,8 +142,10 @@
           right: 30px;
           top: 90%;
           color: $text-main;
+
           ul {
             margin-bottom: 0.5rem;
+
             li {
               display: inline;
 
@@ -151,6 +159,7 @@
           p {
             font-size: 18px;
             font-weight: 500;
+
             span {
               font-weight: 600;
             }

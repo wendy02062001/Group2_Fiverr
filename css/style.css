@@ -1,3 +1,4 @@
+@import url(http://fonts.cdnfonts.com/css/helvetica-neue-9);
 html,
 body,
 div,
@@ -185,7 +186,7 @@ a:hover {
 
 html {
   font-size: 16px;
-  font-family: "Macan", Arial, Helvetica, sans-serif;
+  font-family: "Macan", "Helvetica Neue", Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
 
@@ -335,6 +336,236 @@ h6 {
   font-family: DomaineDisplay;
   font-style: italic;
   font-weight: 500;
+}
+
+#main-header {
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#main-header header {
+  width: 100%;
+  padding: 16px;
+  width: 100%;
+  -webkit-transition: .7s;
+  transition: .7s;
+}
+
+#main-header header .header__container {
+  padding: 0 0;
+}
+
+#main-header header .header__container .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#main-header header .header__container .header__content .trigger-menu-icon {
+  border: 0;
+  margin-right: 15px;
+  margin-top: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#main-header header .header__container .header__content .main-logo {
+  height: auto;
+  min-width: 121px;
+}
+
+#main-header header .header__container .header__content #header__search {
+  position: relative;
+  visibility: hidden;
+  -webkit-transition: .15s ease-in-out;
+  transition: .15s ease-in-out;
+}
+
+#main-header header .header__container .header__content #header__search .header__search-box form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+#main-header header .header__container .header__content #header__search .header__search-box form .search-icon {
+  position: absolute;
+  z-index: 4;
+  left: 8px;
+}
+
+#main-header header .header__container .header__content #header__search .header__search-box form input {
+  border-right: 0;
+  border-radius: 3px 0 0 3px;
+  font-size: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 8px 8px 7px 28px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  z-index: 3;
+  border: 1px solid #c5c6c9;
+  width: 280px;
+  outline: none;
+}
+
+#main-header header .header__container .header__content #header__search .header__search-box form .btn--submit {
+  padding: 5px 16px;
+  height: 32px;
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 0 3px 3px 0;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list {
+  list-style: none;
+  display: block;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list li a {
+  text-decoration: none;
+  line-height: 24px;
+  font-weight: 600;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list li:nth-child(3) i {
+  padding-right: 8px;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list li:nth-child(7) a {
+  border-color: #1dbf73;
+  display: inline-block;
+  position: relative;
+  padding: 6px 20px;
+  border: 1px solid rgba(243, 240, 240, 0.945);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+}
+
+#main-header header .header__container .header__content nav.navbar ul.navbar__list li:nth-child(7) a:hover {
+  color: #fff;
+  background-color: #1dbf73;
+  border: 1px solid #1dbf73 !important;
+}
+
+#categories__menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-top: 1px solid #999ca150;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+#categories__menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  top: 0px;
+  background-color: #fff;
+  padding: 2px 0px;
+}
+
+#categories__menu nav ul.categories li {
+  display: inline-block;
+  padding: 0 18px;
+}
+
+#categories__menu nav ul.categories li a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 35px;
+  color: #999ca1 !important;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#categories__menu nav ul.categories li a:hover {
+  color: #999ca1 !important;
+}
+
+#categories__menu nav ul.categories li a:hover::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  display: block;
+  background: #1dbf73;
+}
+
+#main-header.is-sticky {
+  background: #fff;
+}
+
+#main-header.is-sticky .main-logo .first-path path {
+  fill: black !important;
+}
+
+#main-header.is-sticky nav.navbar li:nth-child(7) a {
+  border: 1px solid #1dbf73 !important;
+  color: #1dbf73 !important;
+}
+
+#main-header.is-sticky nav.navbar li:nth-child(7) a:hover {
+  background-color: #1dbf73 !important;
+  color: #fff !important;
+}
+
+#main-header.is-sticky a {
+  color: #62646a !important;
+}
+
+#main-header.is-sticky a:hover {
+  color: #1dbf73 !important;
+}
+
+#categories__menu.is-sticky {
+  background-color: #fff;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
+}
+
+#header__search.is-sticky {
+  visibility: visible !important;
 }
 
 .carousel {
