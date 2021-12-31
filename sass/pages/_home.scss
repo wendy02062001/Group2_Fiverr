@@ -7,7 +7,19 @@
 }
 
 .slider__container {
-  padding: 15px
+  padding: 15px;
+}
+
+.banner-title {
+  color: white;
+  margin-left: 0;
+  padding: 14px 0;
+}
+
+.domaine-font {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  font-weight: 500;
 }
 
 @import "../layouts/carousel";
@@ -20,3 +32,4 @@
 @import "../layouts/logomaker";
 @import "../layouts/freelancer";
 @import "../layouts/guide";
+@import "../layouts/banner";
