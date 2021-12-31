@@ -30,7 +30,7 @@
           }
       }
       &-body {
-        padding: 1.25rem 0;
+        padding: 1.25rem 0 0;
 
         .card-title {
           font-size: 18px;
@@ -41,6 +41,7 @@
         .card-text {
           color: #7a7d85;
           line-height: 24px;
+          padding-bottom: 0;
         }
       }
     }

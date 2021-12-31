@@ -1009,7 +1009,7 @@ h6 {
 }
 
 .guide__container .card-body {
-  padding: 1.25rem 0;
+  padding: 1.25rem 0 0;
 }
 
 .guide__container .card-body .card-title {
@@ -1021,6 +1021,7 @@ h6 {
 .guide__container .card-body .card-text {
   color: #7a7d85;
   line-height: 24px;
+  padding-bottom: 0;
 }
 
 .banner {
