@@ -154,7 +154,11 @@
             </div>
             <div class="row">
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__designer">
+                <div
+                  class="community__thumbnail community__designer"
+                  data-toggle="modal"
+                  data-target=".modal__designer"
+                >
                   <h6>
                     I am
                     <br />
@@ -163,7 +167,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__developer">
+                <div
+                  class="community__thumbnail community__developer"
+                  data-toggle="modal"
+                  data-target=".modal__developer"
+                >
                   <h6>
                     I am
                     <br />
@@ -172,7 +180,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__writer">
+                <div
+                  class="community__thumbnail community__writer"
+                  data-toggle="modal"
+                  data-target=".modal__writer"
+                >
                   <h6>
                     I am
                     <br />
@@ -181,7 +193,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__editor">
+                <div
+                  class="community__thumbnail community__editor"
+                  data-toggle="modal"
+                  data-target=".modal__editor"
+                >
                   <h6>
                     I am
                     <br />
@@ -190,7 +206,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__musician">
+                <div
+                  class="community__thumbnail community__musician"
+                  data-toggle="modal"
+                  data-target=".modal__musician"
+                >
                   <h6>
                     I am
                     <br />
@@ -199,7 +219,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__voiceover">
+                <div
+                  class="community__thumbnail community__voiceover"
+                  data-toggle="modal"
+                  data-target=".modal__voiceover"
+                >
                   <h6>
                     I am
                     <br />
@@ -208,7 +232,11 @@
                 </div>
               </div>
               <div class="col-xl-3 col-lg-4 col-md-6 col-12 community__item">
-                <div class="community__thumbnail community__social">
+                <div
+                  class="community__thumbnail community__social"
+                  data-toggle="modal"
+                  data-target=".modal__social"
+                >
                   <h6>
                     I am
                     <br />
@@ -237,6 +265,28 @@
         </section>
 
         <section class="community__mobile d-md-none d-block">
+          <div class="community__overlay">
+            <div class="community__overlay_close">
+              <button type="button" class="close close__community_overlay">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="community__overlay_content text-center">
+              <div class="row community__overlay_data">
+                <div class="col-6">
+                  <p>4 Categories in Graphics & Design</p>
+                </div>
+                <div class="col-6">
+                  <p>11,913 Buyers in 136 Countries</p>
+                </div>
+              </div>
+              <a
+                href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                class="btn--standard"
+                >Start Selling</a
+              >
+            </div>
+          </div>
           <div class="community__content">
             <div class="community__mobile_item">
               <div class="community__thumbnail community__designer">
@@ -245,7 +295,12 @@
                   <br />
                   a Designer
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('designer')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -255,7 +310,12 @@
                   <br />
                   a Developer
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('developer')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -265,7 +325,12 @@
                   <br />
                   a Writer
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('writer')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -275,7 +340,12 @@
                   <br />
                   a Video Editor
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('editor')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -285,7 +355,12 @@
                   <br />
                   a Musician
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('musician')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -295,7 +370,12 @@
                   <br />
                   a Voiceover Artist
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('voiceover')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
             <div class="community__mobile_item">
@@ -305,7 +385,12 @@
                   <br />
                   a Social Media Marketer
                 </h6>
-                <button class="btn--see-stats">See statistics</button>
+                <button
+                  class="btn--see-stats"
+                  onclick="getDataOverlay('social')"
+                >
+                  See statistics
+                </button>
               </div>
             </div>
           </div>
@@ -314,35 +399,427 @@
 
       <footer></footer>
     </div>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
+
+    <!-- Modal -->
+    <div
+      class="modal fade modal__designer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_designer">
+                <div class="modal__quote">
+                  <p>
+                    "Fiverr has allowed me to make connections to a wide variety
+                    of markets all over the globe. Fiverr has been by my side as
+                    what's felt like a guaranteed source of income through my
+                    entire graphic design career."
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Tom N.</strong>
+                    Guernsey, United Kingdom
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Joined Fiverr In 2011</h2>
+                <ul>
+                  <li class="subcats_icon">
+                    4 Categories in Graphics & Design
+                  </li>
+                  <li class="contries_icon">11,913 Buyers in 136 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__developer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_developer">
+                <div class="modal__quote">
+                  <p>
+                    "Fiverr has changed my life in ways i could only dream of.
+                    I’m extremely satisfied working on this platform while
+                    supporting my family and exploring the world with new
+                    opportunities"
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Aaliyaan I.</strong>
+                    London, United Kingdom
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Fiverr Seller Since 2010</h2>
+                <ul>
+                  <li class="subcats_icon">
+                    1 Categories in Programming & Tech
+                  </li>
+                  <li class="subcats_icon">
+                    2 Categories in Digital marketing
+                  </li>
+                  <li class="contries_icon">22,305 Buyers in 156 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__writer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_writer">
+                <div class="modal__quote">
+                  <p>
+                    "Through Fiverr Pro, I have been able to help people tell
+                    their stories and get their messages out into the world.
+                    Without Fiverr, I never would have been able to make my
+                    passion into my living!"
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Laura T.</strong>
+                    Salida, CO
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Fiverr Seller Since 2017</h2>
+                <ul>
+                  <li class="subcats_icon">
+                    2 Categories in Writing & Translation
+                  </li>
+                  <li class="contries_icon">46 Buyers in 13 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__editor"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_editor">
+                <div class="modal__quote">
+                  <p>
+                    "Fiverr gave me the opportunity to connect with clients from
+                    all over the world; famous musicians, amazing speakers and
+                    business owners. I would not be where I am today without
+                    Fiverr!"
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Chris K.</strong>
+                    Bourgas, Bulgaria
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Joined Fiverr In 2012</h2>
+                <ul>
+                  <li class="subcats_icon">
+                    1 Categories in Video & Animation
+                  </li>
+                  <li class="contries_icon">6,917 Buyers in 101 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__musician"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_musician">
+                <div class="modal__quote">
+                  <p>
+                    "Being a part of the Fiverr community has helped me work
+                    with clients from all over the world and at the comfort of
+                    my own home studio."
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Lola R.</strong>
+                    Los Angeles, CA
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Joined Fiverr In 2013</h2>
+                <ul>
+                  <li class="subcats_icon">2 Categories in Music & Audio</li>
+                  <li class="contries_icon">978 Buyers in 66 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__voiceover"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_voiceover">
+                <div class="modal__quote">
+                  <p>
+                    "The clients [from Fiverr] range from huge companies to
+                    mom-and-pop shops all over the world"
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Paul S.</strong>
+                    New York, NY
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Joined Fiverr In 2013</h2>
+                <ul>
+                  <li class="subcats_icon">1 Categories in Music & Audio</li>
+                  <li class="contries_icon">5,845 Buyers in 119 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade modal__social"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myLargeModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="row">
+            <div class="col-8">
+              <div class="modal__thumbnail modal__thumbnail_social">
+                <div class="modal__quote">
+                  <p>
+                    "Five years ago, I was working a dreadful 9 to 5 with no
+                    health benefits. Today, I’m a Top Rated Seller. Thanks to
+                    Fiverr my side hustle turned full time and I was able to buy
+                    my own health benefits."
+                  </p>
+                  <span class="separator"></span>
+                  <div class="modal__quote_author">
+                    <strong>Jennifer, S.</strong>
+                    Melbourne, FL
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="modal__text">
+                <div class="modal__close">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <h1></h1>
+
+                <h2>Fiverr Seller Since 2012</h2>
+                <ul>
+                  <li class="subcats_icon">
+                    3 Categories in Digital marketing
+                  </li>
+                  <li class="subcats_icon">
+                    2 Categories in Graphics & Design
+                  </li>
+                  <li class="contries_icon">3,159 Buyers in 92 Countries</li>
+                </ul>
+                <a
+                  href="https://www.fiverr.com/join?ref=start_selling_lp&start_selling_ref=designer"
+                  class="btn--standard"
+                  >Start selling</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -374,10 +851,13 @@
       $(".community__content").slick({
         dots: true,
         arrows: false,
-        autoplay: true,
+        autoplay: false,
         infinite: true,
         speed: 500,
       });
     </script>
+
+    <!-- Custom JS -->
+    <script src="./libs/selling.js"></script>
   </body>
 </html>

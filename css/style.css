@@ -1494,6 +1494,25 @@ h6 {
   transition: all 0.3s;
 }
 
+.community__item .community__thumbnail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 90;
+  background-color: transparent;
+}
+
+.community__item .community__thumbnail:hover::before {
+  background-color: transparent !important;
+}
+
+.community__item .community__thumbnail.bg__black::before {
+  background-color: #0000008c;
+}
+
 .community__item .community__designer {
   background-image: url(../../images/selling/designer.jpg);
   background-position: 0 0;
@@ -1584,6 +1603,8 @@ h6 {
 }
 
 .community__item .community__you-cover {
+  position: relative;
+  z-index: 99;
   text-align: center;
 }
 
@@ -1608,10 +1629,237 @@ h6 {
   margin-top: 20px;
 }
 
+.community__item .community__you::before {
+  background-color: transparent !important;
+}
+
+.community .row:hover .community__thumbnail::before {
+  background-color: #0000008c;
+}
+
+@media only screen and (max-width: 1200px) {
+  .modal .modal-xl {
+    max-width: 1140px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .modal .modal-xl {
+    max-width: 900px;
+  }
+}
+
+.modal .modal__thumbnail {
+  background-repeat: no-repeat;
+  background-position: -45px 0;
+  height: 599px;
+  border-bottom-left-radius: 0.3rem;
+  border-top-left-radius: 0.3rem;
+  position: relative;
+}
+
+.modal .modal__thumbnail .modal__quote {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 4;
+  left: 0;
+  bottom: 30px;
+  display: block;
+  width: 484px;
+  padding: 15px;
+  color: #fff;
+  font: italic 22px/31px Georgia, "Times New Roman", serif;
+}
+
+.modal .modal__thumbnail .modal__quote .separator {
+  display: block;
+  border-top: 2px solid #fff;
+  margin: 10px 0 0;
+  width: 30px;
+}
+
+.modal .modal__thumbnail .modal__quote .modal__quote_author {
+  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.modal .modal__thumbnail .modal__quote .modal__quote_author strong {
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 1px #fff solid;
+  font-weight: 700;
+}
+
+.modal .modal__thumbnail_designer {
+  background-image: url(../../images/selling/designer_mobile.jpg);
+}
+
+.modal .modal__thumbnail_developer {
+  background-image: url(../../images/selling/developer_mobile.jpg);
+  background-size: 100%;
+  background-position: 0 -20px;
+}
+
+.modal .modal__thumbnail_writer {
+  background-image: url(../../images/selling/writer_mobile.jpg);
+  background-size: 120%;
+}
+
+.modal .modal__thumbnail_editor {
+  background-image: url(../../images/selling/video_mobile.jpg);
+  background-position: -45px 0;
+}
+
+.modal .modal__thumbnail_musician {
+  background-image: url(../../images/selling/musician_mobile.jpg);
+}
+
+.modal .modal__thumbnail_voiceover {
+  background-image: url(../../images/selling/voiceover_mobile.jpg);
+}
+
+.modal .modal__thumbnail_social {
+  background-image: url(../../images/selling/analyst_mobile.jpg);
+  background-size: 111%;
+}
+
+.modal .modal__text {
+  padding: 0 20px 45px 10px;
+}
+
+.modal .modal__text .modal__close {
+  margin: 10px 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.modal .modal__text .modal__close button {
+  float: none;
+}
+
+.modal .modal__text .modal__close button span {
+  font-size: 34px;
+  color: #999;
+}
+
+.modal .modal__text h2 {
+  text-transform: capitalize;
+  font-size: 22px;
+  color: #555;
+  margin-bottom: 25px;
+  line-height: 120%;
+  font-weight: 700;
+}
+
+.modal .modal__text ul {
+  margin-bottom: 10px;
+  min-height: 350px;
+}
+
+.modal .modal__text ul li {
+  font-size: 20px;
+  line-height: 28px;
+  padding: 20px 0;
+  color: #62646a;
+}
+
+.modal .modal__text ul li::before {
+  content: "";
+  background: url(../../images/selling/sprite-start-selling.svg) no-repeat 0 0;
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-right: 20px;
+}
+
+.modal .modal__text ul li.subcats_icon::before {
+  background-position: -50px 0;
+}
+
+.modal .modal__text ul li.contries_icon::before {
+  background-position: -100px 0;
+}
+
 .community__mobile {
+  height: 235px;
   width: 100%;
   position: relative;
   overflow: hidden;
+}
+
+.community__mobile .community__overlay {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  color: #fff;
+  opacity: 0;
+  padding: 0;
+  -webkit-transform: scale(3);
+          transform: scale(3);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  pointer-events: none;
+}
+
+.community__mobile .community__overlay .community__overlay_close {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: 14px;
+}
+
+.community__mobile .community__overlay .community__overlay_close button {
+  float: none;
+}
+
+.community__mobile .community__overlay .community__overlay_close button span {
+  color: #fff;
+  font-size: 32px;
+}
+
+.community__mobile .community__overlay .community__overlay_content {
+  position: absolute;
+  z-index: 30;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  margin-top: 15px;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+          transform: translate3d(-50%, -50%, 0);
+}
+
+.community__mobile .community__overlay .community__overlay_content p {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 25px;
+}
+
+.community__mobile .community__overlay .community__overlay_content .btn--standard {
+  font-size: 14px;
+  padding: 9px 10px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+.community__mobile .community__overlay.active {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.community__mobile .community__content {
+  position: relative;
 }
 
 .community__mobile .community__content .slick-dots {
@@ -1643,11 +1891,11 @@ h6 {
   background-color: #fff;
 }
 
-.community__mobile .community__mobile_item {
+.community__mobile .community__content .community__mobile_item {
   height: 235px;
 }
 
-.community__mobile .community__mobile_item .community__thumbnail {
+.community__mobile .community__content .community__mobile_item .community__thumbnail {
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -1657,7 +1905,7 @@ h6 {
   cursor: pointer;
 }
 
-.community__mobile .community__mobile_item .community__thumbnail h6 {
+.community__mobile .community__content .community__mobile_item .community__thumbnail h6 {
   position: absolute;
   z-index: 10;
   top: 15px;
@@ -1669,7 +1917,7 @@ h6 {
   text-align: left;
 }
 
-.community__mobile .community__mobile_item .community__thumbnail .btn--see-stats {
+.community__mobile .community__content .community__mobile_item .community__thumbnail .btn--see-stats {
   border: none;
   cursor: pointer;
   background: rgba(0, 0, 0, 0.7);
@@ -1684,31 +1932,41 @@ h6 {
   border-radius: 5px;
 }
 
-.community__mobile .community__mobile_item .community__designer {
+.community__mobile .community__content .community__mobile_item .community__designer {
   background-image: url(../../images/selling/designer_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__developer {
+.community__mobile .community__content .community__mobile_item .community__developer {
   background-image: url(../../images/selling/developer_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__writer {
+.community__mobile .community__content .community__mobile_item .community__writer {
   background-image: url(../../images/selling/writer_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__editor {
+.community__mobile .community__content .community__mobile_item .community__editor {
   background-image: url(../../images/selling/video_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__musician {
+.community__mobile .community__content .community__mobile_item .community__musician {
   background-image: url(../../images/selling/musician_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__voiceover {
+.community__mobile .community__content .community__mobile_item .community__voiceover {
   background-image: url(../../images/selling/voiceover_mobile.jpg);
 }
 
-.community__mobile .community__mobile_item .community__social {
+.community__mobile .community__content .community__mobile_item .community__social {
   background-image: url(../../images/selling/analyst_mobile.jpg);
+}
+
+.community__mobile .community__content.blur .community__mobile_item {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
+}
+
+.community__mobile .community__content.blur .slick-dots {
+  -webkit-filter: blur(15px);
+          filter: blur(15px);
 }
 /*# sourceMappingURL=style.css.map */
