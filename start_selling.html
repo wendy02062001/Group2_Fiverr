@@ -32,6 +32,10 @@
     <!-- Wow Js -->
     <link rel="stylesheet" href="./libs/WOW/css/libs/animate.css" />
 
+    <!-- Slick  -->
+    <link rel="stylesheet" href="./libs/Slick/slick.css" />
+    <link rel="stylesheet" href="./libs/Slick/slick-theme.css" />
+
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -143,7 +147,7 @@
         </div>
 
         <!-- COMMUNITY -->
-        <section class="community">
+        <section class="community d-md-block d-none">
           <div class="container">
             <div class="community__title">
               <h2>Join Our Growing Freelance Community</h2>
@@ -231,6 +235,81 @@
             </div>
           </div>
         </section>
+
+        <section class="community__mobile d-md-none d-block">
+          <div class="community__content">
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__designer">
+                <h6>
+                  I am
+                  <br />
+                  a Designer
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__developer">
+                <h6>
+                  I am
+                  <br />
+                  a Developer
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__writer">
+                <h6>
+                  I am
+                  <br />
+                  a Writer
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__editor">
+                <h6>
+                  I am
+                  <br />
+                  a Video Editor
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__musician">
+                <h6>
+                  I am
+                  <br />
+                  a Musician
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__voiceover">
+                <h6>
+                  I am
+                  <br />
+                  a Voiceover Artist
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+            <div class="community__mobile_item">
+              <div class="community__thumbnail community__social">
+                <h6>
+                  I am
+                  <br />
+                  a Social Media Marketer
+                </h6>
+                <button class="btn--see-stats">See statistics</button>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer></footer>
@@ -287,6 +366,18 @@
     <script src="./libs/WOW/dist/wow.min.js"></script>
     <script>
       new WOW().init();
+    </script>
+
+    <!-- Slick  -->
+    <script src="./libs/Slick/slick.min.js"></script>
+    <script>
+      $(".community__content").slick({
+        dots: true,
+        arrows: false,
+        autoplay: true,
+        infinite: true,
+        speed: 500,
+      });
     </script>
   </body>
 </html>
