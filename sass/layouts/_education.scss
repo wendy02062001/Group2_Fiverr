@@ -1,0 +1,170 @@
+.education {
+  padding: 48px 0 20px;
+  position: relative;
+  z-index: 2;
+  background-color: $text-main;
+
+  .education__cover {
+    padding: 40px 0;
+    background-color: $section-color;
+    .education__description {
+      padding: 24px 0 4px 21px;
+      .learn-more-logo {
+        background: transparent url(../../images/selling/learn_more.svg)
+          no-repeat 0 0;
+        display: block;
+        height: 45px;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        font-size: 32px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $section-title;
+        @include Responsive(md) {
+          font-size: 28px;
+          line-height: 130%;
+        }
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 26px;
+        padding: 12px 0 25px;
+        color: #7a7d85;
+      }
+
+      a.btn--standard {
+        @include Responsive(md) {
+          width: 100%;
+          text-align: center;
+        }
+      }
+
+      @include Responsive(lg) {
+        padding: 24px 20px 0;
+      }
+    }
+
+    .education__video {
+      padding: 0 64px;
+
+      .education__video_player_warpper {
+        position: relative;
+
+        .btn-video-player {
+          position: absolute;
+          z-index: 3;
+          top: 50%;
+          right: 50%;
+          margin-top: -33.5px;
+          margin-right: -33.5px;
+          font-size: 67px;
+          width: 71px;
+          height: 71px;
+          background: transparent url(../../images/selling/btn-video-player.svg)
+            no-repeat 0 0;
+          background-size: 4em 1em;
+          display: inline-block;
+          border: 2px solid #fff;
+          border-radius: 50%;
+          background-position: 0 0;
+        }
+
+        video {
+          height: 100%;
+          width: 100%;
+          border-radius: 5px;
+        }
+
+        .education__video_description {
+          display: flex;
+          flex-direction: column;
+          position: absolute;
+          bottom: -25px;
+          left: 10px;
+
+          .education__video_title {
+            display: flex;
+            h3 {
+              color: $text-main;
+              font-weight: 700;
+              font-size: 18px;
+              line-height: 135%;
+              width: 70%;
+            }
+
+            span {
+              color: $text-main;
+              align-self: flex-end;
+              font-size: 14px;
+              font-weight: 700;
+              text-transform: uppercase;
+              background-color: $primary-main;
+              margin-bottom: 3px;
+              padding: 2px 8px;
+              line-height: 100%;
+            }
+          }
+
+          .education__video_rating {
+            .education__icon_star {
+              background-image: url(../../images/selling/icn-master-ratings-stars.svg);
+              background-repeat: no-repeat;
+              background-size: 12px 36px;
+              background-position: top left;
+              display: inline-block;
+              overflow: hidden;
+              height: 12px;
+              text-indent: -3000px;
+              width: 15px;
+            }
+
+            .education__rating_value {
+              font-size: 14px;
+              font-weight: 700;
+              color: #ffc100;
+              padding: 0 4px 0 2px;
+            }
+
+            .education__rating_count {
+              font-size: 12px;
+              color: $text-main;
+            }
+          }
+        }
+      }
+
+      @include Responsive(lg) {
+        padding: 24px 20px 0;
+      }
+    }
+  }
+}
+
+.modal__education {
+  .modal__education_close {
+    .close {
+      position: absolute;
+      top: -35px;
+      right: -35px;
+      color: $text-main;
+      font-size: 40px;
+      line-height: 40px;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-weight: 400;
+      z-index: 10;
+      opacity: 1;
+      @include Responsive(lg) {
+        top: -10px;
+        right: -10px;
+        font-size: 20px;
+      }
+    }
+  }
+}

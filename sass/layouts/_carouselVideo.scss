@@ -16,10 +16,10 @@
     -o-object-fit: cover;
     object-fit: cover;
 
-    @include Responsive(xl) {
-      position: fixed;
-      z-index: 0;
-    }
+    // @include Responsive(xl) {
+    //   position: fixed;
+    //   z-index: -99;
+    // }
 
     @include Responsive(md) {
       display: none;
@@ -119,6 +119,7 @@
   width: 100%;
   padding: 8px 0;
   position: relative;
+  z-index: 2;
   display: none;
   @include Responsive(lg) {
     display: block;

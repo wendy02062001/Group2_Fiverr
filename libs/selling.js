@@ -75,3 +75,32 @@ function getDataOverlay(p) {
     sliderContent.classList.add("blur");
     communityOverlay.classList.add("active");
 }
+
+// Education Modal
+
+let tagaPopupModal = document.querySelector(".education__video_popup");
+let videoModal = document.querySelector(".modal__education_video");
+
+let btnCloseModalEducation = document.querySelector(".modal__education_close");
+
+tagaPopupModal.addEventListener("click", () => {
+    videoModal.play();
+})
+
+btnCloseModalEducation.addEventListener("click", () => {
+    videoModal.pause(); 
+})
+
+// question and answer
+
+let qandaItems = document.getElementsByClassName('qanda__item');
+
+for (var i = 0; i < qandaItems.length; i++) {
+    qandaItems[i].onclick = function() {
+        // content show
+        this.lastElementChild.classList.toggle('show');
+
+        // xoay thẻ i
+        this.firstElementChild.lastElementChild.classList.toggle('show');
+    }
+}
