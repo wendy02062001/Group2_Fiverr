@@ -28,9 +28,12 @@
   font-family: "DomaineDisplay";
   src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot);
   src: local("DomaineDisplay-MediumItalic"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot?#iefix) format("embedded-opentype"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2) format("woff2"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff) format("woff");
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2)
+      format("woff2"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff)
+      format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -40,9 +43,12 @@
   font-family: "DomaineDisplay";
   src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot);
   src: local("DomaineDisplay-Bold"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot?#iefix) format("embedded-opentype"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2) format("woff2"),
-    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff) format("woff");
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2)
+      format("woff2"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff)
+      format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -53,8 +59,6 @@ html {
   font-family: "Macan", "Helvetica Neue", Arial, Helvetica, sans-serif;
   overflow-x: hidden;
 }
-
-
 
 h1,
 h2,

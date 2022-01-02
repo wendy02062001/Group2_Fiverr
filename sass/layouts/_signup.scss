@@ -1,0 +1,29 @@
+.signup {
+  padding: 50px 0;
+  background-color: $text-main;
+  position: relative;
+  z-index: 2;
+
+  p {
+    font-size: 18px;
+    color: $text-nav;
+    font-weight: 400;
+  }
+
+  a.btn--standard {
+    margin-top: 20px;
+  }
+
+  @include Responsive(md) {
+    padding: 20px 0;
+
+    p {
+      font-size: 14px;
+    }
+
+    a.btn--standard {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+  }
+}
