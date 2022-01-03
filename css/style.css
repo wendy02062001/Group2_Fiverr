@@ -818,6 +818,7 @@ h6 {
 }
 
 .trusted__container {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -835,6 +836,12 @@ h6 {
   font-weight: 600;
 }
 
+@media only screen and (max-width: 1200px) {
+  .trusted__container .trusted__text {
+    display: none;
+  }
+}
+
 .trusted__container .trusted__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -847,6 +854,26 @@ h6 {
           justify-content: center;
   margin-left: 1rem;
   gap: 3rem;
+}
+
+.trusted__container .trusted__list .trusted__list-item {
+  width: 20%;
+}
+
+.trusted__container .trusted__list .trusted__list-item img {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 960px) {
+  .trusted__container .trusted__list {
+    gap: 2rem;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .trusted__container .trusted__list {
+    gap: 1rem;
+  }
 }
 
 .service__container .service__slider {
