@@ -330,6 +330,13 @@ h6 {
   color: #404145;
 }
 
+@media only screen and (max-width: 576px) {
+  .section-title {
+    font-size: 28px;
+    line-height: 130%;
+  }
+}
+
 .slider__container {
   padding: 15px;
 }

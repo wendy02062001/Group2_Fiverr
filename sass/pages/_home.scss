@@ -4,6 +4,11 @@
   line-height: 120%;
   margin-left: 15px;
   color: $section-title;
+
+  @include Responsive(sm) {
+    font-size: 28px;
+    line-height: 130%;
+  }
 }
 
 .slider__container {
