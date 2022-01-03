@@ -988,6 +988,13 @@ h6 {
   margin-top: 90px;
 }
 
+@media only screen and (max-width: 960px) {
+  .about__container .about__video {
+    margin-top: 60px;
+    padding: 0 5%;
+  }
+}
+
 .category__container ul {
   display: -webkit-box;
   display: -ms-flexbox;
