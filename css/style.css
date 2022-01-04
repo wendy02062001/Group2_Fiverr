@@ -324,6 +324,24 @@ h6 {
   background-color: #3fca89;
 }
 
+@media only screen and (max-width: 900px) {
+  .section--index {
+    margin-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .section--index {
+    margin-top: 40px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .section--index {
+    margin-top: 30px;
+  }
+}
+
 .section-title {
   font-size: 1.8rem;
   font-weight: 700;
@@ -1506,15 +1524,21 @@ label > span {
 }
 
 .client__container .client__slider .client__item .client__info {
-  padding-left: 3rem;
+  padding: 0 56px 0 64px;
 }
 
 .client__container .client__slider .client__item .client__info h5 {
-  font-weight: 400;
+  font-weight: 300;
   color: #7a7d85;
   padding-bottom: 16px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   line-height: 140%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .client__container .client__slider .client__item .client__info h5 {
+    font-size: 20px;
+  }
 }
 
 .client__container .client__slider .client__item .client__info h5 span {
@@ -1535,6 +1559,50 @@ label > span {
   font-style: italic;
   font-size: 2rem;
   line-height: 2.7rem;
+}
+
+@media only screen and (max-width: 1200px) {
+  .client__container .client__slider .client__item .client__info blockquote {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .client__container .client__slider .client__item .client__info {
+    margin-top: 50px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .client__container .client__slider .client__item .client__info {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .client__container .slick-arrow {
+    top: 35%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .client__container .slick-arrow {
+    top: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .client__container .slick-arrow {
+    top: 15%;
+  }
+}
+
+.client__container .slick-prev {
+  left: -20px;
+}
+
+.client__container .slick-next {
+  right: -20px;
 }
 
 .logomaker {
@@ -1583,7 +1651,11 @@ label > span {
   background-color: #d4defb;
 }
 
-.logomaker__container .logomaker__content-img {
+.logomaker__container .logomaker__content-img .logomaker-tablet {
+  display: none;
+}
+
+.logomaker__container .logomaker__content-img .logomaker-default {
   position: absolute;
   top: 0;
   left: 0;
@@ -1592,10 +1664,36 @@ label > span {
 }
 
 .logomaker__container .logomaker__content-img img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+@media only screen and (max-width: 900px) {
+  .logomaker__container .logomaker__content-img .logomaker-default {
+    display: none;
+  }
+  .logomaker__container .logomaker__content-img .logomaker-tablet {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: -25%;
+    z-index: -1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logomaker__container .logomaker__content {
+    padding: 15px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .logomaker {
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
 .freelancer {

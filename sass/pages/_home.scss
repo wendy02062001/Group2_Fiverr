@@ -1,3 +1,17 @@
+.section--index {
+  @include Responsive(lg-carousel) {
+    margin-top: 60px;
+  }
+
+  @include Responsive(sm) {
+    margin-top: 40px;
+  }
+
+  @include Responsive(xs) {
+    margin-top: 30px;
+  }
+}
+
 .section-title {
   font-size: 1.8rem;
   font-weight: 700;
