@@ -66,5 +66,14 @@
         }
       }
     }
+
+    .see-more--responsive {
+      display: none;
+
+      @include Responsive(lg-carousel) {
+        display: block;
+        padding: 15px;
+      }
+    }
   }
 }

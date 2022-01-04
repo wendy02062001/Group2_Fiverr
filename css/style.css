@@ -1774,6 +1774,17 @@ label > span {
   color: #95979d;
 }
 
+.freelancer__container .see-more--responsive {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .freelancer__container .see-more--responsive {
+    display: block;
+    padding: 15px;
+  }
+}
+
 .guide__container .guide__header {
   display: -webkit-box;
   display: -ms-flexbox;
