@@ -1,3 +1,5 @@
+@import url(http://fonts.cdnfonts.com/css/helvetica-neue-9);
+
 @font-face {
   font-family: "Macan";
   src: url("../../fonts/macan-light.9b72a31.woff2") format("woff2");
@@ -22,7 +24,70 @@
   font-weight: 700;
 }
 
-body {
+@font-face {
+  font-family: "DomaineDisplay";
+  src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot);
+  src: local("DomaineDisplay-MediumItalic"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff2)
+      format("woff2"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-medium-italic.woff)
+      format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "DomaineDisplay";
+  src: url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot);
+  src: local("DomaineDisplay-Bold"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.eot?#iefix)
+      format("embedded-opentype"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff2)
+      format("woff2"),
+    url(https://npm-assets.fiverrcdn.com/assets/uploads/domaine-display-web-bold.woff)
+      format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
   font-size: 16px;
-  font-family: "Macan", Arial, Helvetica, sans-serif;
+  font-family: "Macan", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  color: $section-title;
+}
+
+.wrapper--index {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section--index {
+  margin-top: 90px;
+}
+
+.max-width--index {
+  width: 100%;
+  padding: 24px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.wrapper--selling {
+  max-width: 1920px;
+  margin: 0px auto;
 }

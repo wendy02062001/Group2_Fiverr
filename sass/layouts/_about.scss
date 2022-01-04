@@ -1,0 +1,55 @@
+.about {
+  background-color: #f1fdf7;
+
+  &__container {
+    padding: 90px 0;
+
+    .about__txt {
+      padding-right: 11%;
+
+      .about__title {
+        padding-bottom: 1.4rem;
+      }
+
+      ul {
+        padding-left: 13px;
+
+        li {
+          padding-bottom: 24px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+
+          h6 {
+            font-size: 1.1rem;
+            line-height: 140%;
+            padding-bottom: 0.5rem;
+
+            i {
+              color: #7a7d85;
+              font-size: 20px;
+              padding-right: 5px;
+            }
+          }
+
+          p {
+            font-size: 18px;
+            line-height: 26px;
+            color: #62646a;
+          }
+        }
+      }
+    }
+
+    .about__video {
+      padding-left: 9%;
+      margin-top: 90px;
+
+      @include Responsive(lg) {
+        margin-top: 60px;
+        padding: 0 5%;
+      }
+    }
+  }
+}

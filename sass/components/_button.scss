@@ -1,0 +1,92 @@
+.btn {
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: none;
+  &:hover {
+    background-color: $hover-button;
+    color: white;
+  }
+}
+
+.btn--submit {
+  background-color: $primary-main;
+  color: white;
+  border-radius: 4px;
+  height: 2.5rem;
+  margin: 0;
+  font-weight: 600;
+  padding: 0 20px;
+}
+
+.slick-arrow {
+  background-color: white;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  border: 0;
+  border-radius: 50%;
+  font-size: 16px;
+  line-height: 100%;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    background: white;
+  }
+}
+
+.slick-prev {
+  left: -10px;
+  &::before {
+    content: "\f053";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 17px;
+  }
+}
+
+.slick-next {
+  right: -10px;
+  &::before {
+    content: "\f054";
+    display: inline-block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: black;
+    width: 16px;
+    height: 16px;
+    line-height: 16px;
+    margin-top: 17px;
+  }
+}
+
+.btn--standard {
+  color: $text-main;
+  background-color: $primary-main;
+  font-size: 1rem;
+  line-height: 16px;
+  font-weight: 700;
+  border: 1px solid transparent;
+  padding: 15px 35px;
+  margin: 0;
+  display: inline-block;
+  border-radius: 3px;
+  box-sizing: border-box;
+  transition: all 0.2s;
+
+  &:hover {
+    color: $text-main;
+    background-color: $color-standard--hover;
+  }
+}

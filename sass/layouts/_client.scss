@@ -1,0 +1,43 @@
+.client {
+  &__container {
+    .client__slider {
+      max-width: 100%;
+      .client__item {
+        img {
+          border-radius: 4px;
+        }
+        .client__info {
+          padding-left: 3rem;
+
+          h5 {
+            font-weight: 400;
+            color: #7a7d85;
+            padding-bottom: 16px;
+            font-size: 1.4rem;
+            line-height: 140%;
+
+            span {
+              border-left: 1px solid #c5c6c9;
+              height: 2rem;
+              margin-left: 16px;
+
+              img {
+                height: 2rem;
+                display: inline-block;
+                vertical-align: middle;
+                margin-left: 0.8rem;
+              }
+            }
+          }
+
+          blockquote {
+            font-family: DomaineDisplay;
+            font-style: italic;
+            font-size: 2rem;
+            line-height: 2.7rem;
+          }
+        }
+      }
+    }
+  }
+}

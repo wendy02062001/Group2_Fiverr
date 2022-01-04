@@ -1,6 +1,7 @@
 $xs: 480px;
 $sm: 576px;
 $md: 768px;
+$lg-carousel: 900px;
 $lg: 960px;
 $xl: 1200px;
 
@@ -19,6 +20,10 @@ $xl: 1200px;
     }
   } @else if $canvas == lg {
     @media only screen and (max-width: $lg) {
+      @content;
+    }
+  } @else if $canvas == lg-carousel {
+    @media only screen and (max-width: $lg-carousel) {
       @content;
     }
   } @else if $canvas == xl {

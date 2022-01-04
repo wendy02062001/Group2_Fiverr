@@ -1,0 +1,146 @@
+.carouselVideo {
+  height: 580px;
+  background-color: #1f1f1f;
+  z-index: 0;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+  @include Responsive(md) {
+    height: auto;
+  }
+
+  video {
+    opacity: 0.8;
+    min-height: 580px;
+    width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+
+    // @include Responsive(xl) {
+    //   position: fixed;
+    //   z-index: -99;
+    // }
+
+    @include Responsive(md) {
+      display: none;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: none;
+    object-fit: cover;
+    opacity: 0.9;
+    @include Responsive(md) {
+      display: block;
+    }
+  }
+
+  &__caption {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    -webkit-filter: blur(0);
+    -webkit-backface-visibility: hidden;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+
+    h1 {
+      color: $text-main;
+      opacity: 1;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 110%;
+
+      @include Responsive(md) {
+        font-size: 40px;
+      }
+
+      @include Responsive(sm) {
+        font-size: 23px;
+      }
+    }
+
+    p {
+      color: $text-main;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 32px;
+      margin: 5px auto 15px;
+      @include Responsive(md) {
+        font-size: 20px;
+      }
+
+      @include Responsive(sm) {
+        font-size: 16px;
+      }
+    }
+  }
+  &__stats-lg {
+    background-color: rgba(255, 255, 255, 0.3);
+    width: 100%;
+    padding: 25px 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+
+    @include Responsive(lg) {
+      display: none;
+    }
+
+    .carouselVideo__box {
+      margin: 0 auto;
+      padding: 0 50px;
+      position: relative;
+      ul {
+        display: flex;
+        li {
+          color: $text-main;
+          font-size: 22px;
+          line-height: 30px;
+          width: 33.33%;
+          text-align: center;
+          strong {
+            font-weight: 400;
+            font-size: 45px;
+            line-height: normal;
+          }
+        }
+      }
+    }
+  }
+}
+
+.carouselVideo__stats-md {
+  background-color: $text-main;
+  width: 100%;
+  padding: 8px 0;
+  position: relative;
+  z-index: 2;
+  display: none;
+  @include Responsive(lg) {
+    display: block;
+  }
+
+  .carouselVideo__box {
+    margin: 0 auto;
+    padding: 0 15px;
+    ul {
+      li {
+        color: #62646a;
+        font-size: 16px;
+        line-height: 30px;
+        padding: 12px 0;
+        text-align: center;
+        strong {
+          font-weight: 400;
+          font-size: 36px;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}

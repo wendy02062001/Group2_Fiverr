@@ -1,0 +1,43 @@
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 120%;
+  margin-left: 15px;
+  color: $section-title;
+
+  @include Responsive(sm) {
+    font-size: 28px;
+    line-height: 130%;
+  }
+}
+
+.slider__container {
+  padding: 15px;
+}
+
+.banner-title {
+  color: white;
+  margin-left: 0;
+  padding: 14px 0;
+}
+
+.domaine-font {
+  font-family: DomaineDisplay;
+  font-style: italic;
+  font-weight: 500;
+}
+
+@import "../layouts/sidebar";
+@import "../layouts/header-home";
+@import "../layouts/carousel";
+@import "../layouts/trusted";
+@import "../layouts/service";
+@import "../layouts/about";
+@import "../layouts/category";
+@import "../layouts/business";
+@import "../layouts/client";
+@import "../layouts/logomaker";
+@import "../layouts/freelancer";
+@import "../layouts/guide";
+@import "../layouts/banner";
+@import "../layouts/footer-home";

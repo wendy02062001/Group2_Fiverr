@@ -1,0 +1,188 @@
+.nav-scroller, .nav-scroller-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f9f9f9;
+}
+
+.nav-scroller {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.nav-scroller-nav {
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  -webkit-overflow-scrolling: touch;
+  z-index: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-bottom: 30px;
+  margin-bottom: -30px;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.nav-scroller-content, .nav-scroller-items {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  white-space: nowrap;
+}
+
+.nav-scroller-content {
+  min-height: 44px;
+  will-change: transform;
+}
+
+.nav-scroller-content:not(.no-transition) {
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1), -webkit-transform 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+ul.nav-scroller-content {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-scroller-item, .nav-scroller-group-title {
+  padding: .25rem 1rem;
+  margin: .25rem 0;
+}
+
+.nav-scroller-item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  display: block;
+  font-size: 1.125rem;
+  text-align: center;
+  border-left: 1px solid transparent;
+  border-right: 1px solid #ddd;
+}
+
+.nav-scroller-item:last-child {
+  border-right-color: transparent;
+}
+
+.nav-scroller-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 10;
+  width: 44px;
+  min-height: 44px;
+  height: 100%;
+  padding: .5rem;
+  font-size: 1.25rem;
+  color: #000;
+  background: #fff;
+  border: 1px solid #ddd;
+  -webkit-transition: color .3s, opacity .3s;
+  transition: color .3s, opacity .3s;
+  cursor: pointer;
+}
+
+.nav-scroller-btn:hover {
+  color: #666;
+}
+
+.nav-scroller-btn:focus {
+  outline: 0;
+}
+
+.nav-scroller-btn:not(.active) {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.nav-scroller-icon {
+  display: inline-block;
+  position: relative;
+  top: -0.1em;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+  vertical-align: middle;
+}
+
+.nav-scroller-btn--left {
+  left: 0;
+}
+
+.nav-scroller-btn--right {
+  right: 0;
+}
+
+.nav-scroller-logo {
+  display: inline-block;
+  padding: .5rem;
+  margin-right: 1rem;
+  font-size: 1.75rem;
+  font-weight: bold;
+}
+
+.nav-scroller--controls-inline .nav-scroller-content {
+  padding: 0 44px;
+}
+
+.nav-scroller--controls-inline .nav-scroller-btn:not(.active) {
+  color: #ddd;
+  opacity: 1;
+}
+
+.nav-scroller--expand .nav-scroller-nav, .nav-scroller--expand .nav-scroller-content {
+  width: 100%;
+}
+
+.nav-scroller--right .nav-scroller-nav {
+  margin-left: auto;
+}
+
+.nav-scroller--snap .nav-scroller-nav {
+  -ms-scroll-snap-type: x proximity;
+      scroll-snap-type: x proximity;
+  scroll-padding: 0 44px;
+}
+
+.nav-scroller--snap .nav-scroller-content:not(.no-transition) .nav-scroller-item {
+  scroll-snap-align: start;
+}
+
+.nav-scroller--snap .nav-scroller-content:not(.no-transition).snap-align-end .nav-scroller-item {
+  scroll-snap-align: end;
+}
+
+.nav-scroller-group {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.nav-scroller-group:not(:first-child) {
+  border-left: 1px solid #ddd;
+  margin-left: -1px;
+}
+
+.nav-scroller-group-title {
+  font-weight: bold;
+}
+
+.nav-scroller-items .nav-scroller-item {
+  text-align: center;
+  min-width: 80px;
+}
+/*# sourceMappingURL=priority-nav-scroller.css.map */

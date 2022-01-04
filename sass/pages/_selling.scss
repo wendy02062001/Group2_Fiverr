@@ -1,0 +1,24 @@
+@import "../layouts/carouselVideo";
+@import "../layouts/community";
+@import "../layouts/work";
+@import "../layouts/education";
+@import "../layouts/buyer";
+@import "../layouts/qanda";
+@import "../layouts/signup";
+@import "../layouts/copyright-selling";
+
+.title__selling {
+  h2 {
+    font-size: 32px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 30px;
+    color: #222325;
+    font-weight: 700;
+
+    @include Responsive(md) {
+      font-size: 28px;
+    }
+  }
+}
