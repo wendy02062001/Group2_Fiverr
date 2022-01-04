@@ -74,7 +74,7 @@
     }
   }
 
-  @include Responsive(sm) {
+  @include Responsive(md-index) {
     padding-left: 0;
     padding-right: 0;
     margin-left: 0;

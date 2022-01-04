@@ -1687,7 +1687,7 @@ label > span {
   }
 }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 600px) {
   .logomaker {
     padding-left: 0;
     padding-right: 0;
