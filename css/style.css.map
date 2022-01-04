@@ -24,7 +24,12 @@
         "../sass/layouts/_banner.scss",
         "../sass/pages/_selling.scss",
         "../sass/layouts/_carouselVideo.scss",
-        "../sass/layouts/_community.scss"
+        "../sass/layouts/_community.scss",
+        "../sass/layouts/_work.scss",
+        "../sass/layouts/_education.scss",
+        "../sass/layouts/_buyer.scss",
+        "../sass/layouts/_qanda.scss",
+        "../sass/layouts/_signup.scss"
     ],
     "names": [],
     "file": "style.css"

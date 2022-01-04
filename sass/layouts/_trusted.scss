@@ -1,6 +1,7 @@
 .trusted {
   background-color: #fafafa;
   &__container {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -9,6 +10,10 @@
       padding-right: 20px;
       color: #b5b6ba;
       font-weight: 600;
+
+      @include Responsive(xl) {
+        display: none;
+      }
     }
 
     .trusted__list {
@@ -17,6 +22,22 @@
       justify-content: center;
       margin-left: 1rem;
       gap: 3rem;
+
+      .trusted__list-item {
+        width: 20%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      @include Responsive(lg) {
+        gap: 2rem;
+      }
+
+      @include Responsive(sm) {
+        gap: 1rem;
+      }
     }
   }
 }

@@ -45,6 +45,11 @@
     .about__video {
       padding-left: 9%;
       margin-top: 90px;
+
+      @include Responsive(lg) {
+        margin-top: 60px;
+        padding: 0 5%;
+      }
     }
   }
 }

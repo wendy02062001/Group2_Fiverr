@@ -1,0 +1,145 @@
+.buyer {
+  padding: 30px 0 60px;
+  background-color: $text-main;
+  position: relative;
+  z-index: 2;
+
+  .col-12,
+  .col-md-6 {
+    padding: 0;
+  }
+
+  &__item {
+    width: 100%;
+    background-color: $section-color;
+    height: 270px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: inline-block;
+      border-top: 19px transparent solid;
+      border-bottom: 19px transparent solid;
+      position: absolute;
+      z-index: 2;
+      left: 50%;
+      top: 50%;
+    }
+
+    &::after {
+      content: "";
+      background-color: transparent;
+      background-repeat: no-repeat;
+      background-position: top center;
+      float: right;
+      width: 50%;
+      height: 270px;
+      position: absolute;
+      z-index: 1;
+      top: 0;
+    }
+
+    .buyer__quote {
+      display: block;
+      position: absolute;
+      top: 50%;
+      z-index: 2;
+      padding: 0 25px;
+      width: 50%;
+      box-sizing: border-box;
+      transform: translateY(-50%);
+
+      p {
+        font: italic 18px/140% Georgia, "Times New Roman", serif;
+        color: $text-nav;
+      }
+
+      span {
+        display: block;
+        font-size: 14px;
+        padding-top: 25px;
+        color: $text-nav;
+      }
+    }
+  }
+
+  .buyer1,
+  .buyer2 {
+    &::before {
+      transform: translate3d(-24px, -50%, 0);
+      border-right: 25px #f7f7f7 solid;
+    }
+
+    &::after {
+      background-image: url(../../images/selling/buyer1.jpg);
+
+      left: 0;
+    }
+
+    .buyer__quote {
+      right: 0;
+    }
+  }
+
+  .buyer3,
+  .buyer4 {
+    &::before {
+      border-left: 25px #f7f7f7 solid;
+      transform: translate3d(-1px, -50%, 0);
+    }
+
+    &::after {
+      background-image: url(../../images/selling/buyer3.jpg);
+
+      right: 0;
+    }
+  }
+
+  .buyer2 {
+    &::after {
+      background-image: url(../../images/selling/buyer2.jpg);
+    }
+  }
+
+  .buyer4 {
+    &::after {
+      background-image: url(../../images/selling/buyer4.jpg);
+    }
+  }
+
+  @include Responsive(md) {
+    padding: 30px 0 0;
+    .buyer__item {
+      height: 376px;
+      &::after {
+        background-position: center top;
+        background-size: cover;
+        height: 221px;
+        display: block;
+        width: 100%;
+        top: 0;
+      }
+
+      &::before {
+        content: "";
+        border-left: 15px transparent solid;
+        border-right: 15px transparent solid;
+        border-bottom: 19px #f7f7f7 solid;
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        top: 202px;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+        border-top: unset;
+      }
+
+      .buyer__quote {
+        bottom: 0;
+        left: 0;
+        top: unset;
+        width: 100%;
+      }
+    }
+  }
+}
