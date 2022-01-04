@@ -1071,6 +1071,7 @@ label > span {
 @media only screen and (max-width: 900px) {
   .carousel__container .carousel__front-content {
     margin: 0 auto;
+    padding: 0 24px;
   }
 }
 
@@ -1388,6 +1389,18 @@ label > span {
 .category__container ul li:hover a::after {
   padding: 0 40px 8px;
   border-color: #1dbf73;
+}
+
+@media only screen and (max-width: 900px) {
+  .category__container ul li {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .category__container ul li {
+    width: 50%;
+  }
 }
 
 .business {
