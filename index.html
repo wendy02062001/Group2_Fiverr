@@ -35,7 +35,7 @@
         <header class="header__transparent" id="headerArea">
             <div class="header__container wrapper--index">
                 <div class="header__content d-flex align-items-center">
-                    <a class=" trigger-menu-icon">
+                    <a onclick="toggleButton()" class="trigger-menu-icon" id='menu-toggle'>
                         <span class="fas fa-bars"></span>
                     </a>
                     <a class="main-logo" href="#">
@@ -81,7 +81,7 @@
                                     Seller</a></li>
                             <li class="navbar__list-item"><a class="item-link" href="">Sign in</a></li>
                             <li class="navbar__list-item">
-                                <a class="item-link" href="">Join</a>
+                                <a class="item-link" id="join-Btn" href="">Join</a>
                             </li>
                         </ul>
                     </nav>
@@ -91,24 +91,285 @@
         <div id="categories__menu">
             <nav class="categories__menu-list">
                 <ul class="categories d-flex">
-                    <li class="categories-item"><a href="">Graphics & Design</a></li>
-                    <li class="categories-item"><a href="">Digital Marketing</a></li>
-                    <li class="categories-item"><a href="">Writing & Translation</a></li>
-                    <li class="categories-item"><a href="">Video & Animation</a></li>
-                    <li class="categories-item"><a href="">Music & Audio</a></li>
-                    <li class="categories-item"><a href="">Programming & Tech</a></li>
+                    <li class="categories-item"><a href="">Graphics &
+                            Design</a></li>
+                    <li class="categories-item"><a href="">Digital
+                            Marketing</a></li>
+                    <li class="categories-item"><a href="">Writing &
+                            Translation</a></li>
+                    <li class="categories-item"><a href="">Video &
+                            Animation</a></li>
+                    <li class="categories-item"><a href="">Music & Audio</a>
+                    </li>
+                    <li class="categories-item"><a href="">Programming &
+                            Tech</a></li>
                     <li class="categories-item"><a href="">Business</a></li>
-                    <li class="categories-item"><a href="">Lifestyle</a></li>
+                    <li class="categories-item"><a href="">Lifestyle</a>
+                    </li>
                     <li class="categories-item"><a href="">Trending</a></li>
                 </ul>
             </nav>
         </div>
     </div>
-    <div class="sidebar">
-        <div class="sitebar__container">
-
+    <div class="sidebar" id="wrapper">
+        <div class="sidebar__btn-area">
+            <button class="btn btn--submit">
+                Join Fiverr
+            </button>
         </div>
+
+        <nav class="nav__bar" role="navigation">
+            <ul class="nav__list">
+                <li>
+                    <a href="#">Sign in</a>
+                </li>
+                <li>
+                    <input id="group-1" type="checkbox" hidden />
+                    <label for="group-1"><span class="fas fa-chevron-down"></span>Browse Categories</label>
+                    <ul class="group-list">
+                        <li>
+                            <input id="sub-group-1" type="checkbox" hidden />
+                            <label for="sub-group-1"><span class="fas fa-chevron-down"></span>Graphics & Design</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-1" type="checkbox" hidden />
+                                    <label for="sub-sub-group-1"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-2" type="checkbox" hidden />
+                            <label for="sub-group-2"><span class="fas fa-chevron-down"></span>Digital Marketing</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-2" type="checkbox" hidden />
+                                    <label for="sub-sub-group-2"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-3" type="checkbox" hidden />
+                            <label for="sub-group-3"><span class="fas fa-chevron-down"></span>Writing &
+                                Translation</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-3" type="checkbox" hidden />
+                                    <label for="sub-sub-group-3"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-4" type="checkbox" hidden />
+                            <label for="sub-group-4"><span class="fas fa-chevron-down"></span>Video & Animation</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-4" type="checkbox" hidden />
+                                    <label for="sub-sub-group-4"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-5" type="checkbox" hidden />
+                            <label for="sub-group-5"><span class="fas fa-chevron-down"></span>Music & Audio</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-5" type="checkbox" hidden />
+                                    <label for="sub-sub-group-5"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-6" type="checkbox" hidden />
+                            <label for="sub-group-6"><span class="fas fa-chevron-down"></span>Programming & Tech</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-6" type="checkbox" hidden />
+                                    <label for="sub-sub-group-6"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-7" type="checkbox" hidden />
+                            <label for="sub-group-7"><span class="fas fa-chevron-down"></span>Data</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-7" type="checkbox" hidden />
+                                    <label for="sub-sub-group-7"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-8" type="checkbox" hidden />
+                            <label for="sub-group-8"><span class="fas fa-chevron-down"></span>Business</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-8" type="checkbox" hidden />
+                                    <label for="sub-sub-group-8"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <input id="sub-group-9" type="checkbox" hidden />
+                            <label for="sub-group-9"><span class="fas fa-chevron-down"></span>Lifestyle</label>
+                            <ul class="sub-group-list">
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li><a href="#">2nd level nav item</a></li>
+                                <li>
+                                    <input id="sub-sub-group-9" type="checkbox" hidden />
+                                    <label for="sub-sub-group-9"><span class="fas fa-chevron-down"></span> Third
+                                        level</label>
+                                    <ul class="sub-sub-group-list">
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                        <li><a href="#">3rd level nav item</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="group-4" type="checkbox" hidden />
+                    <label for="group-4"><span class="fas fa-chevron-down"></span>Explore</label>
+                    <ul class="group-list">
+                        <li><a href="#">Discover</a></li>
+                        <li><a href="#">Guides</a></li>
+                        <li><a href="#">Learn</a></li>
+                        <li><a href="#">Logo Maker</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </li>
+                <li><a href="#" style="font-weight: 600;
+                    color: rgb(2 ,194, 169);">Fiverr Pro</a></li>
+                <li><a href="#" style="    font-weight: 600;
+                    color: rgb(29, 191, 115);">Fiverr Business</a>
+                </li>
+                <li>
+                    <h6 class="title-submenu">General</h6>
+                </li>
+                <li><a href="#">Home</a></li>
+                <li>
+                    <input id="group-2" type="checkbox" hidden />
+                    <label for="group-2"><span class="fas fa-chevron-down"></span>English <i
+                            class="fa fa-globe"></i></label>
+                    <ul class="group-list">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Deutsch</a></li>
+                        <li><a href="#">Español</a></li>
+                        <li><a href="#">Français</a></li>
+                        <li><a href="#">Português</a></li>
+                        <li><a href="#">Italiano</a></li>
+                        <li><a href="#">Nederlands</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <input id="group-3" type="checkbox" hidden />
+                    <label for="group-3"><span class="fas fa-chevron-down"></span>US$ USD</label>
+                    <ul class="group-list">
+                        <li><a href="#">USD - US$</a></li>
+                        <li><a href="#">EUR - €</a></li>
+                        <li><a href="#">GBP - £</a></li>
+                        <li><a href="#">AUD - A$</a></li>
+                        <li><a href="#">CAD - CA$</a></li>
+                        <li><a href="#">ILS - ₪</a></li>
+                        <li><a href="#">BRL - R$</a></li>
+                        <li><a href="#">HKD - HK$</a></li>
+                        <li><a href="#">SEK - SEK</a></li>
+                        <li><a href="#">NZD - NZ$</a></li>
+                        <li><a href="#">SGD - SGD</a></li>
+                        <li><a href="#">CHF - CHF</a></li>
+                        <li><a href="#">ZAR - ZAR</a></li>
+                        <li><a href="#">CNY - CN¥</a></li>
+                        <li><a href="#">INR - ₹</a></li>
+                        <li><a href="#">MYR - MYR</a></li>
+                        <li><a href="#">MXN - MX$</a></li>
+                        <li><a href="#">PKR - PKR</a></li>
+                        <li><a href="#">PHP - ₱</a></li>
+                        <li><a href="#">TWD - NT$</a></li>
+                        <li><a href="#">THB - THB</a></li>
+                        <li><a href="#">TRY - TRY</a></li>
+                        <li><a href="#">AED - AED</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
     </div>
+    <div class="sidebar__overlay" id="overlay"></div>
     <main>
         <section class="carousel">
             <div class="carousel__container">
@@ -1274,9 +1535,16 @@
     </main>
 
     <footer class="footer-area">
-
         <div class="footer__wrapper wrapper--index">
+            <div class="footer-content grid-15">
+                <div class="col-xs-15 col-sm-5 col-md-3">
 
+                </div>
+                <div class="col-xs-15 col-sm-5 col-md-3"></div>
+                <div class="col-xs-15 col-sm-5 col-md-3"></div>
+                <div class="col-xs-15 col-sm-5 col-md-3"></div>
+                <div class="col-xs-15 col-sm-5 col-md-3"></div>
+            </div>
         </div>
     </footer>
     <!-- Optional JavaScript -->
