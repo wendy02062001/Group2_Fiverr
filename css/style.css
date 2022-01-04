@@ -1447,12 +1447,24 @@ label > span {
   font-style: italic;
 }
 
+@media only screen and (max-width: 900px) {
+  .business .business__container .business__content .section-title {
+    max-width: 100%;
+  }
+}
+
 .business .business__container .business__content .section-p {
   color: white;
   font-size: 1.1rem;
   line-height: 1.5rem;
   padding-bottom: 30px;
   max-width: 450px;
+}
+
+@media only screen and (max-width: 900px) {
+  .business .business__container .business__content .section-p {
+    max-width: 100%;
+  }
 }
 
 .business .business__container .business__content ul {
@@ -1477,6 +1489,12 @@ label > span {
 
 .business .business__container img {
   width: 100%;
+}
+
+@media only screen and (max-width: 900px) {
+  .business .business__container img {
+    margin-top: 50px;
+  }
 }
 
 .client__container .client__slider {
