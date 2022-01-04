@@ -1,7 +1,7 @@
 .freelancer {
   background-color: #f5f5f5;
   &__container {
-    padding: 90px 0;
+    padding: 60px 0;
     .freelancer__header {
       display: flex;
       align-items: center;
@@ -13,6 +13,9 @@
 
         &:hover {
           color: #4a73e8;
+        }
+        @include Responsive(lg-carousel) {
+          display: none;
         }
       }
     }
