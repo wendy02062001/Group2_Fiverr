@@ -17,12 +17,13 @@
       z-index: 10;
 
       &-content {
-        max-width: 650px;
+        max-width: 750px;
+        padding: 64px 30px;
         color: $text-main;
 
         .carousel__title {
-          font-size: 2.5rem;
-          line-height: 3rem;
+          font-size: 3rem;
+          line-height: 3.2rem;
           font-weight: 600;
           color: white;
 
@@ -48,7 +49,7 @@
             }
 
             input {
-              height: 2.7rem;
+              height: 2.8rem;
               width: 80%;
               padding: 7px 7px 7px 28px;
               padding-left: 44px;
@@ -65,7 +66,7 @@
 
             button {
               border-radius: 0 4px 4px 0;
-              height: 2.7rem;
+              height: 2.8rem;
 
               @include Responsive(lg-carousel) {
                 width: 100%;
@@ -118,7 +119,6 @@
 
         @include Responsive(lg-carousel) {
           margin: 0 auto;
-          padding: 0 24px;
         }
       }
     }
