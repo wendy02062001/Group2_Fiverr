@@ -14,7 +14,26 @@
         max-width: 650px;
         font-size: 3rem;
         padding-bottom: 40px;
+
+        @include Responsive(lg-carousel) {
+          font-size: 40px;
+          max-width: 750px;
+        }
+
+        @include Responsive(md-index) {
+          font-size: 2rem;
+        }
       }
+    }
+
+    @include Responsive(lg-carousel) {
+      background-image: none;
+      background-color: #4d1325;
+      padding: 64px 32px;
+    }
+
+    @include Responsive(md-index) {
+      padding: 48px 24px;
     }
   }
 }
