@@ -965,13 +965,14 @@ label > span {
 }
 
 .carousel__container .carousel__front-content {
-  max-width: 650px;
+  max-width: 750px;
+  padding: 64px 30px;
   color: #fff;
 }
 
 .carousel__container .carousel__front-content .carousel__title {
-  font-size: 2.5rem;
-  line-height: 3rem;
+  font-size: 3rem;
+  line-height: 3.2rem;
   font-weight: 600;
   color: white;
 }
@@ -1004,7 +1005,7 @@ label > span {
 }
 
 .carousel__container .carousel__front-content .carousel__search form input {
-  height: 2.7rem;
+  height: 2.8rem;
   width: 80%;
   padding: 7px 7px 7px 28px;
   padding-left: 44px;
@@ -1024,7 +1025,7 @@ label > span {
 
 .carousel__container .carousel__front-content .carousel__search form button {
   border-radius: 0 4px 4px 0;
-  height: 2.7rem;
+  height: 2.8rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -1087,7 +1088,6 @@ label > span {
 @media only screen and (max-width: 900px) {
   .carousel__container .carousel__front-content {
     margin: 0 auto;
-    padding: 0 24px;
   }
 }
 
