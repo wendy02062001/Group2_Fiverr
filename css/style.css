@@ -1307,7 +1307,7 @@ label > span {
 }
 
 .about__container .about__txt {
-  padding-right: 11%;
+  padding-right: 12%;
 }
 
 .about__container .about__txt .about__title {
@@ -1345,8 +1345,8 @@ label > span {
 }
 
 .about__container .about__video {
-  padding-left: 9%;
-  margin-top: 90px;
+  margin-top: 80px;
+  position: relative;
 }
 
 @media only screen and (max-width: 960px) {
@@ -1354,6 +1354,21 @@ label > span {
     margin-top: 60px;
     padding: 0 5%;
   }
+}
+
+.about__container .about__video::after {
+  content: "";
+  display: inline-block;
+  background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png) no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .category__container ul {
@@ -1517,8 +1532,23 @@ label > span {
   max-width: 100%;
 }
 
-.client__container .client__slider .client__item img {
+.client__container .client__slider .client__item .client__video img {
   border-radius: 4px;
+}
+
+.client__container .client__slider .client__item .client__video::after {
+  content: "";
+  display: inline-block;
+  background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png") no-repeat;
+  background-size: 80px;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  z-index: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .client__container .client__slider .client__item .client__info {
@@ -1557,6 +1587,7 @@ label > span {
   font-style: italic;
   font-size: 2rem;
   line-height: 2.7rem;
+  color: #003912;
 }
 
 @media only screen and (max-width: 1200px) {
