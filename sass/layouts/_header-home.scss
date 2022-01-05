@@ -40,12 +40,12 @@
                 .main-logo {
                     height: auto;
                     min-width: 121px;
+                    margin-top: -3px;
                 }
 
                 #header__search {
                     position: relative;
                     visibility: hidden;
-                    transition: .15s ease-in-out;
 
                     .header__search-box {
                         form {
@@ -68,14 +68,14 @@
                                 box-shadow: none;
                                 z-index: 3;
                                 border: 1px solid rgb(197, 198, 201);
-                                width: 280px;
+                                width: 290px;
                                 outline: none;
-                                transition: .15s ease-in-out;
+                                letter-spacing: 1px;
                             }
 
                             .btn--submit {
                                 padding: 5px 16px;
-                                height: 32px;
+                                height: 34px;
                                 display: block;
                                 font-size: 14px;
                                 font-weight: 700;
