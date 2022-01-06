@@ -1,4 +1,5 @@
 footer {
+    margin-top: 120px;
 
     h3,
     a,
@@ -20,9 +21,8 @@ footer {
     }
 
     .footer__content {
-        padding: 64px 32px 24px 32px;
+        padding: 65px 10px 24px 10px;
         background-color: #fff;
-        border-top: 1px solid #e4e5e7;
         border-bottom: 1px solid #e4e5e7;
         position: relative;
     }
@@ -47,12 +47,20 @@ footer {
         }
     }
 
+}
+
+@media only screen and (max-width: $sm) {
+
     .widget {
+        .widget-list {
+            padding-top: 8px !important;
+        }
+
         .card-header {
             background: #fff;
-            margin-left: -40px;
+            margin-left: -10px;
             margin-right: -40px;
-            margin-top: -10px;
+            margin-top: -15px;
 
             a {
                 width: 100%;
@@ -66,7 +74,7 @@ footer {
                     content: "\f078";
                     color: #7a7d85cc;
                     position: absolute;
-                    right: 0px;
+                    right: 20px;
                     top: .8rem;
                     transition: transform .15s ease-in-out;
                 }
@@ -85,8 +93,8 @@ footer {
         }
 
         .card-block {
-            margin-left: -40px;
-            margin-top: -20px;
+            margin-left: -10px;
+            margin-top: -25px;
 
             .widget-list {
                 li {
@@ -154,7 +162,7 @@ footer {
                 }
 
                 a.btn--support-other {
-                    padding: 8px;
+                    padding: 7px 9px 7px 9px;
                     border: 1px solid rgb(122, 125, 133);
                     border-radius: 50%;
                     transition: all .3s;
