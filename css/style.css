@@ -3542,6 +3542,13 @@ footer .widget .card-block .widget-list li {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  .buyer .buyer3 .buyer__quote,
+  .buyer .buyer4 .buyer__quote {
+    bottom: -20px;
+  }
+}
+
 .qanda {
   padding: 40px 0;
   background-color: #f7f7f7;
