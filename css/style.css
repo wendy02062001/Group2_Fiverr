@@ -203,13 +203,14 @@ h6 {
 }
 
 .wrapper--index {
-  max-width: 1400px;
-  margin: 0 auto;
+  width: 100%;
   padding: 0 15px;
+  margin-top: 90px;
 }
 
 .section--index {
-  margin-top: 90px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .max-width--index {
@@ -945,7 +946,12 @@ label > span {
 
 .carousel__container {
   position: relative;
-  background-color: #023a15;
+}
+
+@media only screen and (max-width: 900px) {
+  .carousel__container {
+    background-color: #023a15;
+  }
 }
 
 .carousel__container .carousel__front {
@@ -960,7 +966,6 @@ label > span {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  width: 100%;
   height: 100%;
   z-index: 10;
 }
@@ -1092,6 +1097,12 @@ label > span {
   }
 }
 
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel__front {
+    right: 50% !important;
+  }
+}
+
 .carousel__container .carousel-inner {
   min-height: 680px;
 }
@@ -1107,34 +1118,74 @@ label > span {
 
 .carousel__container .carousel-inner .carousel-item:nth-child(1) {
   background-image: url("../images/home/carousel-andrea.jfif");
+  background-color: #023a15;
 }
 
 .carousel__container .carousel-inner .carousel-item:nth-child(1) ul {
   visibility: hidden;
 }
 
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel-inner .carousel-item:nth-child(1) {
+    background-image: url("../images/home/carousel-andrea-bigger.jfif");
+    background-size: contain;
+  }
+}
+
 .carousel__container .carousel-inner .carousel-item:nth-child(2) {
   background-image: url("../images/home/carousel-moon.jfif");
+  background-color: #b64762;
+}
+
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel-inner .carousel-item:nth-child(2) {
+    background-image: url("../images/home/carousel-moon-bigger.jfif");
+    background-size: contain;
+  }
 }
 
 .carousel__container .carousel-inner .carousel-item:nth-child(3) {
   background-image: url("../images/home/carousel-ritika.jfif");
+  background-color: #540e1f;
 }
 
 .carousel__container .carousel-inner .carousel-item:nth-child(3) ul {
   visibility: hidden;
 }
 
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel-inner .carousel-item:nth-child(3) {
+    background-image: url("../images/home/carousel-ritika-bigger.jfif");
+    background-size: contain;
+  }
+}
+
 .carousel__container .carousel-inner .carousel-item:nth-child(4) {
   background-image: url("../images/home/carousel-zach.jfif");
+  background-color: #023a15;
 }
 
 .carousel__container .carousel-inner .carousel-item:nth-child(4) ul {
   visibility: hidden;
 }
 
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel-inner .carousel-item:nth-child(4) {
+    background-image: url("../images/home/carousel-zach-bigger.jfif");
+    background-size: contain;
+  }
+}
+
 .carousel__container .carousel-inner .carousel-item:nth-child(5) {
   background-image: url("../images/home/carousel-gabrielle.jfif");
+  background-color: #7d1a00;
+}
+
+@media only screen and (min-width: 1400px) {
+  .carousel__container .carousel-inner .carousel-item:nth-child(5) {
+    background-image: url("../images/home/carousel-gabrielle-bigger.jfif");
+    background-size: contain;
+  }
 }
 
 .carousel__container .carousel-inner .carousel-item .carousel__caption {
@@ -1636,8 +1687,8 @@ label > span {
 }
 
 .logomaker {
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .logomaker__container {
@@ -1883,8 +1934,8 @@ label > span {
 }
 
 .banner {
-  margin-left: 15px;
-  margin-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .banner__container {
@@ -2800,7 +2851,7 @@ footer .widget-list li a:hover {
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author {
-  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author strong {

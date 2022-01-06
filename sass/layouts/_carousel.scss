@@ -5,14 +5,16 @@
 
   &__container {
     position: relative;
-    background-color: #023a15;
+
+    @include Responsive(lg-carousel) {
+      background-color: #023a15;
+    }
 
     .carousel__front {
       display: flex;
       flex-direction: column;
       justify-content: center;
       position: absolute;
-      width: 100%;
       height: 100%;
       z-index: 10;
 
@@ -121,6 +123,10 @@
           margin: 0 auto;
         }
       }
+
+      @media only screen and (min-width: 1400px) {
+        right: 50% !important;
+      }
     }
 
     .carousel-inner {
@@ -136,34 +142,64 @@
 
         &:nth-child(1) {
           background-image: url("../images/home/carousel-andrea.jfif");
+          background-color: #023a15;
 
           ul {
             visibility: hidden;
+          }
+
+          @media only screen and (min-width: 1400px) {
+            background-image: url("../images/home/carousel-andrea-bigger.jfif");
+            background-size: contain;
           }
         }
 
         &:nth-child(2) {
           background-image: url("../images/home/carousel-moon.jfif");
+          background-color: #b64762;
+
+          @media only screen and (min-width: 1400px) {
+            background-image: url("../images/home/carousel-moon-bigger.jfif");
+            background-size: contain;
+          }
         }
 
         &:nth-child(3) {
           background-image: url("../images/home/carousel-ritika.jfif");
+          background-color: #540e1f;
 
           ul {
             visibility: hidden;
+          }
+
+          @media only screen and (min-width: 1400px) {
+            background-image: url("../images/home/carousel-ritika-bigger.jfif");
+            background-size: contain;
           }
         }
 
         &:nth-child(4) {
           background-image: url("../images/home/carousel-zach.jfif");
+          background-color: #023a15;
 
           ul {
             visibility: hidden;
+          }
+
+          @media only screen and (min-width: 1400px) {
+            background-image: url("../images/home/carousel-zach-bigger.jfif");
+            background-size: contain;
           }
         }
 
         &:nth-child(5) {
           background-image: url("../images/home/carousel-gabrielle.jfif");
+          background-color: #7d1a00;
+
+          @media only screen and (min-width: 1400px) {
+            background-image: url("../images/home/carousel-gabrielle-bigger.jfif");
+            background-size: contain;
+          }
         }
 
         .carousel__caption {
