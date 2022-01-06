@@ -150,7 +150,7 @@
 
           @media only screen and (min-width: 1400px) {
             background-image: url("../images/home/carousel-andrea-bigger.jfif");
-            background-size: contain;
+            background-size: cover;
           }
         }
 
@@ -160,13 +160,13 @@
 
           @media only screen and (min-width: 1400px) {
             background-image: url("../images/home/carousel-moon-bigger.jfif");
-            background-size: contain;
+            background-size: cover;
           }
         }
 
         &:nth-child(3) {
           background-image: url("../images/home/carousel-ritika.jfif");
-          background-color: #540e1f;
+          background-color: #661d30;
 
           ul {
             visibility: hidden;
@@ -174,7 +174,7 @@
 
           @media only screen and (min-width: 1400px) {
             background-image: url("../images/home/carousel-ritika-bigger.jfif");
-            background-size: contain;
+            background-size: cover;
           }
         }
 
@@ -188,17 +188,17 @@
 
           @media only screen and (min-width: 1400px) {
             background-image: url("../images/home/carousel-zach-bigger.jfif");
-            background-size: contain;
+            background-size: cover;
           }
         }
 
         &:nth-child(5) {
           background-image: url("../images/home/carousel-gabrielle.jfif");
-          background-color: #7d1a00;
+          background-color: #8f2807;
 
           @media only screen and (min-width: 1400px) {
             background-image: url("../images/home/carousel-gabrielle-bigger.jfif");
-            background-size: contain;
+            background-size: cover;
           }
         }
 
