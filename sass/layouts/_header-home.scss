@@ -8,6 +8,7 @@
         width: 100%;
         transition: .7s;
 
+
         .header__container {
             padding: 0px 0px;
 
@@ -40,12 +41,12 @@
                 .main-logo {
                     height: auto;
                     min-width: 121px;
+                    margin-top: -3px;
                 }
 
                 #header__search {
                     position: relative;
                     visibility: hidden;
-                    transition: .15s ease-in-out;
 
                     .header__search-box {
                         form {
@@ -68,14 +69,14 @@
                                 box-shadow: none;
                                 z-index: 3;
                                 border: 1px solid rgb(197, 198, 201);
-                                width: 280px;
+                                width: 290px;
                                 outline: none;
-                                transition: .15s ease-in-out;
+                                letter-spacing: 1px;
                             }
 
                             .btn--submit {
                                 padding: 5px 16px;
-                                height: 32px;
+                                height: 34px;
                                 display: block;
                                 font-size: 14px;
                                 font-weight: 700;
@@ -274,65 +275,11 @@
 
 }
 
-#categories__menu {
-    display: block;
-    position: relative;
-    width: 100%;
-    transition: .2s;
-    border-top: 1px solid #999ca150;
-    transform: rotateX(90deg);
-
-    nav {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        overflow: hidden;
-        z-index: 10;
-        width: 100%;
-        top: 0px;
-        background-color: #fff;
-        padding: 2px 0px;
-
-        ul.categories {
-            li {
-                display: inline-block;
-                padding: 0 18px;
-
-                a {
-                    display: block;
-                    position: relative;
-                    font-size: 16px;
-                    line-height: 35px;
-                    color: #999ca1 !important;
-                    text-decoration: none;
-                    font-weight: 400;
-
-                    &:hover {
-                        color: #999ca1 !important;
-                    }
-
-                    &:hover::after {
-                        content: "";
-                        width: 100%;
-                        height: 3px;
-                        display: block;
-                        background: $primary-main;
-                    }
-                }
-            }
-        }
-    }
-}
-
-
-
-
 #main-header.is-sticky {
     background: #fff;
 
     .main-logo .first-path path {
-        fill: black !important
+        fill: #404145 !important;
     }
 
     nav.navbar {
@@ -358,11 +305,6 @@
             color: $primary-main !important;
         }
     }
-}
-
-#categories__menu.is-sticky {
-    background-color: #fff !important;
-    transform: rotateX(0deg);
 }
 
 #header__search.is-sticky {
