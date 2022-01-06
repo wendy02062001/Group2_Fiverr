@@ -370,7 +370,7 @@
   <main>
     <section class="carousel">
       <div class="carousel__container">
-        <div class="carousel__front section--index ">
+        <div class="carousel__front section--index">
           <div class="carousel__front-content">
             <h1 class="carousel__title">
               Find the perfect
@@ -1457,7 +1457,7 @@
       </div>
     </section>
   </main>
-  <footer class="footer-collapse wrapper--index px-1 py-4">
+  <footer class="footer-collapse wrapper--index px-1">
     <div class="col-lg-12 mx-auto footer__wrapper section--index">
       <div class="row d-flex justify-content-between footer__content">
         <div class="col-lg-2 col-sm-3 col-md-3">
@@ -1829,6 +1829,15 @@
           // settings: "unslick"
           // instead of a settings object
         ],
+      });
+      $('.categories__menu-list').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
       });
     });
   </script>
