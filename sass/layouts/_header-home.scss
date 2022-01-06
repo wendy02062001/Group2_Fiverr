@@ -8,9 +8,10 @@
         width: 100%;
         transition: .7s;
 
-
         .header__container {
-            padding: 0px 0px;
+            padding: 0 0;
+            max-width: 1400px;
+            margin: 0 auto;
 
             .header__content {
                 display: flex;
@@ -132,7 +133,7 @@
                         margin-top: 10px;
 
                         li {
-                            margin-right: 20px;
+                            margin-left: 20px;
 
                             a {
                                 text-decoration: none;
@@ -182,7 +183,6 @@
                 @media only screen and (max-width: 900px) {
                     nav.navbar {
                         ul.navbar__list {
-
 
                             li:nth-child(1),
                             li:nth-child(2),
