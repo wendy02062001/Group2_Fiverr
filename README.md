@@ -5,16 +5,16 @@ Dự án tổng hợp HTML & CSS. Trang chủ và trang Start Selling.
 ## Phân công công việc
 
 **Nguyễn Thụy Khánh Linh:** 
-- Phần main (trang chủ Fiverr).
+- Phần Main (trang chủ Fiverr).
 
 **Lê Di Đan:**
-- Header (trang chủ Fiverr và trang Start Selling).
-- Footer (trang chủ Fiver và trang Start Selling).
+- Phần Header (trang chủ Fiverr và trang Start Selling).
+- Phần Footer (trang chủ Fiver và trang Start Selling).
 
 **Phạm Minh Hy:**
-- Phần main (trang Start Selling).
+- Phần Main (trang Start Selling).
 
-## Fiver Link
+## Fiverr Link
 
 **Trang chủ:** https://www.fiverr.com/
 

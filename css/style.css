@@ -2855,7 +2855,7 @@ footer .widget-list li a:hover {
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author {
-  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author strong {
@@ -3544,6 +3544,13 @@ footer .widget-list li a:hover {
     left: 0;
     top: unset;
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .buyer .buyer3 .buyer__quote,
+  .buyer .buyer4 .buyer__quote {
+    bottom: -20px;
   }
 }
 
