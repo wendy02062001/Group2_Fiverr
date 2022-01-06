@@ -592,93 +592,6 @@ label > span {
   opacity: 1;
 }
 
-#categories__menu {
-  display: block;
-  position: relative;
-  width: 100%;
-  -webkit-transition: .2s;
-  transition: .2s;
-  border-top: 1px solid #999ca150;
-  -webkit-transform: rotateX(90deg);
-          transform: rotateX(90deg);
-}
-
-#categories__menu nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: absolute;
-  z-index: 10;
-  width: 100%;
-  top: 0px;
-  border-bottom: 1px solid #999ca150;
-  background-color: #fff;
-  padding: 0px 0px;
-}
-
-#categories__menu nav ul.categories li {
-  display: block;
-  padding: 0 18px;
-  height: 100%;
-}
-
-#categories__menu nav ul.categories li a {
-  display: block;
-  font-size: 16px;
-  line-height: 40px;
-  color: #999ca1 !important;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-#categories__menu nav ul.categories li a:hover {
-  color: #999ca1 !important;
-}
-
-#categories__menu nav ul.categories li a:hover::after {
-  content: "";
-  width: 100%;
-  position: absolute;
-  bottom: 0px;
-  height: 3px;
-  display: block;
-  background: #1dbf73;
-}
-
-#categories__menu nav ul.categories .categories-item.sub-menu-1 {
-  display: block !important;
-}
-
-#categories__menu nav ul.categories .categories-item.sub-menu-1 .categories-item--inner {
-  position: absolute;
-  visibility: visible;
-  left: 0;
-}
-
-#categories__menu nav ul.categories .categories-item.sub-menu-1 .categories-item--inner .categories__content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: fixed;
-  width: 800px;
-  height: 100%;
-  top: 14%;
-  left: 0;
-  background-color: #999ca13f;
-}
-
-#categories__menu.is-sticky {
-  background-color: #fff !important;
-  -webkit-transform: rotateX(0deg);
-          transform: rotateX(0deg);
-}
-
 #main-header {
   position: fixed;
   width: 100%;
@@ -956,6 +869,72 @@ label > span {
 
 #header__search.is-sticky {
   visibility: visible !important;
+}
+
+#categories__menu {
+  display: block;
+  position: relative;
+  width: 100%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-top: 1px solid #999ca150;
+  -webkit-transform: rotateX(90deg);
+          transform: rotateX(90deg);
+}
+
+#categories__menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  width: 100%;
+  border-bottom: 1px solid #999ca150;
+  top: 0px;
+  background-color: #fff;
+  padding: 2px 0px;
+}
+
+#categories__menu nav ul.categories li {
+  display: inline-block;
+  padding: 0 18px;
+}
+
+#categories__menu nav ul.categories li a {
+  display: block;
+  position: relative;
+  font-size: 16px;
+  line-height: 35px;
+  color: #999ca1 !important;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#categories__menu nav ul.categories li a:hover {
+  color: #999ca1 !important;
+}
+
+#categories__menu nav ul.categories li a:hover::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 3px;
+  display: block;
+  background: #1dbf73;
+}
+
+#categories__menu.is-sticky {
+  background-color: #fff !important;
+  -webkit-transform: rotateX(0deg);
+          transform: rotateX(0deg);
 }
 
 .carousel {
@@ -2048,10 +2027,6 @@ footer .widget .card-block .widget-list li {
   padding: 30px 40px;
 }
 
-.copyright .copyright__inner .right ul.social-media li {
-  margin-left: 10px;
-}
-
 .copyright .copyright__inner .right ul.social-media li a {
   padding: 16px 12px 12px 12px;
   border-radius: 50%;
@@ -2069,7 +2044,7 @@ footer .widget .card-block .widget-list li {
 }
 
 .copyright .copyright__inner .right .fiverr__btn--support a {
-  margin-left: 15px;
+  margin-left: 10px;
 }
 
 .copyright .copyright__inner .right .fiverr__btn--support a.btn--support {
@@ -2823,7 +2798,7 @@ footer .widget .card-block .widget-list li {
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author {
-  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author strong {
