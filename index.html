@@ -2,1917 +2,1941 @@
 <html lang="en">
 
 <head>
-    <title>Fiverr - Freelance Services Marketplace for Businesses</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./images/favicon.ico" />
+  <title>Fiverr - Freelance Services Marketplace for Businesses</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./images/favicon.ico" />
 
-    <!-- Font Awesome 5  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  <!-- Font Awesome 5  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-    <!-- Line Awsome  -->
-    <link rel="stylesheet"
-        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
+  <!-- Line Awsome  -->
+  <link rel="stylesheet"
+    href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" />
 
-    <!-- Animate  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Animate  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- Slick  -->
-    <link rel="stylesheet" href="./libs/Slick/slick.css" />
-    <link rel="stylesheet" href="./libs/Slick/slick-theme.css" />
+  <!-- Slick  -->
+  <link rel="stylesheet" href="./libs/Slick/slick.css" />
+  <link rel="stylesheet" href="./libs/Slick/slick-theme.css" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom CSS  -->
-    <link rel="stylesheet" href="./css/style.css" />
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
-    <div id="main-header">
-        <header class="header__transparent" id="headerArea">
-            <div class="header__container wrapper--index">
-                <div class="header__content d-flex align-items-center">
-                    <a onclick="toggleButton()" class="trigger-menu-icon" id='menu-toggle'>
-                        <span class="fas fa-bars"></span>
-                    </a>
-                    <a class="main-logo" href="#">
-                        <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg"
-                            style="">
-                            <g fill="#fff" class="first-path">
-                                <path
-                                    d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
-                                </path>
-                            </g>
-                            <g fill="#1dbf73">
-                                <path
-                                    d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
-                                </path>
-                            </g>
-                        </svg>
-                    </a>
-                    <div id="header__search">
-                        <div class="header__search-box">
-                            <form action="">
-                                <div class="search-icon">
-                                    <svg fill="#7a7d85" width="16" height="16" viewBox="0 0 16 16"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <input type="search" autocomplete="off" placeholder="Find Services">
-                                <button class="btn btn--submit">Search</button>
-                            </form>
-                        </div>
-                    </div>
-                    <nav class="navbar ml-auto">
-                        <ul class="navbar__list">
-                            <li class="navbar__list-item"><a class="item-link" href="">Fiverr Business</a></li>
-                            <li class="navbar__list-item"><a class="item-link" href="">Explore</a></li>
-                            <li class="navbar__list-item">
-                                <a class="item-link" href=""><i class="fas fa-globe"></i>English</a>
-                            </li>
-                            <li class="navbar__list-item"><a class="item-link" href="">US$ USD</a></li>
-                            <li class="navbar__list-item"><a class="item-link" href="/start_selling.html">Become a
-                                    Seller</a></li>
-                            <li class="navbar__list-item"><a class="item-link" href="">Sign in</a></li>
-                            <li class="navbar__list-item">
-                                <a class="item-link" id="join-Btn" href="">Join</a>
-                            </li>
-                        </ul>
-                    </nav>
+  <div id="main-header">
+    <header class="header__transparent" id="headerArea">
+      <div class="header__container wrapper--index">
+        <div class="header__content d-flex align-items-center">
+          <a onclick="toggleButton()" class="trigger-menu-icon" id='menu-toggle'>
+            <span class="fas fa-bars"></span>
+          </a>
+          <a class="main-logo" href="#">
+            <svg width="89" height="27" viewBox="0 0 89 27" fill="none" xmlns="http://www.w3.org/2000/svg" style="">
+              <g fill="#fff" class="first-path">
+                <path
+                  d="m81.6 13.1h-3.1c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-13.4h-2.5c-2 0-3.1 1.5-3.1 4.1v9.3h-6v-18.4h6v2.8c1-2.2 2.3-2.8 4.3-2.8h7.3v2.8c1-2.2 2.3-2.8 4.3-2.8h2zm-25.2 5.6h-12.4c.3 2.1 1.6 3.2 3.7 3.2 1.6 0 2.7-.7 3.1-1.8l5.3 1.5c-1.3 3.2-4.5 5.1-8.4 5.1-6.5 0-9.5-5.1-9.5-9.5 0-4.3 2.6-9.4 9.1-9.4 6.9 0 9.2 5.2 9.2 9.1 0 .9 0 1.4-.1 1.8zm-5.7-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3 .8-3.4 3zm-22.9 11.3h5.2l6.6-18.3h-6l-3.2 10.7-3.2-10.8h-6zm-24.4 0h5.9v-13.4h5.7v13.4h5.9v-18.4h-11.6v-1.1c0-1.2.9-2 2.2-2h3.5v-5h-4.4c-4.3 0-7.2 2.7-7.2 6.6v1.5h-3.4v5h3.4z">
+                </path>
+              </g>
+              <g fill="#1dbf73">
+                <path d="m85.3 27c2 0 3.7-1.7 3.7-3.7s-1.7-3.7-3.7-3.7-3.7 1.7-3.7 3.7 1.7 3.7 3.7 3.7z">
+                </path>
+              </g>
+            </svg>
+          </a>
+          <div id="header__search">
+            <div class="header__search-box">
+              <form action="">
+                <div class="search-icon">
+                  <svg fill="#7a7d85" width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z">
+                    </path>
+                  </svg>
                 </div>
+                <input type="search" autocomplete="off" placeholder="Find Services">
+                <button class="btn btn--submit">Search</button>
+              </form>
             </div>
-        </header>
-        <div id="categories__menu">
-            <nav class="categories__menu-list">
-                <ul class="categories d-flex">
-                    <li class="categories-item"><a href="">Graphics &
-                            Design</a></li>
-                    <li class="categories-item"><a href="">Digital
-                            Marketing</a></li>
-                    <li class="categories-item"><a href="">Writing &
-                            Translation</a></li>
-                    <li class="categories-item"><a href="">Video &
-                            Animation</a></li>
-                    <li class="categories-item"><a href="">Music & Audio</a>
-                    </li>
-                    <li class="categories-item"><a href="">Programming &
-                            Tech</a></li>
-                    <li class="categories-item"><a href="">Business</a></li>
-                    <li class="categories-item"><a href="">Lifestyle</a>
-                    </li>
-                    <li class="categories-item"><a href="">Trending</a></li>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="sidebar" id="wrapper">
-        <div class="sidebar__btn-area">
-            <button class="btn btn--submit">
-                Join Fiverr
-            </button>
-        </div>
-
-        <nav class="nav__bar" role="navigation">
-            <ul class="nav__list">
-                <li>
-                    <a href="#">Sign in</a>
-                </li>
-                <li>
-                    <input id="group-1" type="checkbox" hidden />
-                    <label for="group-1"><span class="fas fa-chevron-down"></span>Browse Categories</label>
-                    <ul class="group-list">
-                        <li>
-                            <input id="sub-group-1" type="checkbox" hidden />
-                            <label for="sub-group-1"><span class="fas fa-chevron-down"></span>Graphics & Design</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-1" type="checkbox" hidden />
-                                    <label for="sub-sub-group-1"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-2" type="checkbox" hidden />
-                            <label for="sub-group-2"><span class="fas fa-chevron-down"></span>Digital Marketing</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-2" type="checkbox" hidden />
-                                    <label for="sub-sub-group-2"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-3" type="checkbox" hidden />
-                            <label for="sub-group-3"><span class="fas fa-chevron-down"></span>Writing &
-                                Translation</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-3" type="checkbox" hidden />
-                                    <label for="sub-sub-group-3"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-4" type="checkbox" hidden />
-                            <label for="sub-group-4"><span class="fas fa-chevron-down"></span>Video & Animation</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-4" type="checkbox" hidden />
-                                    <label for="sub-sub-group-4"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-5" type="checkbox" hidden />
-                            <label for="sub-group-5"><span class="fas fa-chevron-down"></span>Music & Audio</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-5" type="checkbox" hidden />
-                                    <label for="sub-sub-group-5"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-6" type="checkbox" hidden />
-                            <label for="sub-group-6"><span class="fas fa-chevron-down"></span>Programming & Tech</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-6" type="checkbox" hidden />
-                                    <label for="sub-sub-group-6"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-7" type="checkbox" hidden />
-                            <label for="sub-group-7"><span class="fas fa-chevron-down"></span>Data</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-7" type="checkbox" hidden />
-                                    <label for="sub-sub-group-7"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-8" type="checkbox" hidden />
-                            <label for="sub-group-8"><span class="fas fa-chevron-down"></span>Business</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-8" type="checkbox" hidden />
-                                    <label for="sub-sub-group-8"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <input id="sub-group-9" type="checkbox" hidden />
-                            <label for="sub-group-9"><span class="fas fa-chevron-down"></span>Lifestyle</label>
-                            <ul class="sub-group-list">
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li><a href="#">2nd level nav item</a></li>
-                                <li>
-                                    <input id="sub-sub-group-9" type="checkbox" hidden />
-                                    <label for="sub-sub-group-9"><span class="fas fa-chevron-down"></span> Third
-                                        level</label>
-                                    <ul class="sub-sub-group-list">
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                        <li><a href="#">3rd level nav item</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <input id="group-4" type="checkbox" hidden />
-                    <label for="group-4"><span class="fas fa-chevron-down"></span>Explore</label>
-                    <ul class="group-list">
-                        <li><a href="#">Discover</a></li>
-                        <li><a href="#">Guides</a></li>
-                        <li><a href="#">Learn</a></li>
-                        <li><a href="#">Logo Maker</a></li>
-                        <li><a href="#">Community</a></li>
-                        <li><a href="#">Podcast</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" style="font-weight: 600;
-                    color: rgb(2 ,194, 169);">Fiverr Pro</a></li>
-                <li><a href="#" style="    font-weight: 600;
-                    color: rgb(29, 191, 115);">Fiverr Business</a>
-                </li>
-                <li>
-                    <h6 class="title-submenu">General</h6>
-                </li>
-                <li><a href="#">Home</a></li>
-                <li>
-                    <input id="group-2" type="checkbox" hidden />
-                    <label for="group-2"><span class="fas fa-chevron-down"></span>English <i
-                            class="fa fa-globe"></i></label>
-                    <ul class="group-list">
-                        <li><a href="#">English</a></li>
-                        <li><a href="#">Deutsch</a></li>
-                        <li><a href="#">Español</a></li>
-                        <li><a href="#">Français</a></li>
-                        <li><a href="#">Português</a></li>
-                        <li><a href="#">Italiano</a></li>
-                        <li><a href="#">Nederlands</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <input id="group-3" type="checkbox" hidden />
-                    <label for="group-3"><span class="fas fa-chevron-down"></span>US$ USD</label>
-                    <ul class="group-list">
-                        <li><a href="#">USD - US$</a></li>
-                        <li><a href="#">EUR - €</a></li>
-                        <li><a href="#">GBP - £</a></li>
-                        <li><a href="#">AUD - A$</a></li>
-                        <li><a href="#">CAD - CA$</a></li>
-                        <li><a href="#">ILS - ₪</a></li>
-                        <li><a href="#">BRL - R$</a></li>
-                        <li><a href="#">HKD - HK$</a></li>
-                        <li><a href="#">SEK - SEK</a></li>
-                        <li><a href="#">NZD - NZ$</a></li>
-                        <li><a href="#">SGD - SGD</a></li>
-                        <li><a href="#">CHF - CHF</a></li>
-                        <li><a href="#">ZAR - ZAR</a></li>
-                        <li><a href="#">CNY - CN¥</a></li>
-                        <li><a href="#">INR - ₹</a></li>
-                        <li><a href="#">MYR - MYR</a></li>
-                        <li><a href="#">MXN - MX$</a></li>
-                        <li><a href="#">PKR - PKR</a></li>
-                        <li><a href="#">PHP - ₱</a></li>
-                        <li><a href="#">TWD - NT$</a></li>
-                        <li><a href="#">THB - THB</a></li>
-                        <li><a href="#">TRY - TRY</a></li>
-                        <li><a href="#">AED - AED</a></li>
-                    </ul>
-                </li>
+          </div>
+          <nav class="navbar ml-auto">
+            <ul class="navbar__list">
+              <li class="navbar__list-item"><a class="item-link" href="">Fiverr Business</a></li>
+              <li class="navbar__list-item"><a class="item-link" href="">Explore</a></li>
+              <li class="navbar__list-item">
+                <a class="item-link" href=""><i class="fas fa-globe"></i>English</a>
+              </li>
+              <li class="navbar__list-item"><a class="item-link" href="">US$ USD</a></li>
+              <li class="navbar__list-item"><a class="item-link" href="/start_selling.html">Become a
+                  Seller</a></li>
+              <li class="navbar__list-item"><a class="item-link" href="">Sign in</a></li>
+              <li class="navbar__list-item">
+                <a class="item-link" id="join-Btn" href="">Join</a>
+              </li>
             </ul>
-        </nav>
-    </div>
-    <div class="sidebar__overlay" id="overlay"></div>
-    <main>
-        <section class="carousel">
-            <div class="carousel__container">
-                <div class="carousel__front">
-                    <div class="carousel__front-content">
-                        <h1 class="carousel__title">
-                            Find the perfect
-                            <span class="domaine-font">freelance</span> services for your
-                            business
-                        </h1>
-
-                        <div class="carousel__search">
-                            <form>
-                                <div class="search-icon">
-                                    <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <input type="search" placeholder='Try "building mobile app "' />
-                                <button class="btn btn--submit" type="submit">Search</button>
-                            </form>
-                        </div>
-
-                        <div class="carousel__popular">
-                            <span>Popular:</span>
-                            <ul class="carousel__popular-list">
-                                <li class="carousel__popular-item">
-                                    <a
-                                        href="www.fiverr.com/categories/graphics-design/website-design?source=hplo_search_tag">Website
-                                        Design</a>
-                                </li>
-                                <li class="carousel__popular-item">
-                                    <a
-                                        href="www.fiverr.com/categories/programming-tech/wordpress-services?source=hplo_search_tag&pos=2&name=wordpress-services">
-                                        WordPress
-                                    </a>
-                                </li>
-                                <li class="carousel__popular-item">
-                                    <a
-                                        href="www.fiverr.com/categories/graphics-design/creative-logo-design?source=hplo_search_tag&pos=3&name=creative-logo-design">
-                                        Logo Design
-                                    </a>
-                                </li>
-                                <li class="carousel__popular-item">
-                                    <a href="www.fiverr.com/search/gigs?source=hplo_search_tag&pos=4&query=NFT%20Art">
-                                        NFT Art
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel"
-                    data-interval="2500">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel__caption text-left">
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Andrea, <span>Fashion Designer</span></p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="carousel__caption text-left">
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Moon, <span>Marketing Expert</span></p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="carousel__caption text-left">
-                                <p>Ritika, <span>Shoemaker and Designer</span></p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <ul>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                                <li><i class="fa fa-star"></i></li>
-                            </ul>
-                            <div class="carousel__caption text-left">
-                                <p>Zach, <span>Bar Owner</span></p>
-                            </div>
-                        </div>
-
-                        <div class="carousel-item">
-                            <div class="carousel__caption text-left">
-                                <ul>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                    <li><i class="fa fa-star"></i></li>
-                                </ul>
-                                <p>Gabrielle, <span>Video Ediiter</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="trusted wrapper--index">
-            <div class="trusted__container">
-                <span class="trusted__text">Trusted by:</span>
-                <ul class="trusted__list">
-                    <li class="trusted__list-item">
-                        <img src="./images/home/facebook.png" alt="Facebook" />
-                    </li>
-
-                    <li class="trusted__list-item">
-                        <img src="./images/home/google.png" alt="Google" />
-                    </li>
-
-                    <li class="trusted__list-item">
-                        <img src="./images/home/netflix.png" alt="Netflix" />
-                    </li>
-
-                    <li class="trusted__list-item">
-                        <img src="./images/home/png.png" alt="P&G" />
-                    </li>
-
-                    <li class="trusted__list-item">
-                        <img src="./images/home/paypal.png" alt="PayPal" />
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="service wrapper--index section--index">
-            <div class="service__container">
-                <h1 class="section-title service__title">
-                    Popular professional services
-                </h1>
-                <div class="service__slider">
-                    <div class="slider-content">
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Build your brand</h4>
-                                        <h2>Logo Design</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/logo-design.jfif" alt="Logo Design" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Customize your site</h4>
-                                        <h2>WordPress</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/word-press.jfif" alt="WordPress" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Share your message</h4>
-                                        <h2>Voice Over</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/voiceover.jfif" alt="Voice Over" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Engage your audience</h4>
-                                        <h2>
-                                            Video <br />
-                                            Explainer
-                                        </h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/animated-explainer.jfif" alt="Video Explainer" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Reach more customer</h4>
-                                        <h2>Social Media</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/social.jfif" alt="Social media" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Unlock growth online</h4>
-                                        <h2>SEO</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/seo.jfif" alt="SEO" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Color your dream</h4>
-                                        <h2>Illustration</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/illustration.jfif" alt="Illustration" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Go global</h4>
-                                        <h2>Translation</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/translation.jfif" alt="Translation" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Learn your business</h4>
-                                        <h2>Data Entry</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/data-entry.jfif" alt="Data Entry" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="slider-item">
-                            <div class="slider-item__wrapper">
-                                <a href="">
-                                    <div class="slider-item__txt">
-                                        <h4>Showcase your story</h4>
-                                        <h2>Book Covers</h2>
-                                    </div>
-                                </a>
-                                <div class="slider-item__img">
-                                    <img src="./images/home/book-covers.jfif" alt="Book Covers" />
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="about wrapper--index section--index">
-            <div class="about__container">
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div id="categories__menu">
+      <nav class="categories__menu-list">
+        <ul class="categories d-flex">
+          <li class="categories-item sub-menu-1">
+            <a href="">Graphics &
+              Design</a>
+            <div class="categories-item--inner" id="categories__inner-full">
+              <div class="categories__content col-lg-12">
                 <div class="row">
-                    <div class="col-md-5">
-                        <div class="about__txt">
-                            <h2 class="section-title about__title">
-                                A whole world of freelance talent at your fingertips
-                            </h2>
-                            <ul class="about__list">
-                                <li>
-                                    <h6>
-                                        <i class="far fa-check-circle"></i>
-                                        The best for every budget
-                                    </h6>
-                                    <p>
-                                        Find high-quality services at every price point. No hourly
-                                        rates, just project-based pricing.
-                                    </p>
-                                </li>
+                  <div class="col-3 column1">
+                    <ul class="item-top">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-middle">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-bottom">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 column2">
+                    <ul class="item-top">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-middle">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-bottom">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 column3">
+                    <ul class="item-top">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-middle">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-bottom">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-3 column4">
+                    <ul class="item-top">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-middle">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                    <ul class="item-bottom">
+                      <h3 class="item-title">Logo & Brand Identity</h3>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                      <li class="item"><a href="" class="item-link">Logo Design</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="categories-item"><a href="">Digital
+              Marketing</a></li>
+          <li class="categories-item"><a href="">Writing &
+              Translation</a></li>
+          <li class="categories-item"><a href="">Video &
+              Animation</a></li>
+          <li class="categories-item"><a href="">Music & Audio</a>
+          </li>
+          <li class="categories-item"><a href="">Programming &
+              Tech</a></li>
+          <li class="categories-item"><a href="">Business</a></li>
+          <li class="categories-item"><a href="">Lifestyle</a>
+          </li>
+          <li class="categories-item"><a href="">Trending</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="sidebar" id="wrapper">
+    <div class="sidebar__btn-area">
+      <button class="btn btn--submit">
+        Join Fiverr
+      </button>
+    </div>
 
-                                <li>
-                                    <h6>
-                                        <i class="far fa-check-circle"></i>
-                                        Quality work done quickly
-                                    </h6>
-                                    <p>
-                                        Find the right freelancer to begin working on your project
-                                        within minutes.
-                                    </p>
-                                </li>
+    <nav class="nav__bar" role="navigation">
+      <ul class="nav__list">
+        <li>
+          <a href="#">Sign in</a>
+        </li>
+        <li>
+          <input id="group-1" type="checkbox" hidden />
+          <label for="group-1"><span class="fas fa-chevron-down"></span>Browse Categories</label>
+          <ul class="group-list">
+            <li>
+              <input id="sub-group-1" type="checkbox" hidden />
+              <label for="sub-group-1"><span class="fas fa-chevron-down"></span>Graphics & Design</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-1" type="checkbox" hidden />
+                  <label for="sub-sub-group-1"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-2" type="checkbox" hidden />
+              <label for="sub-group-2"><span class="fas fa-chevron-down"></span>Digital Marketing</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-2" type="checkbox" hidden />
+                  <label for="sub-sub-group-2"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-3" type="checkbox" hidden />
+              <label for="sub-group-3"><span class="fas fa-chevron-down"></span>Writing &
+                Translation</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-3" type="checkbox" hidden />
+                  <label for="sub-sub-group-3"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-4" type="checkbox" hidden />
+              <label for="sub-group-4"><span class="fas fa-chevron-down"></span>Video & Animation</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-4" type="checkbox" hidden />
+                  <label for="sub-sub-group-4"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-5" type="checkbox" hidden />
+              <label for="sub-group-5"><span class="fas fa-chevron-down"></span>Music & Audio</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-5" type="checkbox" hidden />
+                  <label for="sub-sub-group-5"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-6" type="checkbox" hidden />
+              <label for="sub-group-6"><span class="fas fa-chevron-down"></span>Programming & Tech</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-6" type="checkbox" hidden />
+                  <label for="sub-sub-group-6"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-7" type="checkbox" hidden />
+              <label for="sub-group-7"><span class="fas fa-chevron-down"></span>Data</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-7" type="checkbox" hidden />
+                  <label for="sub-sub-group-7"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-8" type="checkbox" hidden />
+              <label for="sub-group-8"><span class="fas fa-chevron-down"></span>Business</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-8" type="checkbox" hidden />
+                  <label for="sub-sub-group-8"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input id="sub-group-9" type="checkbox" hidden />
+              <label for="sub-group-9"><span class="fas fa-chevron-down"></span>Lifestyle</label>
+              <ul class="sub-group-list">
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li><a href="#">2nd level nav item</a></li>
+                <li>
+                  <input id="sub-sub-group-9" type="checkbox" hidden />
+                  <label for="sub-sub-group-9"><span class="fas fa-chevron-down"></span> Third
+                    level</label>
+                  <ul class="sub-sub-group-list">
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                    <li><a href="#">3rd level nav item</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <input id="group-4" type="checkbox" hidden />
+          <label for="group-4"><span class="fas fa-chevron-down"></span>Explore</label>
+          <ul class="group-list">
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Guides</a></li>
+            <li><a href="#">Learn</a></li>
+            <li><a href="#">Logo Maker</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Podcast</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </li>
+        <li><a href="#" style="font-weight: 600;
+                    color: rgb(2 ,194, 169);">Fiverr Pro</a></li>
+        <li><a href="#" style="    font-weight: 600;
+                    color: rgb(29, 191, 115);">Fiverr Business</a>
+        </li>
+        <li>
+          <h6 class="title-submenu">General</h6>
+        </li>
+        <li><a href="#">Home</a></li>
+        <li>
+          <input id="group-2" type="checkbox" hidden />
+          <label for="group-2"><span class="fas fa-chevron-down"></span>English <i class="fa fa-globe"></i></label>
+          <ul class="group-list">
+            <li><a href="#">English</a></li>
+            <li><a href="#">Deutsch</a></li>
+            <li><a href="#">Español</a></li>
+            <li><a href="#">Français</a></li>
+            <li><a href="#">Português</a></li>
+            <li><a href="#">Italiano</a></li>
+            <li><a href="#">Nederlands</a></li>
+          </ul>
+        </li>
+        <li>
+          <input id="group-3" type="checkbox" hidden />
+          <label for="group-3"><span class="fas fa-chevron-down"></span>US$ USD</label>
+          <ul class="group-list">
+            <li><a href="#">USD - US$</a></li>
+            <li><a href="#">EUR - €</a></li>
+            <li><a href="#">GBP - £</a></li>
+            <li><a href="#">AUD - A$</a></li>
+            <li><a href="#">CAD - CA$</a></li>
+            <li><a href="#">ILS - ₪</a></li>
+            <li><a href="#">BRL - R$</a></li>
+            <li><a href="#">HKD - HK$</a></li>
+            <li><a href="#">SEK - SEK</a></li>
+            <li><a href="#">NZD - NZ$</a></li>
+            <li><a href="#">SGD - SGD</a></li>
+            <li><a href="#">CHF - CHF</a></li>
+            <li><a href="#">ZAR - ZAR</a></li>
+            <li><a href="#">CNY - CN¥</a></li>
+            <li><a href="#">INR - ₹</a></li>
+            <li><a href="#">MYR - MYR</a></li>
+            <li><a href="#">MXN - MX$</a></li>
+            <li><a href="#">PKR - PKR</a></li>
+            <li><a href="#">PHP - ₱</a></li>
+            <li><a href="#">TWD - NT$</a></li>
+            <li><a href="#">THB - THB</a></li>
+            <li><a href="#">TRY - TRY</a></li>
+            <li><a href="#">AED - AED</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <div class="sidebar__overlay" id="overlay"></div>
 
-                                <li>
-                                    <h6>
-                                        <i class="far fa-check-circle"></i>
-                                        Protected payments, every time
-                                    </h6>
-                                    <p>
-                                        Always know what you'll pay upfront. Your payment isn't
-                                        released until you approve the work.
-                                    </p>
-                                </li>
+  <main>
+    <section class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__front">
+          <div class="carousel__front-content">
+            <h1 class="carousel__title">
+              Find the perfect
+              <span class="domaine-font">freelance</span> services for your
+              business
+            </h1>
 
-                                <li>
-                                    <h6>
-                                        <i class="far fa-check-circle"></i>
-                                        24/7 support
-                                    </h6>
-                                    <p>
-                                        Questions? Our round-the-clock support team is available
-                                        to help anytime, anywhere.
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="carousel__search">
+              <form>
+                <div class="search-icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M15.8906 14.6531L12.0969 10.8594C12.025 10.7875 11.9313 10.75 11.8313 10.75H11.4187C12.4031 9.60938 13 8.125 13 6.5C13 2.90937 10.0906 0 6.5 0C2.90937 0 0 2.90937 0 6.5C0 10.0906 2.90937 13 6.5 13C8.125 13 9.60938 12.4031 10.75 11.4187V11.8313C10.75 11.9313 10.7906 12.025 10.8594 12.0969L14.6531 15.8906C14.8 16.0375 15.0375 16.0375 15.1844 15.8906L15.8906 15.1844C16.0375 15.0375 16.0375 14.8 15.8906 14.6531ZM6.5 11.5C3.7375 11.5 1.5 9.2625 1.5 6.5C1.5 3.7375 3.7375 1.5 6.5 1.5C9.2625 1.5 11.5 3.7375 11.5 6.5C11.5 9.2625 9.2625 11.5 6.5 11.5Z">
+                    </path>
+                  </svg>
+                </div>
+                <input type="search" placeholder='Try "building mobile app "' />
+                <button class="btn btn--submit" type="submit">Search</button>
+              </form>
+            </div>
 
-                    <div class="col-md-7 about__video">
-                        <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog modal-lg" role="document">
-                                <!--Content-->
-                                <div class="modal-content">
-                                    <!--Body-->
-                                    <div class="modal-body mb-0 p-0">
-                                        <div class="
+            <div class="carousel__popular">
+              <span>Popular:</span>
+              <ul class="carousel__popular-list">
+                <li class="carousel__popular-item">
+                  <a href="www.fiverr.com/categories/graphics-design/website-design?source=hplo_search_tag">Website
+                    Design</a>
+                </li>
+                <li class="carousel__popular-item">
+                  <a
+                    href="www.fiverr.com/categories/programming-tech/wordpress-services?source=hplo_search_tag&pos=2&name=wordpress-services">
+                    WordPress
+                  </a>
+                </li>
+                <li class="carousel__popular-item">
+                  <a
+                    href="www.fiverr.com/categories/graphics-design/creative-logo-design?source=hplo_search_tag&pos=3&name=creative-logo-design">
+                    Logo Design
+                  </a>
+                </li>
+                <li class="carousel__popular-item">
+                  <a href="www.fiverr.com/search/gigs?source=hplo_search_tag&pos=4&query=NFT%20Art">
+                    NFT Art
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel"
+          data-interval="2500">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="carousel__caption text-left">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p>Andrea, <span>Fashion Designer</span></p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel__caption text-left">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p>Moon, <span>Marketing Expert</span></p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel__caption text-left">
+                <p>Ritika, <span>Shoemaker and Designer</span></p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <ul>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+                <li><i class="fa fa-star"></i></li>
+              </ul>
+              <div class="carousel__caption text-left">
+                <p>Zach, <span>Bar Owner</span></p>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="carousel__caption text-left">
+                <ul>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                  <li><i class="fa fa-star"></i></li>
+                </ul>
+                <p>Gabrielle, <span>Video Ediiter</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="trusted wrapper--index">
+      <div class="trusted__container">
+        <span class="trusted__text">Trusted by:</span>
+        <ul class="trusted__list">
+          <li class="trusted__list-item">
+            <img src="./images/home/facebook.png" alt="Facebook" />
+          </li>
+
+          <li class="trusted__list-item">
+            <img src="./images/home/google.png" alt="Google" />
+          </li>
+
+          <li class="trusted__list-item">
+            <img src="./images/home/netflix.png" alt="Netflix" />
+          </li>
+
+          <li class="trusted__list-item">
+            <img src="./images/home/png.png" alt="P&G" />
+          </li>
+
+          <li class="trusted__list-item">
+            <img src="./images/home/paypal.png" alt="PayPal" />
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="service wrapper--index section--index">
+      <div class="service__container">
+        <h1 class="section-title service__title">
+          Popular professional services
+        </h1>
+        <div class="service__slider">
+          <div class="slider-content">
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Build your brand</h4>
+                    <h2>Logo Design</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/logo-design.jfif" alt="Logo Design" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Customize your site</h4>
+                    <h2>WordPress</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/word-press.jfif" alt="WordPress" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Share your message</h4>
+                    <h2>Voice Over</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/voiceover.jfif" alt="Voice Over" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Engage your audience</h4>
+                    <h2>
+                      Video <br />
+                      Explainer
+                    </h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/animated-explainer.jfif" alt="Video Explainer" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Reach more customer</h4>
+                    <h2>Social Media</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/social.jfif" alt="Social media" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Unlock growth online</h4>
+                    <h2>SEO</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/seo.jfif" alt="SEO" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Color your dream</h4>
+                    <h2>Illustration</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/illustration.jfif" alt="Illustration" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Go global</h4>
+                    <h2>Translation</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/translation.jfif" alt="Translation" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Learn your business</h4>
+                    <h2>Data Entry</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/data-entry.jfif" alt="Data Entry" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+
+            <div class="slider-item">
+              <div class="slider-item__wrapper">
+                <a href="">
+                  <div class="slider-item__txt">
+                    <h4>Showcase your story</h4>
+                    <h2>Book Covers</h2>
+                  </div>
+                </a>
+                <div class="slider-item__img">
+                  <img src="./images/home/book-covers.jfif" alt="Book Covers" />
+                </div>
+              </div>
+            </div>
+            <!--End slider item-->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about wrapper--index section--index">
+      <div class="about__container">
+        <div class="row">
+          <div class="col-lg-5 col-md-12 col-12">
+            <div class="about__txt">
+              <h2 class="section-title about__title">
+                A whole world of freelance talent at your fingertips
+              </h2>
+              <ul class="about__list">
+                <li>
+                  <h6>
+                    <i class="far fa-check-circle"></i>
+                    The best for every budget
+                  </h6>
+                  <p>
+                    Find high-quality services at every price point. No hourly
+                    rates, just project-based pricing.
+                  </p>
+                </li>
+
+                <li>
+                  <h6>
+                    <i class="far fa-check-circle"></i>
+                    Quality work done quickly
+                  </h6>
+                  <p>
+                    Find the right freelancer to begin working on your project
+                    within minutes.
+                  </p>
+                </li>
+
+                <li>
+                  <h6>
+                    <i class="far fa-check-circle"></i>
+                    Protected payments, every time
+                  </h6>
+                  <p>
+                    Always know what you'll pay upfront. Your payment isn't
+                    released until you approve the work.
+                  </p>
+                </li>
+
+                <li>
+                  <h6>
+                    <i class="far fa-check-circle"></i>
+                    24/7 support
+                  </h6>
+                  <p>
+                    Questions? Our round-the-clock support team is available
+                    to help anytime, anywhere.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-7 col-md-12 col-12 about__video">
+            <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg" role="document">
+                <!--Content-->
+                <div class="modal-content">
+                  <!--Body-->
+                  <div class="modal-body mb-0 p-0">
+                    <div class="
                           embed-responsive embed-responsive-16by9
                           z-depth-1-half
                         ">
-                                            <video controls width="90%" src="./images/home/home-teaser.mp4"></video>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!--/.Content-->
-                            </div>
-                        </div>
-                        <!--Modal: Name-->
-                        <a><img class="img-fluid z-depth-1" src="./images/home/teaser-poster.png" alt="video"
-                                data-toggle="modal" data-target="#modal1" /></a>
+                      <video controls width="90%" src="./images/home/home-teaser.mp4"></video>
                     </div>
+                  </div>
                 </div>
-                <!--row-->
+              </div>
             </div>
-            <!--COntainer-->
-        </section>
-
-        <section class="category wrapper--index section--index">
-            <div class="category__container">
-                <h1 class="section-title category__title">Explore the marketplace</h1>
-                <ul>
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/graphics-design.d32a2f8.svg" alt="Graphic Design" />
-                            Graphics &amp; Design
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/online-marketing.74e221b.svg" alt="Digital Marketing" />
-                            Digital Marketing
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/writing-translation.32ebe2e.svg" alt="Writing Translation" />
-                            Writing &amp; Translation
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/video-animation.f0d9d71.svg" alt="Video Animation" />
-                            Video &amp; Animation
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/music-audio.320af20.svg" alt="Music Audio" />
-                            Music &amp; Audio
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/programming.9362366.svg" alt="Programming Tech" />
-                            Programming &amp; Tech
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/business.bbdf319.svg" alt="Business" />
-                            Business
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/lifestyle.745b575.svg" alt="Lifestyle" />
-                            Lifestyle
-                        </a>
-                    </li>
-
-                    <li class="text-center">
-                        <a class="align-center" href="#">
-                            <img src="./images/home/data.718910f.svg" alt="Data" />
-                            Data
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <section class="business wrapper--index">
-            <div class="business__container">
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="business__content">
-                            <div class="business__content-logo">
-                                <i class="fiver-logo">
-                                    <svg width="219" height="27" viewBox="0 0 219 27" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g fill="#fff">
-                                            <path
-                                                d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
-                                            </path>
-                                            <path
-                                                d="M91.7,23.7v2.7h-3.5V0h3.5v10.8c1.1-1.8,3.3-3,5.8-3c5.6,0,8.7,4,8.7,9.4s-3.2,9.4-8.8,9.4 C95,26.7,92.8,25.5,91.7,23.7z M102.6,17.3c0-3.8-2.2-6.4-5.6-6.4c-3.4,0-5.6,2.5-5.6,6.4s2.2,6.4,5.6,6.4 C100.4,23.6,102.6,21.1,102.6,17.3z">
-                                            </path>
-                                            <path
-                                                d="M123.5,26.4H120v-3.2c-1,2.3-3.2,3.5-5.9,3.5c-4.1,0-6.8-3-6.8-7.3V8.1h3.5v10.6c0,2.9,1.7,4.9,4.3,4.9 c2.9,0,4.9-2.3,4.9-5.5V8.1h3.5L123.5,26.4z">
-                                            </path>
-                                            <path
-                                                d="M125,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3c0-3.1,2.7-5.2,6.5-5.2 c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2c0,3.3-2.7,5.5-6.8,5.5 C128.1,26.7,125.2,24.3,125,20.5z">
-                                            </path>
-                                            <path d="M144.5,8.1H141v18.3h3.5V8.1z"></path>
-                                            <path
-                                                d="M147.1,8.1h3.5v3.2c1-2.3,3.2-3.5,5.9-3.5c4.1,0,6.8,3,6.8,7.3v11.3h-3.5V15.8c0-2.9-1.7-4.9-4.3-4.9 c-2.9,0-4.9,2.3-4.9,5.5v9.9H147L147.1,8.1z">
-                                            </path>
-                                            <path
-                                                d="M182.9,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C186,26.7,183.2,24.3,182.9,20.5z">
-                                            </path>
-                                            <path
-                                                d="M178.7,20.5c-0.5,2.1-2.3,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h14c0-0.3,0.1-0.9,0.1-1.4c0-4.6-3-8.7-8.7-8.7 c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.6,9.2,9.6c4.1,0,7.2-2.1,8.2-5.3L178.7,20.5z M173.4,10.7c3,0,4.9,1.9,5.1,4.6h-10.4 C168.7,12.2,170.5,10.7,173.4,10.7z">
-                                            </path>
-                                            <path
-                                                d="M198.1,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C201.2,26.7,198.3,24.3,198.1,20.5z">
-                                            </path>
-                                            <path
-                                                d="M142.7,0c-0.6,0-1.1,0.2-1.6,0.7c-0.4,0.4-0.7,1-0.7,1.6c0,0.6,0.2,1.1,0.7,1.6c0.5,0.4,1,0.7,1.6,0.7 c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.7-1,0.7-1.6c0-0.3-0.1-0.6-0.2-0.9s-0.3-0.5-0.5-0.8c-0.2-0.2-0.5-0.4-0.7-0.5 C143.4,0.1,143.1,0,142.7,0z">
-                                            </path>
-                                            <path
-                                                d="M218.3,24.4L218.3,24.4c0,0.6-0.2,1.2-0.7,1.6c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7 c-0.4-0.4-0.7-1-0.7-1.6v0c0-0.6,0.2-1.2,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7c0.6,0,1.2,0.2,1.6,0.7C218.1,23.2,218.3,23.8,218.3,24.4z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </i>
-                                <span class="fiver-logo-new">New</span>
-                            </div>
-                            <h1 class="section-title">
-                                A business solution designed for <span>teams</span>
-                            </h1>
-                            <p class="section-p">
-                                Upgrade to a curated experience packed with tools and
-                                benefits, dedicated to businesses
-                            </p>
-                            <ul class="service__list">
-                                <li>
-                                    <i class="far fa-check-circle"></i>
-                                    Connect to freelancers with proven business experience
-                                </li>
-
-                                <li>
-                                    <i class="far fa-check-circle"></i>
-                                    Get matched with the perfect talent by a customer success
-                                    manager
-                                </li>
-
-                                <li>
-                                    <i class="far fa-check-circle"></i>
-                                    Manage teamwork and boost productivity with one powerful
-                                    workspace
-                                </li>
-                            </ul>
-
-                            <button class="btn btn--submit">
-                                <a href="#"> Explore Fiverr Business </a>
-                            </button>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-7">
-                        <img src="./images/home/business.png" alt="" />
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="client wrapper--index section--index">
-            <div class="client__container">
-                <div class="client__slider slider__container">
-                    <div class="client__slider-content">
-                        <div class="client__item">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <!--Modal: Name-->
-                                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <!--Content-->
-                                            <div class="modal-content">
-                                                <!--Body-->
-                                                <div class="modal-body mb-0 p-0">
-                                                    <div class="
-                                embed-responsive embed-responsive-16by9
-                                z-depth-1-half
-                              ">
-                                                        <video controls width="100%"
-                                                            src="./images/home/client-1.mp4"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/.Content-->
-                                        </div>
-                                    </div>
-                                    <!--Modal: Name-->
-
-                                    <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-1.jpg"
-                                            alt="video" data-toggle="modal" data-target="#modal2" /></a>
-                                </div>
-
-                                <div class="col-lg-8 client__info">
-                                    <h5>
-                                        Caitlin Tormey, Chief Commercial Officer
-                                        <span class="client__logo">
-                                            <img alt="Company logo" src="./images/home/naadam.png" loading="lazy" />
-                                        </span>
-                                    </h5>
-
-                                    <blockquote>
-                                        "We've used Fiverr for Shopify web development, graphic
-                                        design, and backend web development. Working with Fiverr
-                                        makes my job a little easier every day."
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End item-->
-
-                        <div class="client__item">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <!--Modal: Name-->
-                                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <!--Content-->
-                                            <div class="modal-content">
-                                                <!--Body-->
-                                                <div class="modal-body mb-0 p-0">
-                                                    <div class="
-                                embed-responsive embed-responsive-16by9
-                                z-depth-1-half
-                              ">
-                                                        <video controls width="100%"
-                                                            src="./images/home/client-4.mp4"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/.Content-->
-                                        </div>
-                                    </div>
-                                    <!--Modal: Name-->
-
-                                    <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-4.jpg"
-                                            alt="video" data-toggle="modal" data-target="#modal5" /></a>
-                                </div>
-
-                                <div class="col-lg-8 client__info">
-                                    <h5>
-                                        Tim and Dan Joo, Co-Founders<span class="testimonial-logo"><img
-                                                alt="Company logo" src="./images/home/haerfest.png"
-                                                loading="lazy" /></span>
-                                    </h5>
-
-                                    <blockquote>
-                                        "When you want to create a business bigger than yourself,
-                                        you need a lot of help. That's what Fiverr does."
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End item-->
-
-                        <div class="client__item">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <!--Modal: Name-->
-                                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <!--Content-->
-                                            <div class="modal-content">
-                                                <!--Body-->
-                                                <div class="modal-body mb-0 p-0">
-                                                    <div class="
-                                embed-responsive embed-responsive-16by9
-                                z-depth-1-half
-                              ">
-                                                        <video controls width="100%"
-                                                            src="./images/home/client-2.mp4"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/.Content-->
-                                        </div>
-                                    </div>
-                                    <!--Modal: Name-->
-
-                                    <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-2.jpg"
-                                            alt="video" data-toggle="modal" data-target="#modal3" /></a>
-                                </div>
-
-                                <div class="col-lg-8 client__info">
-                                    <h5>
-                                        Brighid Gannon (DNP, PMHNP-BC), Co-Founder<span class="testimonial-logo"><img
-                                                alt="Company logo" src="./images/home/lavender.png"
-                                                loading="lazy" /></span>
-                                    </h5>
-
-                                    <blockquote>
-                                        "We used Fiverr for SEO, our logo, website, copy, animated
-                                        videos — literally everything. It was like working with a
-                                        human right next to you versus being across the world."
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End item-->
-
-                        <div class="client__item">
-                            <div class="row">
-                                <div class="col-lg-4">
-                                    <!--Modal: Name-->
-                                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog"
-                                        aria-labelledby="myModalLabel" aria-hidden="true">
-                                        <div class="modal-dialog modal-lg" role="document">
-                                            <!--Content-->
-                                            <div class="modal-content">
-                                                <!--Body-->
-                                                <div class="modal-body mb-0 p-0">
-                                                    <div class="
-                                embed-responsive embed-responsive-16by9
-                                z-depth-1-half
-                              ">
-                                                        <video controls width="100%"
-                                                            src="./images/home/client-3.mp4"></video>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <!--/.Content-->
-                                        </div>
-                                    </div>
-                                    <!--Modal: Name-->
-
-                                    <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-3.jpg"
-                                            alt="video" data-toggle="modal" data-target="#modal4" /></a>
-                                </div>
-
-                                <div class="col-lg-8 client__info">
-                                    <h5>
-                                        Kay Kim, Co-Founder<span class="testimonial-logo"><img alt="Company logo"
-                                                src="./images/home/rooted.png" loading="lazy" /></span>
-                                    </h5>
-
-                                    <blockquote>
-                                        "It's extremely exciting that Fiverr has freelancers from
-                                        all over the world — it broadens the talent pool. One of
-                                        the best things about Fiverr is that while we're sleeping,
-                                        someone's working."
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End item-->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="logomaker wrapper--index section--index">
-            <div class="logomaker__container">
-                <div class="logomaker__content-img">
-                    <img src="./images/home/logo-maker-banner.png" alt="" />
-                </div>
-                <div class="row">
-                    <div class="col-lg-5">
-                        <div class="logomaker__content">
-                            <div class="logomaker__content-logo">
-                                <i class="fiver-logo">
-                                    <svg width="249" height="34" viewBox="0 0 249 34" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g fill="#FFFFFF">
-                                            <path
-                                                d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
-                                            </path>
-                                            <path d="M88.4,0h3.5v26.6h-3.5V0z"></path>
-                                            <path
-                                                d="M93.6,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C97.5,26.9,93.6,23,93.6,17.5z M108.8,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C106.4,23.8,108.8,21.2,108.8,17.5z">
-                                            </path>
-                                            <path
-                                                d="M130.1,28.3c0,3.3-2.1,5.7-5.6,5.7h-5.6c-3.8,0-5.8-2.2-5.8-5.4c0-1.5,0.8-2.9,1.9-3.7 c-0.9-0.7-1.4-1.6-1.4-2.8c0-1.5,0.9-2.5,2.2-3.8c-0.8-1-1.2-2.4-1.2-3.8c0-3.8,3-6.3,7-6.3c1,0,2,0.2,2.9,0.5l2.5-2.9l2.2,2 l-2.2,2.5c1,1.1,1.6,2.6,1.6,4.1c0,3.8-3,6.3-7,6.3c-1.3,0-2.5-0.3-3.5-0.7c-0.7,0.8-1,1.2-1,1.8c0,1,0.9,1.5,2,1.5h5.1 C127.6,23.3,130.1,24.9,130.1,28.3z M126.7,28.5c0-1.7-1.1-2.5-2.9-2.5h-4.2c-0.6,0-1.2,0-1.8-0.1c-0.9,0.7-1.2,1.6-1.2,2.6 c0,1.5,1,2.6,2.5,2.6h5.4C126.1,31.1,126.7,30,126.7,28.5z M117.9,14.4c0,2.2,1.7,3.5,3.7,3.5c2,0,3.7-1.3,3.7-3.5 c0-2.2-1.7-3.5-3.7-3.5C119.6,10.9,117.9,12.2,117.9,14.4z">
-                                            </path>
-                                            <path
-                                                d="M130.2,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C134.2,26.9,130.2,23,130.2,17.5z M145.4,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C143.1,23.8,145.4,21.2,145.4,17.5z">
-                                            </path>
-                                            <path
-                                                d="M155,8.4h3.5v3.3c0.8-2.1,2.7-3.5,5.4-3.5c3,0,5.2,1.3,5.9,3.7c0.7-2.1,3.1-3.7,5.9-3.7 c3.9,0,6.4,2.7,6.4,6.9v11.6h-3.5V16c0-2.9-1.5-4.8-3.9-4.8c-2.8,0-4.5,2-4.5,4.8v10.6h-3.5V16c0-2.9-1.5-4.8-3.8-4.8 c-2.8,0-4.5,2-4.5,4.8v10.6H155V8.4z">
-                                            </path>
-                                            <path
-                                                d="M199.3,14.7v11.9h-3.4v-3c-0.9,2-3.2,3.3-5.9,3.3c-3.7,0-6.2-2.3-6.2-5.5c0-3.7,2.4-5.9,7.1-5.9h3.9 c0.7,0,1.1-0.4,1.1-1v-0.1c0-2.2-2-3.6-4.5-3.6s-4.3,1.6-4.5,3.5h-3.2c0.3-3.6,3.5-6.3,7.6-6.3C195.9,8.1,199.3,10.7,199.3,14.7z M195.9,18.6v-0.5h-4.7c-2.8,0-3.9,1.2-3.9,3.3c0,1.6,1.5,2.8,3.4,2.8C193.9,24.1,195.9,22,195.9,18.6z">
-                                            </path>
-                                            <path
-                                                d="M207,17.9l-2.3,2.1v6.6h-3.5V0h3.5v15.6l8-7.2h4.5l-7.7,7.1l8.4,11.1h-4.3L207,17.9z">
-                                            </path>
-                                            <path
-                                                d="M243.2,11.4c-3.3,0-4.4,3-4.4,6.9v8.3h-3.5V8.4h3.5v3.5c0.8-2.4,2.3-3.5,4.8-3.5h2.2v3H243.2z">
-                                            </path>
-                                            <path
-                                                d="M230.4,20.7c-0.5,2.1-2.2,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h13.9c0-0.3,0.1-0.9,0.1-1.4 c0-4.6-3-8.6-8.6-8.6c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.5,9.2,9.5c4.1,0,7.2-2.1,8.2-5.3L230.4,20.7L230.4,20.7z M225.2,10.9 c3,0,4.9,1.8,5.1,4.6h-10.4C220.5,12.5,222.3,10.9,225.2,10.9z">
-                                            </path>
-                                            <path
-                                                d="M248.8,24.6L248.8,24.6c0,0.6-0.2,1.2-0.7,1.7c-0.4,0.4-1,0.7-1.6,0.7c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.2-0.4-0.5-0.5-0.7c-0.1-0.3-0.2-0.6-0.2-0.9v0c0-0.3,0.1-0.6,0.2-0.9c0.1-0.3,0.3-0.5,0.5-0.7 c0.2-0.2,0.5-0.4,0.7-0.5c0.3-0.1,0.6-0.2,0.9-0.2c0.6,0,1.2,0.2,1.6,0.7C248.6,23.4,248.8,24,248.8,24.6z">
-                                            </path>
-                                        </g>
-                                    </svg>
-                                </i>
-                            </div>
-                            <h1 class="section-title banner-title">
-                                Make an incredible logo<br /><span class="domaine-font">in minutes</span>
-                            </h1>
-                            <p class="section-p">
-                                Pre-designed by top talent. Just add your touch
-                            </p>
-                            <button class="btn btn--submit">Try Fiverr Logo Maker</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="freelancer wrapper--index section--index">
-            <div class="freelancer__container">
-                <div class="freelancer__header">
-                    <h1 class="section-title freelancer__title">
-                        Get inspired with projects made by our freelancers
-                    </h1>
-                    <a class="see-more" href="#">
-                        See More Projects
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-                <div class="freelancer__slider">
-                    <div class="freelancer__slider-content">
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer1.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-1.jpg" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Portrait &amp; Caricatures</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;noneyn</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-2.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-2.jfif" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Social Media Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;fernandobengua</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 2-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-3.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-1.jfif" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Animated GIFs</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;lamonastudio</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 3-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer4.jpeg"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-4.png" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Logo Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;eveeelin</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 4-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer2.jpeg"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-2.jpg" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Flyer Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;spickex</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 5-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-5.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-5.jfif" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Logo Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;bruno_malagrino</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 6-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer6.jpeg"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-6.jpg" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Product Photography</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;passionshake</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 7-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer3.jpeg"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-8.jpg" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Book Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;annapietrangeli</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 8-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-9.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-9.png" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Illustration</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;christophbrandl</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 9-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-10.jfif"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-10.jpg" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Packaging Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;mijalzagier</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 10-->
-
-                        <div class="freelancer__slider-item">
-                            <div class="slider-item__wrapper">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/freelancer-11.png"
-                                        alt="Card image cap" />
-                                    <div class="card-body">
-                                        <div class="card-ava">
-                                            <img src="./images/home/freelancer-ava-11.png" alt="" />
-                                        </div>
-                                        <div class="card-text">
-                                            <h6>
-                                                <a href="#">Web &amp; Mobile Design</a>
-                                            </h6>
-                                            <p class="card-name">
-                                                <a href="#">by&nbsp;annapietrangeli</a>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--End slider item 11-->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="guide wrapper--index section--index">
-            <div class="guide__container">
-                <div class="guide__header">
-                    <h1 class="section-title guide__title">Fiverr guides</h1>
-                    <a class="see-more" href="#">
-                        See More Guides
-                        <i class="fas fa-chevron-right"></i>
-                    </a>
-                </div>
-                <div class="guide__content">
-                    <div class="row">
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="guide__item">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/guide-start-online-business-552-x2.png"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">
-                                                Start an online business and work from home
-                                            </h4>
-                                            <p class="card-text">
-                                                A complete guide to starting a small business online
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End item-->
-                        </div>
-                        <!--ENd col-->
-
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="guide__item">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/guide-digital-marketing-552-x2.png"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">Digital marketing made easy</h4>
-                                            <p class="card-text">
-                                                A practical guide to understand what is digital
-                                                marketing
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End item-->
-                        </div>
-                        <!--ENd col-->
-
-                        <div class="col-lg-4 col-sm-6">
-                            <div class="guide__item">
-                                <div class="card">
-                                    <img class="card-img-top" src="./images/home/guide-create-a-logo-552-x2.png"
-                                        alt="" />
-                                    <div class="card-body">
-                                        <a href="#">
-                                            <h4 class="card-title">
-                                                Create a logo for your business
-                                            </h4>
-                                            <p class="card-text">
-                                                A step-b-step guide to create a memorable business
-                                                logo
-                                            </p>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--End item-->
-                        </div>
-                        <!--ENd col-->
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="banner wrapper--index section--index">
-            <div class="banner__container">
-                <div class="banner__content">
-                    <h1 class="section-title banner-title">
-                        Find the <span class="domaine-font">talent</span> needed to <br />
-                        get your business <span class="domaine-font">growing</span>.
-                    </h1>
-                    <button class="btn btn--submit">Get started</button>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer class="footer-collapse wrapper--index px-1 py-4">
-        <div class="col-lg-12 mx-auto footer__wrapper">
-            <div class="row d-flex justify-content-between footer__content">
-                <div class="col-lg-2 col-sm-3 col-md-3">
-                    <div class="widget hidden-xs-down">
-                        <h4>Categories</h4>
-                        <ul class="widget-list list-unstyled p-0">
-                            <li><a href="">Graphics & Design</a></li>
-                            <li><a href="">Digital Marketing</a></li>
-                            <li><a href="">Writing & Translation</a></li>
-                            <li><a href="">Video & Animation</a></li>
-                            <li><a href="">Music & Audio</a></li>
-                            <li><a href="">Programming & Tech</a></li>
-                            <li><a href="">Data</a></li>
-                            <li><a href="">Business</a></li>
-                            <li><a href="">Lifestyle</a></li>
-                            <li><a href="">Sitemap</a></li>
-                        </ul>
-                    </div>
-                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
-                        <div role="tab" id="headingOne">
-                            <h4 class="card-header py-3 border-0">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
-                                    aria-expanded="false" aria-controls="collapseOne">
-                                    Categories
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="card-block">
-                                <ul class="widget-list list-unstyled p-0">
-                                    <li><a href="">Graphics & Design</a></li>
-                                    <li><a href="">Digital Marketing</a></li>
-                                    <li><a href="">Writing & Translation</a></li>
-                                    <li><a href="">Video & Animation</a></li>
-                                    <li><a href="">Music & Audio</a></li>
-                                    <li><a href="">Programming & Tech</a></li>
-                                    <li><a href="">Data</a></li>
-                                    <li><a href="">Business</a></li>
-                                    <li><a href="">Lifestyle</a></li>
-                                    <li><a href="">Sitemap</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-md-3">
-                    <div class="widget hidden-xs-down">
-                        <h4>About</h4>
-                        <ul class="widget-list list-unstyled p-0">
-                            <li><a href="">Careers</a></li>
-                            <li><a href="">Press & News</a></li>
-                            <li><a href="" target="_blank">Partnerships</a></li>
-                            <li><a href="">Privacy Policy</a></li>
-                            <li><a href="">Terms of Service</a></li>
-                            <li style="width: 120%;"><a href="">Intellectual Property Claims</a></li>
-                            <li><a href="">Investor Relations</a></li>
-                        </ul>
-                    </div>
-                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
-                        <div role="tab" id="headingTwo">
-                            <h4 class="card-header py-3 border-0">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
-                                    aria-expanded="false" aria-controls="collapseTwo">
-                                    About
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-                            <div class="card-block">
-                                <ul class="widget-list list-unstyled">
-                                    <li><a href="">Careers</a></li>
-                                    <li><a href="">Press & News</a></li>
-                                    <li><a href="" target="_blank">Partnerships</a></li>
-                                    <li><a href="">Privacy Policy</a></li>
-                                    <li><a href="">Terms of Service</a></li>
-                                    <li><a href="">Intellectual Property Claims</a></li>
-                                    <li><a href="">Investor Relations</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-md-3">
-                    <div class="widget hidden-xs-down">
-                        <h4>Support</h4>
-                        <ul class="widget-list list-unstyled p-0">
-                            <li><a href="">Help & Support</a></li>
-                            <li><a href="">Trust & Safety</a></li>
-                            <li><a href="">Selling on Fiverr</a></li>
-                            <li><a href="">Buying on Fiverr</a></li>
-                        </ul>
-                    </div>
-                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
-                        <div role="tab" id="headingThree">
-                            <h4 class="card-header py-3 border-0">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
-                                    aria-expanded="false" aria-controls="collapseThree">
-                                    Support
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
-                            <div class="card-block">
-                                <ul class="widget-list list-unstyled p-0">
-                                    <li><a href="">Help & Support</a></li>
-                                    <li><a href="">Trust & Safety</a></li>
-                                    <li><a href="">Selling on Fiverr</a></li>
-                                    <li><a href="">Buying on Fiverr</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-md-3">
-                    <div class="widget hidden-xs-down">
-                        <h4 class="text-bold">Community</h4>
-                        <ul class="widget-list list-unstyled list-unstyle p-0">
-                            <li><a href="" target="_blank">Events</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Forum</a></li>
-                            <li><a href="">Community Standards</a></li>
-                            <li><a href="">Podcast</a></li>
-                            <li><a href="">Affiliates</a></li>
-                            <li><a href="">Invite a Friend</a></li>
-                            <li><a href="">Become a Seller</a></li>
-                            <!--<li><a href="/login.stml">Login</a></li>-->
-                        </ul>
-                    </div>
-                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
-                        <div role="tab" id="headingFour">
-                            <h4 class="card-header py-3 border-0">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"
-                                    aria-expanded="false" aria-controls="collapseFour">
-                                    Community
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-                            <div class="card-block">
-                                <ul class="widget-list list-unstyled">
-                                    <li><a href="" target="_blank">Events</a></li>
-                                    <li><a href="">Blog</a></li>
-                                    <li><a href="">Forum</a></li>
-                                    <li><a href="">Community Standards</a></li>
-                                    <li><a href="">Podcast</a></li>
-                                    <li><a href="">Affiliates</a></li>
-                                    <li><a href="">Invite a Friend</a></li>
-                                    <li><a href="">Become a Seller</a></li>
-                                    <!--<li><a href="/login.stml">Login</a></li>-->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-sm-3 col-md-3">
-                    <div class="widget hidden-xs-down">
-                        <h4>More From Fiverr</h4>
-                        <ul class="widget-list list-unstyled list-unstyle p-0">
-                            <li><a href="" target="_blank">Fiverr Business</a></li>
-                            <li><a href="">Fiverr Pro</a></li>
-                            <li><a href="">Fiverr Studios</a></li>
-                            <li><a href="">Fiverr Logo Maker</a></li>
-                            <li><a href="">Fiverr Guides</a></li>
-                            <li><a href="">Get Inspired</a></li>
-                            <li><a href="">ClearVoice<br>
-                                    <p class="miniTab">Content Marketing</p>
-                                </a></li>
-                            <li><a href="">Fiverr Workspace
-                                    <br>
-                                    <p class="miniTab">Invoice Software</p>
-                                </a></li>
-                            <li><a href="">Learn
-                                    <br>
-                                    <p class="miniTab">Online Courses</p>
-                                </a></li>
-                            <li><a href="">Working Not Working</a></li>
-                            <!--<li><a href="/login.stml">Login</a></li>-->
-                        </ul>
-                    </div>
-                    <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
-                        <div role="tab" id="headingFive">
-                            <h4 class="card-header py-3 border-0">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive"
-                                    aria-expanded="false" aria-controls="collapseFive">
-                                    More From Fiverr
-                                </a>
-                            </h4>
-                        </div>
-                        <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
-                            <div class="card-block">
-                                <ul class="widget-list list-unstyled p-0">
-                                    <li><a href="" target="_blank">Fiverr Business</a></li>
-                                    <li><a href="">Fiverr Pro</a></li>
-                                    <li><a href="">Fiverr Studios</a></li>
-                                    <li><a href="">Fiverr Logo Maker</a></li>
-                                    <li><a href="">Fiverr Guides</a></li>
-                                    <li><a href="">Get Inspired</a></li>
-                                    <li><a href="">ClearVoice<br>
-                                            <p class="miniTab">Content
-                                                Marketing</p>
-                                        </a></li>
-                                    <li><a href="">Fiverr Workspace
-                                            <br>
-                                            <p class="miniTab">Invoice Software</p>
-                                        </a></li>
-                                    <li><a href="">Learn
-                                            <br>
-                                            <p class="miniTab">Online Courses</span>
-                                        </a></li>
-                                    <li><a href="">Working Not Working</a></li>
-                                    <!--<li><a href="/login.stml">Login</a></li>-->
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a><img class="img-fluid z-depth-1" src="./images/home/teaser-poster.png" alt="video" data-toggle="modal"
+                data-target="#modal1" /></a>
+          </div>
         </div>
-    </footer>
-    <div class="copyright">
-        <div class="copyright__inner wrapper--index d-flex  align-items-center justify-content-between">
-            <div class="left d-flex align-items-center">
-                <span class="fiverr-logo-footer"><svg width="77" height="23" viewBox="0 0 91 27" fill="none"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <g fill="#7A7D85">
-                            <path
-                                d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z">
-                            </path>
-                        </g>
-                        <g fill="#7A7D85">
-                            <path
-                                d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z">
-                            </path>
-                        </g>
-                    </svg></span>
-                <p class="copyright-text">© Fiverr International Ltd. 2022</p>
+      </div>
+    </section>
+
+    <section class="category wrapper--index section--index">
+      <div class="category__container">
+        <h1 class="section-title category__title">Explore the marketplace</h1>
+        <ul>
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/graphics-design.d32a2f8.svg" alt="Graphic Design" />
+              Graphics &amp; Design
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/online-marketing.74e221b.svg" alt="Digital Marketing" />
+              Digital Marketing
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/writing-translation.32ebe2e.svg" alt="Writing Translation" />
+              Writing &amp; Translation
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/video-animation.f0d9d71.svg" alt="Video Animation" />
+              Video &amp; Animation
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/music-audio.320af20.svg" alt="Music Audio" />
+              Music &amp; Audio
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/programming.9362366.svg" alt="Programming Tech" />
+              Programming &amp; Tech
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/business.bbdf319.svg" alt="Business" />
+              Business
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/lifestyle.745b575.svg" alt="Lifestyle" />
+              Lifestyle
+            </a>
+          </li>
+
+          <li class="text-center">
+            <a class="align-center" href="#">
+              <img src="./images/home/data.718910f.svg" alt="Data" />
+              Data
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="business wrapper--index">
+      <div class="business__container">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="business__content">
+              <div class="business__content-logo">
+                <i class="fiver-logo">
+                  <svg width="219" height="27" viewBox="0 0 219 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g fill="#fff">
+                      <path
+                        d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
+                      </path>
+                      <path
+                        d="M91.7,23.7v2.7h-3.5V0h3.5v10.8c1.1-1.8,3.3-3,5.8-3c5.6,0,8.7,4,8.7,9.4s-3.2,9.4-8.8,9.4 C95,26.7,92.8,25.5,91.7,23.7z M102.6,17.3c0-3.8-2.2-6.4-5.6-6.4c-3.4,0-5.6,2.5-5.6,6.4s2.2,6.4,5.6,6.4 C100.4,23.6,102.6,21.1,102.6,17.3z">
+                      </path>
+                      <path
+                        d="M123.5,26.4H120v-3.2c-1,2.3-3.2,3.5-5.9,3.5c-4.1,0-6.8-3-6.8-7.3V8.1h3.5v10.6c0,2.9,1.7,4.9,4.3,4.9 c2.9,0,4.9-2.3,4.9-5.5V8.1h3.5L123.5,26.4z">
+                      </path>
+                      <path
+                        d="M125,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3c0-3.1,2.7-5.2,6.5-5.2 c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2c0,3.3-2.7,5.5-6.8,5.5 C128.1,26.7,125.2,24.3,125,20.5z">
+                      </path>
+                      <path d="M144.5,8.1H141v18.3h3.5V8.1z"></path>
+                      <path
+                        d="M147.1,8.1h3.5v3.2c1-2.3,3.2-3.5,5.9-3.5c4.1,0,6.8,3,6.8,7.3v11.3h-3.5V15.8c0-2.9-1.7-4.9-4.3-4.9 c-2.9,0-4.9,2.3-4.9,5.5v9.9H147L147.1,8.1z">
+                      </path>
+                      <path
+                        d="M182.9,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C186,26.7,183.2,24.3,182.9,20.5z">
+                      </path>
+                      <path
+                        d="M178.7,20.5c-0.5,2.1-2.3,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h14c0-0.3,0.1-0.9,0.1-1.4c0-4.6-3-8.7-8.7-8.7 c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.6,9.2,9.6c4.1,0,7.2-2.1,8.2-5.3L178.7,20.5z M173.4,10.7c3,0,4.9,1.9,5.1,4.6h-10.4 C168.7,12.2,170.5,10.7,173.4,10.7z">
+                      </path>
+                      <path
+                        d="M198.1,20.5h3.2c0.3,2.2,1.7,3.4,4.2,3.4c2.1,0,3.5-1.1,3.5-2.5c0-5-10.5-0.4-10.5-8.3 c0-3.1,2.7-5.2,6.5-5.2c4.1,0,6.9,2.3,7.1,5.7h-3.2c-0.3-2.1-2.3-2.9-3.9-2.9c-2,0-3.3,0.9-3.3,2.4c0,4.6,10.5-0.1,10.5,8.2 c0,3.3-2.7,5.5-6.8,5.5C201.2,26.7,198.3,24.3,198.1,20.5z">
+                      </path>
+                      <path
+                        d="M142.7,0c-0.6,0-1.1,0.2-1.6,0.7c-0.4,0.4-0.7,1-0.7,1.6c0,0.6,0.2,1.1,0.7,1.6c0.5,0.4,1,0.7,1.6,0.7 c0.6,0,1.1-0.2,1.6-0.7c0.4-0.5,0.7-1,0.7-1.6c0-0.3-0.1-0.6-0.2-0.9s-0.3-0.5-0.5-0.8c-0.2-0.2-0.5-0.4-0.7-0.5 C143.4,0.1,143.1,0,142.7,0z">
+                      </path>
+                      <path
+                        d="M218.3,24.4L218.3,24.4c0,0.6-0.2,1.2-0.7,1.6c-0.4,0.4-1,0.7-1.6,0.7c-0.6,0-1.2-0.2-1.6-0.7 c-0.4-0.4-0.7-1-0.7-1.6v0c0-0.6,0.2-1.2,0.7-1.6c0.4-0.4,1-0.7,1.6-0.7c0.6,0,1.2,0.2,1.6,0.7C218.1,23.2,218.3,23.8,218.3,24.4z">
+                      </path>
+                    </g>
+                  </svg>
+                </i>
+                <span class="fiver-logo-new">New</span>
+              </div>
+              <h1 class="section-title">
+                A business solution designed for <span>teams</span>
+              </h1>
+              <p class="section-p">
+                Upgrade to a curated experience packed with tools and
+                benefits, dedicated to businesses
+              </p>
+              <ul class="service__list">
+                <li>
+                  <i class="far fa-check-circle"></i>
+                  Connect to freelancers with proven business experience
+                </li>
+
+                <li>
+                  <i class="far fa-check-circle"></i>
+                  Get matched with the perfect talent by a customer success
+                  manager
+                </li>
+
+                <li>
+                  <i class="far fa-check-circle"></i>
+                  Manage teamwork and boost productivity with one powerful
+                  workspace
+                </li>
+              </ul>
+
+              <button class="btn btn--submit">
+                <a href="#"> Explore Fiverr Business </a>
+              </button>
             </div>
-            <div class="right d-flex">
-                <ul class="social-media d-flex align-items-center">
-                    <li><a href=""><i class="fab fa-twitter"></i></a></li>
-                    <li><a href=""><i class="fab fa-facebook"></i></a></li>
-                    <li><a href=""><i class="fab fa-linkedin"></i></a></li>
-                    <li><a href=""><i class="fab fa-pinterest"></i></a></li>
-                    <li><a href=""><i class="fab fa-instagram"></i></a></li>
-                </ul>
-                <div class="fiverr__btn--support px-1">
-                    <a href="#" class="btn--support"><i class="fas fa-globe"></i>English</a>
-                    <a href="#" class="btn--support">US$ USD</a>
-                    <a href="#" class="btn--support-other"><i class="fas fa-child"></i></a>
-                </div>
-            </div>
+          </div>
+
+          <div class="col-lg-7">
+            <img src="./images/home/business.png" alt="" />
+          </div>
         </div>
+      </div>
+    </section>
+
+    <section class="client wrapper--index section--index">
+      <div class="client__container">
+        <div class="client__slider slider__container">
+          <div class="client__slider-content">
+            <div class="client__item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body mb-0 p-0">
+                          <div class="
+                                embed-responsive embed-responsive-16by9
+                                z-depth-1-half
+                              ">
+                            <video controls width="100%" src="./images/home/client-1.mp4"></video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-1.jpg" alt="video"
+                      data-toggle="modal" data-target="#modal2" /></a>
+                </div>
+
+                <div class="col-lg-8 client__info">
+                  <h5>
+                    Caitlin Tormey, Chief Commercial Officer
+                    <span class="client__logo">
+                      <img alt="Company logo" src="./images/home/naadam.png" loading="lazy" />
+                    </span>
+                  </h5>
+
+                  <blockquote>
+                    "We've used Fiverr for Shopify web development, graphic
+                    design, and backend web development. Working with Fiverr
+                    makes my job a little easier every day."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="client__item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body mb-0 p-0">
+                          <div class="
+                                embed-responsive embed-responsive-16by9
+                                z-depth-1-half
+                              ">
+                            <video controls width="100%" src="./images/home/client-4.mp4"></video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-4.jpg" alt="video"
+                      data-toggle="modal" data-target="#modal5" /></a>
+                </div>
+
+                <div class="col-lg-8 client__info">
+                  <h5>
+                    Tim and Dan Joo, Co-Founders<span class="testimonial-logo"><img alt="Company logo"
+                        src="./images/home/haerfest.png" loading="lazy" /></span>
+                  </h5>
+
+                  <blockquote>
+                    "When you want to create a business bigger than yourself,
+                    you need a lot of help. That's what Fiverr does."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="client__item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body mb-0 p-0">
+                          <div class="
+                                embed-responsive embed-responsive-16by9
+                                z-depth-1-half
+                              ">
+                            <video controls width="100%" src="./images/home/client-2.mp4"></video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-2.jpg" alt="video"
+                      data-toggle="modal" data-target="#modal3" /></a>
+                </div>
+
+                <div class="col-lg-8 client__info">
+                  <h5>
+                    Brighid Gannon (DNP, PMHNP-BC), Co-Founder<span class="testimonial-logo"><img alt="Company logo"
+                        src="./images/home/lavender.png" loading="lazy" /></span>
+                  </h5>
+
+                  <blockquote>
+                    "We used Fiverr for SEO, our logo, website, copy, animated
+                    videos — literally everything. It was like working with a
+                    human right next to you versus being across the world."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+
+            <div class="client__item">
+              <div class="row">
+                <div class="col-lg-4">
+                  <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body mb-0 p-0">
+                          <div class="
+                                embed-responsive embed-responsive-16by9
+                                z-depth-1-half
+                              ">
+                            <video controls width="100%" src="./images/home/client-3.mp4"></video>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a><img class="img-fluid z-depth-1" src="./images/home/client-teaser-3.jpg" alt="video"
+                      data-toggle="modal" data-target="#modal4" /></a>
+                </div>
+
+                <div class="col-lg-8 client__info">
+                  <h5>
+                    Kay Kim, Co-Founder<span class="testimonial-logo"><img alt="Company logo"
+                        src="./images/home/rooted.png" loading="lazy" /></span>
+                  </h5>
+
+                  <blockquote>
+                    "It's extremely exciting that Fiverr has freelancers from
+                    all over the world — it broadens the talent pool. One of
+                    the best things about Fiverr is that while we're sleeping,
+                    someone's working."
+                  </blockquote>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="logomaker wrapper--index section--index">
+      <div class="logomaker__container">
+        <div class="logomaker__content">
+          <div class="logomaker__content-logo">
+            <i class="fiver-logo">
+              <svg width="249" height="34" viewBox="0 0 249 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g fill="#FFFFFF">
+                  <path
+                    d="M81.6,13.1h-3.1c-2,0-3.1,1.5-3.1,4.1v9.3h-6V13.1h-2.5c-2,0-3.1,1.5-3.1,4.1v9.3h-6V8.1h6v2.8 c1-2.2,2.3-2.8,4.3-2.8h7.3v2.8c1-2.2,2.3-2.8,4.3-2.8h2L81.6,13.1z M56.4,18.7H44c0.3,2.1,1.6,3.2,3.7,3.2 c1.6,0,2.7-0.7,3.1-1.8l5.3,1.5c-1.3,3.2-4.5,5.1-8.4,5.1c-6.5,0-9.5-5.1-9.5-9.5c0-4.3,2.6-9.4,9.1-9.4c6.9,0,9.2,5.2,9.2,9.1 C56.5,17.8,56.5,18.3,56.4,18.7z M50.7,15.2c-0.1-1.6-1.3-3-3.3-3c-1.9,0-3,0.8-3.4,3H50.7z M27.8,26.5H33l6.6-18.3h-6l-3.2,10.7 L27.2,8.1h-6L27.8,26.5z M3.4,26.5h5.9V13.1H15v13.4h5.9V8.1H9.3V7c0-1.2,0.9-2,2.2-2H15V0h-4.4C6.3,0,3.4,2.7,3.4,6.6v1.5H0v5 h3.4L3.4,26.5z">
+                  </path>
+                  <path d="M88.4,0h3.5v26.6h-3.5V0z"></path>
+                  <path
+                    d="M93.6,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C97.5,26.9,93.6,23,93.6,17.5z M108.8,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C106.4,23.8,108.8,21.2,108.8,17.5z">
+                  </path>
+                  <path
+                    d="M130.1,28.3c0,3.3-2.1,5.7-5.6,5.7h-5.6c-3.8,0-5.8-2.2-5.8-5.4c0-1.5,0.8-2.9,1.9-3.7 c-0.9-0.7-1.4-1.6-1.4-2.8c0-1.5,0.9-2.5,2.2-3.8c-0.8-1-1.2-2.4-1.2-3.8c0-3.8,3-6.3,7-6.3c1,0,2,0.2,2.9,0.5l2.5-2.9l2.2,2 l-2.2,2.5c1,1.1,1.6,2.6,1.6,4.1c0,3.8-3,6.3-7,6.3c-1.3,0-2.5-0.3-3.5-0.7c-0.7,0.8-1,1.2-1,1.8c0,1,0.9,1.5,2,1.5h5.1 C127.6,23.3,130.1,24.9,130.1,28.3z M126.7,28.5c0-1.7-1.1-2.5-2.9-2.5h-4.2c-0.6,0-1.2,0-1.8-0.1c-0.9,0.7-1.2,1.6-1.2,2.6 c0,1.5,1,2.6,2.5,2.6h5.4C126.1,31.1,126.7,30,126.7,28.5z M117.9,14.4c0,2.2,1.7,3.5,3.7,3.5c2,0,3.7-1.3,3.7-3.5 c0-2.2-1.7-3.5-3.7-3.5C119.6,10.9,117.9,12.2,117.9,14.4z">
+                  </path>
+                  <path
+                    d="M130.2,17.5c0-5.5,3.9-9.4,9.4-9.4c5.5,0,9.4,3.9,9.4,9.4s-3.9,9.4-9.4,9.4C134.2,26.9,130.2,23,130.2,17.5z M145.4,17.5c0-3.7-2.4-6.3-5.8-6.3c-3.5,0-5.8,2.6-5.8,6.3s2.4,6.3,5.8,6.3C143.1,23.8,145.4,21.2,145.4,17.5z">
+                  </path>
+                  <path
+                    d="M155,8.4h3.5v3.3c0.8-2.1,2.7-3.5,5.4-3.5c3,0,5.2,1.3,5.9,3.7c0.7-2.1,3.1-3.7,5.9-3.7 c3.9,0,6.4,2.7,6.4,6.9v11.6h-3.5V16c0-2.9-1.5-4.8-3.9-4.8c-2.8,0-4.5,2-4.5,4.8v10.6h-3.5V16c0-2.9-1.5-4.8-3.8-4.8 c-2.8,0-4.5,2-4.5,4.8v10.6H155V8.4z">
+                  </path>
+                  <path
+                    d="M199.3,14.7v11.9h-3.4v-3c-0.9,2-3.2,3.3-5.9,3.3c-3.7,0-6.2-2.3-6.2-5.5c0-3.7,2.4-5.9,7.1-5.9h3.9 c0.7,0,1.1-0.4,1.1-1v-0.1c0-2.2-2-3.6-4.5-3.6s-4.3,1.6-4.5,3.5h-3.2c0.3-3.6,3.5-6.3,7.6-6.3C195.9,8.1,199.3,10.7,199.3,14.7z M195.9,18.6v-0.5h-4.7c-2.8,0-3.9,1.2-3.9,3.3c0,1.6,1.5,2.8,3.4,2.8C193.9,24.1,195.9,22,195.9,18.6z">
+                  </path>
+                  <path d="M207,17.9l-2.3,2.1v6.6h-3.5V0h3.5v15.6l8-7.2h4.5l-7.7,7.1l8.4,11.1h-4.3L207,17.9z"></path>
+                  <path d="M243.2,11.4c-3.3,0-4.4,3-4.4,6.9v8.3h-3.5V8.4h3.5v3.5c0.8-2.4,2.3-3.5,4.8-3.5h2.2v3H243.2z">
+                  </path>
+                  <path
+                    d="M230.4,20.7c-0.5,2.1-2.2,3.2-4.9,3.2c-3.2,0-5.4-2.4-5.7-5.8h13.9c0-0.3,0.1-0.9,0.1-1.4 c0-4.6-3-8.6-8.6-8.6c-5.6,0-8.8,4.2-8.8,9.3c0,5.1,3.5,9.5,9.2,9.5c4.1,0,7.2-2.1,8.2-5.3L230.4,20.7L230.4,20.7z M225.2,10.9 c3,0,4.9,1.8,5.1,4.6h-10.4C220.5,12.5,222.3,10.9,225.2,10.9z">
+                  </path>
+                  <path
+                    d="M248.8,24.6L248.8,24.6c0,0.6-0.2,1.2-0.7,1.7c-0.4,0.4-1,0.7-1.6,0.7c-0.3,0-0.6-0.1-0.9-0.2 c-0.3-0.1-0.5-0.3-0.7-0.5c-0.2-0.2-0.4-0.5-0.5-0.7c-0.1-0.3-0.2-0.6-0.2-0.9v0c0-0.3,0.1-0.6,0.2-0.9c0.1-0.3,0.3-0.5,0.5-0.7 c0.2-0.2,0.5-0.4,0.7-0.5c0.3-0.1,0.6-0.2,0.9-0.2c0.6,0,1.2,0.2,1.6,0.7C248.6,23.4,248.8,24,248.8,24.6z">
+                  </path>
+                </g>
+              </svg>
+            </i>
+          </div>
+          <h1 class="section-title banner-title">
+            Make an incredible logo<br /><span class="domaine-font">in minutes</span>
+          </h1>
+          <p class="section-p">
+            Pre-designed by top talent. Just add your touch
+          </p>
+          <button class="btn btn--submit">Try Fiverr Logo Maker</button>
+        </div>
+        <div class="logomaker__content-img">
+          <img class="logomaker-default" src="./images/home/logo-maker-banner.png" alt="" />
+          <img class="logomaker-tablet" src="./images/home/logo-maker-banner-tablet-852-2x.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section class="freelancer wrapper--index section--index">
+      <div class="freelancer__container">
+        <div class="freelancer__header">
+          <h1 class="section-title freelancer__title">
+            Get inspired with projects made by our freelancers
+          </h1>
+          <a class="see-more" href="#">
+            See More Projects
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="freelancer__slider">
+          <div class="freelancer__slider-content">
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer1.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-1.jpg" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Portrait &amp; Caricatures</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;noneyn</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-2.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-2.jfif" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Social Media Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;fernandobengua</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-3.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-1.jfif" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Animated GIFs</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;lamonastudio</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer4.jpeg" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-4.png" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Logo Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;eveeelin</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer2.jpeg" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-2.jpg" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Flyer Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;spickex</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-5.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-5.jfif" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Logo Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;bruno_malagrino</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer6.jpeg" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-6.jpg" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Product Photography</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;passionshake</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer3.jpeg" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-8.jpg" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Book Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;annapietrangeli</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-9.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-9.png" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Illustration</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;christophbrandl</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-10.jfif" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-10.jpg" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Packaging Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;mijalzagier</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="freelancer__slider-item">
+              <div class="slider-item__wrapper">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/freelancer-11.png" alt="Card image cap" />
+                  <div class="card-body">
+                    <div class="card-ava">
+                      <img src="./images/home/freelancer-ava-11.png" alt="" />
+                    </div>
+                    <div class="card-text">
+                      <h6>
+                        <a href="#">Web &amp; Mobile Design</a>
+                      </h6>
+                      <p class="card-name">
+                        <a href="#">by&nbsp;annapietrangeli</a>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="see-more see-more--responsive" href="#">
+          See More Projects
+          <i class="fas fa-chevron-right"></i>
+        </a>
+      </div>
+    </section>
+
+    <section class="guide wrapper--index section--index">
+      <div class="guide__container">
+        <div class="guide__header">
+          <h1 class="section-title guide__title">Fiverr guides</h1>
+          <a class="see-more" href="#">
+            See More Guides
+            <i class="fas fa-chevron-right"></i>
+          </a>
+        </div>
+        <div class="guide__content">
+          <div class="row">
+            <div class="col-lg-4 col-sm-6">
+              <div class="guide__item">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/guide-start-online-business-552-x2.png" alt="" />
+                  <div class="card-body">
+                    <a href="#">
+                      <h4 class="card-title">
+                        Start an online business and work from home
+                      </h4>
+                      <p class="card-text">
+                        A complete guide to starting a small business online
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="guide__item">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/guide-digital-marketing-552-x2.png" alt="" />
+                  <div class="card-body">
+                    <a href="#">
+                      <h4 class="card-title">Digital marketing made easy</h4>
+                      <p class="card-text">
+                        A practical guide to understand what is digital
+                        marketing
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6">
+              <div class="guide__item">
+                <div class="card">
+                  <img class="card-img-top" src="./images/home/guide-create-a-logo-552-x2.png" alt="" />
+                  <div class="card-body">
+                    <a href="#">
+                      <h4 class="card-title">
+                        Create a logo for your business
+                      </h4>
+                      <p class="card-text">
+                        A step-b-step guide to create a memorable business
+                        logo
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="banner wrapper--index section--index">
+      <div class="banner__container">
+        <div class="banner__content">
+          <h1 class="section-title banner-title">
+            Find the <span class="domaine-font">talent</span> needed to <br />
+            get your business <span class="domaine-font">growing</span>.
+          </h1>
+          <button class="btn btn--submit">Get started</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer-collapse wrapper--index px-1">
+    <div class="col-lg-12 mx-auto footer__wrapper">
+      <div class="row d-flex justify-content-between footer__content">
+        <div class="col-lg-2 col-sm-3 col-md-3">
+          <div class="widget hidden-xs-down">
+            <h4>Categories</h4>
+            <ul class="widget-list list-unstyled p-0">
+              <li><a href="">Graphics & Design</a></li>
+              <li><a href="">Digital Marketing</a></li>
+              <li><a href="">Writing & Translation</a></li>
+              <li><a href="">Video & Animation</a></li>
+              <li><a href="">Music & Audio</a></li>
+              <li><a href="">Programming & Tech</a></li>
+              <li><a href="">Data</a></li>
+              <li><a href="">Business</a></li>
+              <li><a href="">Lifestyle</a></li>
+              <li><a href="">Sitemap</a></li>
+            </ul>
+          </div>
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+            <div role="tab" id="headingOne">
+              <h4 class="card-header py-3 border-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="false"
+                  aria-controls="collapseOne">
+                  Categories
+                </a>
+              </h4>
+            </div>
+            <div id="collapseOne" class="collapse" role="tabpanel" aria-labelledby="headingOne">
+              <div class="card-block">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="">Graphics & Design</a></li>
+                  <li><a href="">Digital Marketing</a></li>
+                  <li><a href="">Writing & Translation</a></li>
+                  <li><a href="">Video & Animation</a></li>
+                  <li><a href="">Music & Audio</a></li>
+                  <li><a href="">Programming & Tech</a></li>
+                  <li><a href="">Data</a></li>
+                  <li><a href="">Business</a></li>
+                  <li><a href="">Lifestyle</a></li>
+                  <li><a href="">Sitemap</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-md-3">
+          <div class="widget hidden-xs-down">
+            <h4>About</h4>
+            <ul class="widget-list list-unstyled p-0">
+              <li><a href="">Careers</a></li>
+              <li><a href="">Press & News</a></li>
+              <li><a href="" target="_blank">Partnerships</a></li>
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Terms of Service</a></li>
+              <li style="width: 120%;"><a href="">Intellectual Property Claims</a></li>
+              <li><a href="">Investor Relations</a></li>
+            </ul>
+          </div>
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+            <div role="tab" id="headingTwo">
+              <h4 class="card-header py-3 border-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  About
+                </a>
+              </h4>
+            </div>
+            <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+              <div class="card-block">
+                <ul class="widget-list list-unstyled">
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Press & News</a></li>
+                  <li><a href="" target="_blank">Partnerships</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms of Service</a></li>
+                  <li><a href="">Intellectual Property Claims</a></li>
+                  <li><a href="">Investor Relations</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-md-3">
+          <div class="widget hidden-xs-down">
+            <h4>Support</h4>
+            <ul class="widget-list list-unstyled p-0">
+              <li><a href="">Help & Support</a></li>
+              <li><a href="">Trust & Safety</a></li>
+              <li><a href="">Selling on Fiverr</a></li>
+              <li><a href="">Buying on Fiverr</a></li>
+            </ul>
+          </div>
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+            <div role="tab" id="headingThree">
+              <h4 class="card-header py-3 border-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  Support
+                </a>
+              </h4>
+            </div>
+            <div id="collapseThree" class="collapse" role="tabpanel" aria-labelledby="headingThree">
+              <div class="card-block">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="">Help & Support</a></li>
+                  <li><a href="">Trust & Safety</a></li>
+                  <li><a href="">Selling on Fiverr</a></li>
+                  <li><a href="">Buying on Fiverr</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-md-3">
+          <div class="widget hidden-xs-down">
+            <h4 class="text-bold">Community</h4>
+            <ul class="widget-list list-unstyled list-unstyle p-0">
+              <li><a href="" target="_blank">Events</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Forum</a></li>
+              <li><a href="">Community Standards</a></li>
+              <li><a href="">Podcast</a></li>
+              <li><a href="">Affiliates</a></li>
+              <li><a href="">Invite a Friend</a></li>
+              <li><a href="">Become a Seller</a></li>
+              <!--<li><a href="/login.stml">Login</a></li>-->
+            </ul>
+          </div>
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+            <div role="tab" id="headingFour">
+              <h4 class="card-header py-3 border-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  Community
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+              <div class="card-block">
+                <ul class="widget-list list-unstyled">
+                  <li><a href="" target="_blank">Events</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Forum</a></li>
+                  <li><a href="">Community Standards</a></li>
+                  <li><a href="">Podcast</a></li>
+                  <li><a href="">Affiliates</a></li>
+                  <li><a href="">Invite a Friend</a></li>
+                  <li><a href="">Become a Seller</a></li>
+                  <!--<li><a href="/login.stml">Login</a></li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2 col-sm-3 col-md-3">
+          <div class="widget hidden-xs-down">
+            <h4>More From Fiverr</h4>
+            <ul class="widget-list list-unstyled list-unstyle p-0">
+              <li><a href="" target="_blank">Fiverr Business</a></li>
+              <li><a href="">Fiverr Pro</a></li>
+              <li><a href="">Fiverr Studios</a></li>
+              <li><a href="">Fiverr Logo Maker</a></li>
+              <li><a href="">Fiverr Guides</a></li>
+              <li><a href="">Get Inspired</a></li>
+              <li><a href="">ClearVoice<br>
+                  <p class="miniTab">Content Marketing</p>
+                </a></li>
+              <li><a href="">Fiverr Workspace
+                  <br>
+                  <p class="miniTab">Invoice Software</p>
+                </a></li>
+              <li><a href="">Learn
+                  <br>
+                  <p class="miniTab">Online Courses</p>
+                </a></li>
+              <li><a href="">Working Not Working</a></li>
+              <!--<li><a href="/login.stml">Login</a></li>-->
+            </ul>
+          </div>
+          <div id="accordion" role="tablist" aria-multiselectable="true" class="widget hidden-sm-up">
+            <div role="tab" id="headingFive">
+              <h4 class="card-header py-3 border-0">
+                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  More From Fiverr
+                </a>
+              </h4>
+            </div>
+            <div id="collapseFive" class="collapse" role="tabpanel" aria-labelledby="headingFive">
+              <div class="card-block">
+                <ul class="widget-list list-unstyled p-0">
+                  <li><a href="" target="_blank">Fiverr Business</a></li>
+                  <li><a href="">Fiverr Pro</a></li>
+                  <li><a href="">Fiverr Studios</a></li>
+                  <li><a href="">Fiverr Logo Maker</a></li>
+                  <li><a href="">Fiverr Guides</a></li>
+                  <li><a href="">Get Inspired</a></li>
+                  <li><a href="">ClearVoice<br>
+                      <p class="miniTab">Content
+                        Marketing</p>
+                    </a></li>
+                  <li><a href="">Fiverr Workspace
+                      <br>
+                      <p class="miniTab">Invoice Software</p>
+                    </a></li>
+                  <li><a href="">Learn
+                      <br>
+                      <p class="miniTab">Online Courses</span>
+                    </a></li>
+                  <li><a href="">Working Not Working</a></li>
+                  <!--<li><a href="/login.stml">Login</a></li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Optional JavaScript -->
-    <script src="/libs/style.js"></script>
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+    </div>
+  </footer>
+  <div class="copyright">
+    <div class="copyright__inner wrapper--index d-flex  align-items-center justify-content-between">
+      <div class="left d-flex align-items-center">
+        <span class="fiverr-logo-footer"><svg width="77" height="23" viewBox="0 0 91 27" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g fill="#7A7D85">
+              <path
+                d="m82.9 13.1h-3.2c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-13.4h-2.6c-2.1 0-3.2 1.5-3.2 4.1v9.3h-6.1v-18.4h6.1v2.8c1-2.2 2.4-2.8 4.4-2.8h7.4v2.8c1-2.2 2.4-2.8 4.4-2.8h2v5zm-25.6 5.6h-12.6c.3 2.1 1.6 3.2 3.8 3.2 1.6 0 2.8-.7 3.1-1.8l5.4 1.5c-1.3 3.2-4.6 5.1-8.5 5.1-6.6 0-9.6-5.1-9.6-9.5 0-4.3 2.6-9.4 9.2-9.4 7 0 9.3 5.2 9.3 9.1 0 .9 0 1.4-.1 1.8zm-5.9-3.5c-.1-1.6-1.3-3-3.3-3-1.9 0-3.1.8-3.4 3zm-23.1 11.3h5.3l6.7-18.3h-6.1l-3.2 10.7-3.4-10.8h-6.1zm-24.9 0h6v-13.4h5.7v13.4h6v-18.4h-11.6v-1.1c0-1.2.9-2 2.3-2h3.5v-5h-4.4c-4.5 0-7.5 2.7-7.5 6.6v1.5h-3.4v5h3.4z">
+              </path>
+            </g>
+            <g fill="#7A7D85">
+              <path
+                d="m90.4 23.3c0 2.1-1.6 3.7-3.8 3.7s-3.8-1.6-3.8-3.7 1.6-3.7 3.8-3.7c2.2-.1 3.8 1.5 3.8 3.7zm-.7 0c0-1.8-1.3-3.1-3.1-3.1s-3.1 1.3-3.1 3.1 1.3 3.1 3.1 3.1 3.1-1.4 3.1-3.1zm-1.7.8.1.9h-.7l-.1-.9c0-.3-.2-.5-.5-.5h-.8v1.4h-.7v-3.5h1.4c.7 0 1.2.4 1.2 1.1 0 .4-.2.6-.5.8.4.1.5.3.6.7zm-1.9-1h.7c.4 0 .5-.3.5-.5 0-.3-.2-.5-.5-.5h-.7z">
+              </path>
+            </g>
+          </svg></span>
+        <p class="copyright-text">© Fiverr International Ltd. 2022</p>
+      </div>
+      <div class="right d-flex">
+        <ul class="social-media d-flex align-items-center">
+          <li><a href=""><i class="fab fa-twitter"></i></a></li>
+          <li><a href=""><i class="fab fa-facebook"></i></a></li>
+          <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+          <li><a href=""><i class="fab fa-pinterest"></i></a></li>
+          <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        </ul>
+        <div class="fiverr__btn--support px-1">
+          <a href="#" class="btn--support"><i class="fas fa-globe"></i>English</a>
+          <a href="#" class="btn--support">US$ USD</a>
+          <a href="#" class="btn--support-other"><i class="fas fa-child"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Optional JavaScript -->
+  <script src="/libs/style.js"></script>
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
 
-    <!-- Slick  -->
-    <script src="./libs/Slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $(".slider-content").slick({
-                dots: false,
-                arrows: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 5,
-                slidesToScroll: 5,
-                responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true,
-                        },
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        },
-                    },
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ],
-            });
+  <!-- Slick  -->
+  <script src="./libs/Slick/slick.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      $(".slider-content").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 5,
+        slidesToScroll: 5,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
 
-            $(".client__slider-content").slick({
-                dots: false,
-                arrows: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true,
-                        },
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        },
-                    },
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ],
-            });
+      $(".client__slider-content").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [{
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
 
-            $(".freelancer__slider-content").slick({
-                dots: false,
-                arrows: true,
-                infinite: true,
-                speed: 300,
-                slidesToShow: 4,
-                slidesToScroll: 4,
-                responsive: [{
-                        breakpoint: 1024,
-                        settings: {
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
-                            infinite: true,
-                            dots: true,
-                        },
-                    },
-                    {
-                        breakpoint: 600,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 2,
-                        },
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        },
-                    },
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ],
-            });
-        });
-    </script>
+      $(".freelancer__slider-content").slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+            },
+          },
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+      });
+      $('.categories__menu-list').slick({
+        dots: false,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        centerMode: true,
+        variableWidth: true
+      });
+
+    });
+  </script>
 </body>
 
 </html>

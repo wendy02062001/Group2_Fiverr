@@ -1,5 +1,19 @@
+.section--index {
+  @include Responsive(lg-carousel) {
+    margin-top: 60px;
+  }
+
+  @include Responsive(sm) {
+    margin-top: 40px;
+  }
+
+  @include Responsive(xs) {
+    margin-top: 30px;
+  }
+}
+
 .section-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
   line-height: 120%;
   margin-left: 15px;
@@ -28,6 +42,7 @@
 }
 
 @import "../layouts/sidebar";
+@import "../layouts/categories-menu";
 @import "../layouts/header-home";
 @import "../layouts/carousel";
 @import "../layouts/trusted";
