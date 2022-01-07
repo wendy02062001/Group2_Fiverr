@@ -37,6 +37,10 @@
           font-family: DomaineDisplay;
           font-style: italic;
         }
+
+        @include Responsive(lg-carousel) {
+          max-width: 100%;
+        }
       }
 
       .section-p {
@@ -45,6 +49,10 @@
         line-height: 1.5rem;
         padding-bottom: 30px;
         max-width: 450px;
+
+        @include Responsive(lg-carousel) {
+          max-width: 100%;
+        }
       }
 
       ul {
@@ -72,6 +80,10 @@
 
     img {
       width: 100%;
+
+      @include Responsive(lg-carousel) {
+        margin-top: 50px;
+      }
     }
   }
 }

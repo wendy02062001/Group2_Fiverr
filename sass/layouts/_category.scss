@@ -41,6 +41,14 @@
             }
           }
         }
+
+        @include Responsive(lg-carousel) {
+          width: 33.33%;
+        }
+
+        @include Responsive(sm) {
+          width: 50%;
+        }
       }
     }
   }

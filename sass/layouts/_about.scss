@@ -5,7 +5,7 @@
     padding: 90px 0;
 
     .about__txt {
-      padding-right: 11%;
+      padding-right: 12%;
 
       .about__title {
         padding-bottom: 1.4rem;
@@ -43,12 +43,27 @@
     }
 
     .about__video {
-      padding-left: 9%;
-      margin-top: 90px;
+      margin-top: 80px;
+      position: relative;
 
       @include Responsive(lg) {
         margin-top: 60px;
         padding: 0 5%;
+      }
+
+      &::after {
+        content: "";
+        display: inline-block;
+        background: url(https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png)
+          no-repeat;
+        background-size: 80px;
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        z-index: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
       }
     }
   }

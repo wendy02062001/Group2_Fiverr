@@ -3,18 +3,40 @@
     .client__slider {
       max-width: 100%;
       .client__item {
-        img {
-          border-radius: 4px;
+        .client__video {
+          img {
+            border-radius: 4px;
+          }
+
+          &::after {
+            content: "";
+            display: inline-block;
+            background: url("https://fiverr-res.cloudinary.com/npm-assets/@fiverr/logged_out_homepage_perseus/apps/desktop-play-button.c1196d6.png")
+              no-repeat;
+            background-size: 80px;
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            z-index: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
         }
+
         .client__info {
-          padding-left: 3rem;
+          padding: 0 56px 0 64px;
 
           h5 {
-            font-weight: 400;
+            font-weight: 300;
             color: #7a7d85;
             padding-bottom: 16px;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             line-height: 140%;
+
+            @include Responsive(xl) {
+              font-size: 20px;
+            }
 
             span {
               border-left: 1px solid #c5c6c9;
@@ -35,9 +57,42 @@
             font-style: italic;
             font-size: 2rem;
             line-height: 2.7rem;
+            color: #003912;
+
+            @include Responsive(xl) {
+              font-size: 24px;
+            }
+          }
+
+          @include Responsive(lg) {
+            margin-top: 50px;
+          }
+
+          @include Responsive(lg-carousel) {
+            padding: 15px;
           }
         }
       }
+    }
+
+    .slick-arrow {
+      @include Responsive(lg) {
+        top: 35%;
+      }
+      @include Responsive(sm) {
+        top: 25%;
+      }
+      @include Responsive(xs) {
+        top: 15%;
+      }
+    }
+
+    .slick-prev {
+      left: -20px;
+    }
+
+    .slick-next {
+      right: -20px;
     }
   }
 }

@@ -43,6 +43,14 @@
           line-height: 24px;
           padding-bottom: 0;
         }
+
+        @include Responsive(md-index) {
+          padding-top: 10px;
+        }
+      }
+
+      @include Responsive(md-index) {
+        margin-top: 20px;
       }
     }
   }

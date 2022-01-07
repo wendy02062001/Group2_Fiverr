@@ -1,9 +1,15 @@
 footer {
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgb(228, 229, 231);
+    position: relative;
+
     .copyright {
+        padding-top: 20px;
 
         .copyright__inner {
-            padding-bottom: 30px;
+            padding: 0px 32px 16px 32px;
             align-items: center;
+            max-width: 1336px;
 
             .right {
                 ul.social-media {
@@ -32,12 +38,13 @@ footer {
 
                 .fiverr__btn--support {
                     a {
-                        margin-left: 15px;
+                        margin-left: 10px;
                     }
 
                     a.btn--support {
                         font-size: 14px;
-                        color: $text-nav;
+                        font-weight: 550;
+                        color: #7a7d85;
                         padding: 8px 12px;
                         border-radius: 15px;
                         transition: all .3s;
@@ -48,7 +55,7 @@ footer {
                         }
 
                         i {
-                            padding-right: 8px;
+                            padding-right: 5px;
                             color: $text-nav;
                         }
                     }
@@ -58,7 +65,7 @@ footer {
                     }
 
                     a.btn--support-other {
-                        padding: 8px;
+                        padding: 7px 9px 7px 9px;
                         border: 1px solid rgb(122, 125, 133);
                         border-radius: 50%;
                         transition: all .3s;
@@ -78,7 +85,24 @@ footer {
                     margin-left: 25px;
                     font-size: 14px;
                     line-height: 21px;
-                    margin-top: 8px;
+                    margin-top: 2px;
+                }
+
+                span.privacy {
+                    margin-top: 6px;
+                    margin-left: 20px;
+                    color: #b7b8bb;
+
+                    a {
+                        font-size: 14px;
+
+                        font-weight: lighter;
+                        color: #80838a;
+
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
             }
         }
@@ -109,10 +133,18 @@ footer {
                     justify-content: center;
                 }
 
+                span.privacy {
+                    display: block;
+                    justify-content: center;
+                    margin-left: 0px !important;
+                    margin-top: 20px !important;
+                }
+
                 p {
                     margin-left: -10px !important;
                     margin-top: 15px !important;
                 }
+
             }
 
             .right {

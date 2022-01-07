@@ -142,4 +142,13 @@
       }
     }
   }
+
+  @include Responsive(xs) {
+    .buyer3,
+    .buyer4 {
+      .buyer__quote {
+        bottom: -20px;
+      }
+    }
+  }
 }
