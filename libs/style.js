@@ -41,7 +41,7 @@ function toggleButton() {
     $("#overlay").click(function () {
       $("#overlay").removeClass("showOverlay");
       $("#wrapper").removeClass("toggled");
-      $("body").css("overflow-y", "auto");
+      $("html").css("overflow-y", "auto");
     });
   });
 }
