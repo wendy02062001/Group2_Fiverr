@@ -10,7 +10,7 @@
     .education__description {
       padding: 24px 0 4px 21px;
       .learn-more-logo {
-        background: transparent url(../../images/selling/learn_more.svg)
+        background: transparent url(./../images/selling/learn_more.svg)
           no-repeat 0 0;
         display: block;
         height: 45px;
@@ -65,7 +65,7 @@
           font-size: 67px;
           width: 71px;
           height: 71px;
-          background: transparent url(../../images/selling/btn-video-player.svg)
+          background: transparent url(./../images/selling/btn-video-player.svg)
             no-repeat 0 0;
           background-size: 4em 1em;
           display: inline-block;
@@ -112,7 +112,7 @@
 
           .education__video_rating {
             .education__icon_star {
-              background-image: url(../../images/selling/icn-master-ratings-stars.svg);
+              background-image: url(./../images/selling/icn-master-ratings-stars.svg);
               background-repeat: no-repeat;
               background-size: 12px 36px;
               background-position: top left;
