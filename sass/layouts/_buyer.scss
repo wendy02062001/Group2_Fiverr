@@ -71,7 +71,7 @@
     }
 
     &::after {
-      background-image: url(../../images/selling/buyer1.jpg);
+      background-image: url(./../images/selling/buyer1.jpg);
 
       left: 0;
     }
@@ -89,7 +89,7 @@
     }
 
     &::after {
-      background-image: url(../../images/selling/buyer3.jpg);
+      background-image: url(./../images/selling/buyer3.jpg);
 
       right: 0;
     }
@@ -97,13 +97,13 @@
 
   .buyer2 {
     &::after {
-      background-image: url(../../images/selling/buyer2.jpg);
+      background-image: url(./../images/selling/buyer2.jpg);
     }
   }
 
   .buyer4 {
     &::after {
-      background-image: url(../../images/selling/buyer4.jpg);
+      background-image: url(./../images/selling/buyer4.jpg);
     }
   }
 

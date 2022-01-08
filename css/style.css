@@ -2690,7 +2690,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__designer {
-  background-image: url(../../images/selling/designer.jpg);
+  background-image: url(./../images/selling/designer.jpg);
   background-position: 0 0;
   background-size: 100%;
 }
@@ -2700,7 +2700,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__developer {
-  background-image: url(../../images/selling/developer.jpg);
+  background-image: url(./../images/selling/developer.jpg);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2712,7 +2712,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__writer {
-  background-image: url(../../images/selling/writer.jpg);
+  background-image: url(./../images/selling/writer.jpg);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2724,7 +2724,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__editor {
-  background-image: url(../../images/selling/video.jpg);
+  background-image: url(./../images/selling/video.jpg);
   background-position: 0 0;
   background-size: 100%;
 }
@@ -2734,7 +2734,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__musician {
-  background-image: url(../../images/selling/musician.jpg);
+  background-image: url(./../images/selling/musician.jpg);
   background-position: 0 0;
   background-size: 100%;
 }
@@ -2744,7 +2744,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__voiceover {
-  background-image: url(../../images/selling/voiceover.jpg);
+  background-image: url(./../images/selling/voiceover.jpg);
   background-position: 0 0;
   background-size: 100%;
 }
@@ -2754,7 +2754,7 @@ footer .widget-list li a:hover {
 }
 
 .community__item .community__social {
-  background-image: url(../../images/selling/analyst.jpg);
+  background-image: url(./../images/selling/analyst.jpg);
   background-position: 50% 50%;
   background-size: cover;
 }
@@ -2793,7 +2793,7 @@ footer .widget-list li a:hover {
 
 .community__item .community__you-cover h3::before {
   content: "";
-  background: transparent url(../../images/selling/sprite-start-selling.svg) no-repeat -300px 0;
+  background: transparent url(./../images/selling/sprite-start-selling.svg) no-repeat -300px 0;
   background-size: 350px;
   display: block;
   width: 50px;
@@ -2866,35 +2866,35 @@ footer .widget-list li a:hover {
 }
 
 .modal .modal__thumbnail_designer {
-  background-image: url(../../images/selling/designer_mobile.jpg);
+  background-image: url(./../images/selling/designer_mobile.jpg);
 }
 
 .modal .modal__thumbnail_developer {
-  background-image: url(../../images/selling/developer_mobile.jpg);
+  background-image: url(./../images/selling/developer_mobile.jpg);
   background-size: 100%;
   background-position: 0 -20px;
 }
 
 .modal .modal__thumbnail_writer {
-  background-image: url(../../images/selling/writer_mobile.jpg);
+  background-image: url(./../images/selling/writer_mobile.jpg);
   background-size: 120%;
 }
 
 .modal .modal__thumbnail_editor {
-  background-image: url(../../images/selling/video_mobile.jpg);
+  background-image: url(./../images/selling/video_mobile.jpg);
   background-position: -45px 0;
 }
 
 .modal .modal__thumbnail_musician {
-  background-image: url(../../images/selling/musician_mobile.jpg);
+  background-image: url(./../images/selling/musician_mobile.jpg);
 }
 
 .modal .modal__thumbnail_voiceover {
-  background-image: url(../../images/selling/voiceover_mobile.jpg);
+  background-image: url(./../images/selling/voiceover_mobile.jpg);
 }
 
 .modal .modal__thumbnail_social {
-  background-image: url(../../images/selling/analyst_mobile.jpg);
+  background-image: url(./../images/selling/analyst_mobile.jpg);
   background-size: 111%;
 }
 
@@ -2944,7 +2944,7 @@ footer .widget-list li a:hover {
 
 .modal .modal__text ul li::before {
   content: "";
-  background: url(../../images/selling/sprite-start-selling.svg) no-repeat 0 0;
+  background: url(./../images/selling/sprite-start-selling.svg) no-repeat 0 0;
   width: 50px;
   height: 50px;
   float: left;
@@ -3109,31 +3109,31 @@ footer .widget-list li a:hover {
 }
 
 .community__mobile .community__content .community__mobile_item .community__designer {
-  background-image: url(../../images/selling/designer_mobile.jpg);
+  background-image: url(./../images/selling/designer_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__developer {
-  background-image: url(../../images/selling/developer_mobile.jpg);
+  background-image: url(./../images/selling/developer_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__writer {
-  background-image: url(../../images/selling/writer_mobile.jpg);
+  background-image: url(./../images/selling/writer_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__editor {
-  background-image: url(../../images/selling/video_mobile.jpg);
+  background-image: url(./../images/selling/video_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__musician {
-  background-image: url(../../images/selling/musician_mobile.jpg);
+  background-image: url(./../images/selling/musician_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__voiceover {
-  background-image: url(../../images/selling/voiceover_mobile.jpg);
+  background-image: url(./../images/selling/voiceover_mobile.jpg);
 }
 
 .community__mobile .community__content .community__mobile_item .community__social {
-  background-image: url(../../images/selling/analyst_mobile.jpg);
+  background-image: url(./../images/selling/analyst_mobile.jpg);
 }
 
 .community__mobile .community__content.blur .community__mobile_item {
@@ -3162,7 +3162,7 @@ footer .widget-list li a:hover {
 }
 
 .work .work__item h3::before {
-  background: transparent url(../../images/selling/sprite-start-selling.svg) no-repeat 0 0;
+  background: transparent url(./../images/selling/sprite-start-selling.svg) no-repeat 0 0;
   background-size: 350px;
   content: "";
   display: block;
@@ -3237,7 +3237,7 @@ footer .widget-list li a:hover {
 }
 
 .education .education__cover .education__description .learn-more-logo {
-  background: transparent url(../../images/selling/learn_more.svg) no-repeat 0 0;
+  background: transparent url(./../images/selling/learn_more.svg) no-repeat 0 0;
   display: block;
   height: 45px;
   padding-bottom: 20px;
@@ -3297,7 +3297,7 @@ footer .widget-list li a:hover {
   font-size: 67px;
   width: 71px;
   height: 71px;
-  background: transparent url(../../images/selling/btn-video-player.svg) no-repeat 0 0;
+  background: transparent url(./../images/selling/btn-video-player.svg) no-repeat 0 0;
   background-size: 4em 1em;
   display: inline-block;
   border: 2px solid #fff;
@@ -3352,7 +3352,7 @@ footer .widget-list li a:hover {
 }
 
 .education .education__cover .education__video .education__video_player_warpper .education__video_description .education__video_rating .education__icon_star {
-  background-image: url(../../images/selling/icn-master-ratings-stars.svg);
+  background-image: url(./../images/selling/icn-master-ratings-stars.svg);
   background-repeat: no-repeat;
   background-size: 12px 36px;
   background-position: top left;
@@ -3481,7 +3481,7 @@ footer .widget-list li a:hover {
 
 .buyer .buyer1::after,
 .buyer .buyer2::after {
-  background-image: url(../../images/selling/buyer1.jpg);
+  background-image: url(./../images/selling/buyer1.jpg);
   left: 0;
 }
 
@@ -3499,16 +3499,16 @@ footer .widget-list li a:hover {
 
 .buyer .buyer3::after,
 .buyer .buyer4::after {
-  background-image: url(../../images/selling/buyer3.jpg);
+  background-image: url(./../images/selling/buyer3.jpg);
   right: 0;
 }
 
 .buyer .buyer2::after {
-  background-image: url(../../images/selling/buyer2.jpg);
+  background-image: url(./../images/selling/buyer2.jpg);
 }
 
 .buyer .buyer4::after {
-  background-image: url(../../images/selling/buyer4.jpg);
+  background-image: url(./../images/selling/buyer4.jpg);
 }
 
 @media only screen and (max-width: 768px) {

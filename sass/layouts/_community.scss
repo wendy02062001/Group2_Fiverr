@@ -51,7 +51,7 @@
     }
 
     .community__designer {
-      background-image: url(../../images/selling/designer.jpg);
+      background-image: url(./../images/selling/designer.jpg);
       background-position: 0 0;
       background-size: 100%;
       &:hover {
@@ -60,7 +60,7 @@
     }
 
     .community__developer {
-      background-image: url(../../images/selling/developer.jpg);
+      background-image: url(./../images/selling/developer.jpg);
       background-position: 50% 50%;
       background-size: cover;
       &:hover {
@@ -70,7 +70,7 @@
     }
 
     .community__writer {
-      background-image: url(../../images/selling/writer.jpg);
+      background-image: url(./../images/selling/writer.jpg);
       background-position: 50% 50%;
       background-size: cover;
       &:hover {
@@ -80,7 +80,7 @@
     }
 
     .community__editor {
-      background-image: url(../../images/selling/video.jpg);
+      background-image: url(./../images/selling/video.jpg);
       background-position: 0 0;
       background-size: 100%;
       &:hover {
@@ -89,7 +89,7 @@
     }
 
     .community__musician {
-      background-image: url(../../images/selling/musician.jpg);
+      background-image: url(./../images/selling/musician.jpg);
       background-position: 0 0;
       background-size: 100%;
       &:hover {
@@ -98,7 +98,7 @@
     }
 
     .community__voiceover {
-      background-image: url(../../images/selling/voiceover.jpg);
+      background-image: url(./../images/selling/voiceover.jpg);
       background-position: 0 0;
       background-size: 100%;
       &:hover {
@@ -107,7 +107,7 @@
     }
 
     .community__social {
-      background-image: url(../../images/selling/analyst.jpg);
+      background-image: url(./../images/selling/analyst.jpg);
       background-position: 50% 50%;
       background-size: cover;
       &:hover {
@@ -135,7 +135,7 @@
           &::before {
             content: "";
             background: transparent
-              url(../../images/selling/sprite-start-selling.svg) no-repeat -300px
+              url(./../images/selling/sprite-start-selling.svg) no-repeat -300px
               0;
             background-size: 350px;
             display: block;
@@ -215,35 +215,35 @@
   }
 
   .modal__thumbnail_designer {
-    background-image: url(../../images/selling/designer_mobile.jpg);
+    background-image: url(./../images/selling/designer_mobile.jpg);
   }
 
   .modal__thumbnail_developer {
-    background-image: url(../../images/selling/developer_mobile.jpg);
+    background-image: url(./../images/selling/developer_mobile.jpg);
     background-size: 100%;
     background-position: 0 -20px;
   }
 
   .modal__thumbnail_writer {
-    background-image: url(../../images/selling/writer_mobile.jpg);
+    background-image: url(./../images/selling/writer_mobile.jpg);
     background-size: 120%;
   }
 
   .modal__thumbnail_editor {
-    background-image: url(../../images/selling/video_mobile.jpg);
+    background-image: url(./../images/selling/video_mobile.jpg);
     background-position: -45px 0;
   }
 
   .modal__thumbnail_musician {
-    background-image: url(../../images/selling/musician_mobile.jpg);
+    background-image: url(./../images/selling/musician_mobile.jpg);
   }
 
   .modal__thumbnail_voiceover {
-    background-image: url(../../images/selling/voiceover_mobile.jpg);
+    background-image: url(./../images/selling/voiceover_mobile.jpg);
   }
 
   .modal__thumbnail_social {
-    background-image: url(../../images/selling/analyst_mobile.jpg);
+    background-image: url(./../images/selling/analyst_mobile.jpg);
     background-size: 111%;
   }
 
@@ -283,7 +283,7 @@
 
         &::before {
           content: "";
-          background: url(../../images/selling/sprite-start-selling.svg)
+          background: url(./../images/selling/sprite-start-selling.svg)
             no-repeat 0 0;
           width: 50px;
           height: 50px;
@@ -447,31 +447,31 @@
         }
       }
       .community__designer {
-        background-image: url(../../images/selling/designer_mobile.jpg);
+        background-image: url(./../images/selling/designer_mobile.jpg);
       }
 
       .community__developer {
-        background-image: url(../../images/selling/developer_mobile.jpg);
+        background-image: url(./../images/selling/developer_mobile.jpg);
       }
 
       .community__writer {
-        background-image: url(../../images/selling/writer_mobile.jpg);
+        background-image: url(./../images/selling/writer_mobile.jpg);
       }
 
       .community__editor {
-        background-image: url(../../images/selling/video_mobile.jpg);
+        background-image: url(./../images/selling/video_mobile.jpg);
       }
 
       .community__musician {
-        background-image: url(../../images/selling/musician_mobile.jpg);
+        background-image: url(./../images/selling/musician_mobile.jpg);
       }
 
       .community__voiceover {
-        background-image: url(../../images/selling/voiceover_mobile.jpg);
+        background-image: url(./../images/selling/voiceover_mobile.jpg);
       }
 
       .community__social {
-        background-image: url(../../images/selling/analyst_mobile.jpg);
+        background-image: url(./../images/selling/analyst_mobile.jpg);
       }
     }
   }
