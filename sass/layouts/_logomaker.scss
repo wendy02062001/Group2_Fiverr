@@ -1,15 +1,15 @@
 .logomaker {
-  padding-left:  30px;
+  padding-left: 30px;
   padding-right: 30px;
   &__container {
     background-color: #4a73e8;
     color: #fff;
-    position: relative;
 
     .logomaker__content {
       padding: 36px 0 36px 32px;
       padding-left: 76px;
-      z-index: 1;
+      position: relative;
+      z-index: 2;
       &-logo {
         margin-bottom: 10px;
         svg {
@@ -39,16 +39,22 @@
       }
 
       &-img {
+        .logomaker-default {
+          display: block;
+          height: 100%;
+          width: 100%;
+          margin-top: -25%;
+          position: relative;
+          z-index: 1;
+        }
+
         .logomaker-tablet {
           display: none;
         }
-        .logomaker-default {
-          position: absolute;
-          top: 0;
-          left: 0;
-          height: 100%;
-          width: 100%;
+        .logomaker-mobile {
+          display: none;
         }
+
         img {
           object-fit: cover;
         }
@@ -63,7 +69,27 @@
             height: 100%;
             width: 100%;
             margin-top: -27%;
-            z-index: -1;
+            position: relative;
+            z-index: 1;
+          }
+        }
+
+        @include Responsive(sm) {
+          .logomaker-default {
+            display: none;
+          }
+
+          .logomaker-tablet {
+            display: none;
+          }
+
+          .logomaker-mobile {
+            display: block;
+            height: 100%;
+            width: 100%;
+            margin-top: -27%;
+            position: relative;
+            z-index: 1;
           }
         }
       }

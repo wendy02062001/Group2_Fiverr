@@ -1697,13 +1697,13 @@ label > span {
 .logomaker__container {
   background-color: #4a73e8;
   color: #fff;
-  position: relative;
 }
 
 .logomaker__container .logomaker__content {
   padding: 36px 0 36px 32px;
   padding-left: 76px;
-  z-index: 1;
+  position: relative;
+  z-index: 2;
 }
 
 .logomaker__container .logomaker__content-logo {
@@ -1735,16 +1735,21 @@ label > span {
   background-color: #d4defb;
 }
 
+.logomaker__container .logomaker__content-img .logomaker-default {
+  display: block;
+  height: 100%;
+  width: 100%;
+  margin-top: -25%;
+  position: relative;
+  z-index: 1;
+}
+
 .logomaker__container .logomaker__content-img .logomaker-tablet {
   display: none;
 }
 
-.logomaker__container .logomaker__content-img .logomaker-default {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
+.logomaker__container .logomaker__content-img .logomaker-mobile {
+  display: none;
 }
 
 .logomaker__container .logomaker__content-img img {
@@ -1761,7 +1766,25 @@ label > span {
     height: 100%;
     width: 100%;
     margin-top: -27%;
-    z-index: -1;
+    position: relative;
+    z-index: 1;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .logomaker__container .logomaker__content-img .logomaker-default {
+    display: none;
+  }
+  .logomaker__container .logomaker__content-img .logomaker-tablet {
+    display: none;
+  }
+  .logomaker__container .logomaker__content-img .logomaker-mobile {
+    display: block;
+    height: 100%;
+    width: 100%;
+    margin-top: -27%;
+    position: relative;
+    z-index: 1;
   }
 }
 
