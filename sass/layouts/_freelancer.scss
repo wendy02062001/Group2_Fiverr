@@ -32,6 +32,12 @@
           .card-img-top {
             height: 240px;
             object-fit: cover;
+            transition: all .5s;
+
+            &:hover {
+              opacity: 0.85;
+              cursor: pointer;
+            }
           }
 
           .card-body {

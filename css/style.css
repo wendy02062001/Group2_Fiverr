@@ -1827,6 +1827,13 @@ label > span {
   height: 240px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.freelancer__container .freelancer__slider .freelancer__slider-item .card .card-img-top:hover {
+  opacity: 0.85;
+  cursor: pointer;
 }
 
 .freelancer__container .freelancer__slider .freelancer__slider-item .card .card-body {
