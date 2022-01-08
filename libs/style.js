@@ -35,16 +35,18 @@ function toggleButton() {
       e.preventDefault();
       $("#wrapper").toggleClass("toggled");
       $("#overlay").toggleClass("showOverlay");
-      $("body").css("overflow-y", "hidden");
+      $("html").css("overflow", "hidden");
     });
 
     $("#overlay").click(function () {
       $("#overlay").removeClass("showOverlay");
       $("#wrapper").removeClass("toggled");
-      $("body").css("overflow-y", "auto");
+      $("html").css("overflow", "auto");
     });
   });
 }
 jQuery(".nav-footer h4").click(function () {
   jQuery(this).parent(".nav").toggleClass("open");
 });
+
+// Disable Scroll when popup is opened

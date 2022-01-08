@@ -885,7 +885,7 @@ label > span {
           transform: rotateX(90deg);
 }
 
-#categories__menu nav {
+#categories__menu nav.categories__menu-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -896,7 +896,7 @@ label > span {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  overflow: hidden;
+  overflow: visible;
   z-index: 10;
   width: 100%;
   border-bottom: 1px solid #999ca150;
@@ -905,12 +905,12 @@ label > span {
   padding: 2px 0px;
 }
 
-#categories__menu nav ul.categories li {
+#categories__menu nav.categories__menu-list ul.categories li {
   display: inline-block;
   padding: 0 18px;
 }
 
-#categories__menu nav ul.categories li a {
+#categories__menu nav.categories__menu-list ul.categories li a {
   display: block;
   position: relative;
   font-size: 16px;
@@ -920,11 +920,11 @@ label > span {
   font-weight: 400;
 }
 
-#categories__menu nav ul.categories li a:hover {
+#categories__menu nav.categories__menu-list ul.categories li a:hover {
   color: #999ca1 !important;
 }
 
-#categories__menu nav ul.categories li a:hover::after {
+#categories__menu nav.categories__menu-list ul.categories li a:hover::after {
   content: "";
   width: 100%;
   position: absolute;
@@ -2855,7 +2855,7 @@ footer .widget-list li a:hover {
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author {
-  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: normal 14px/31px "Macan", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .modal .modal__thumbnail .modal__quote .modal__quote_author strong {

@@ -86,8 +86,8 @@
       </div>
     </header>
     <div id="categories__menu">
-      <nav class="categories__menu-list">
-        <ul class="categories d-flex">
+      <nav class="categories__menu-list overflow-hidden">
+        <ul class="categories d-flex flex-nowrap">
           <li class="categories-item"><a href="">Graphics &
               Design</a></li>
           <li class="categories-item"><a href="">Digital
@@ -108,7 +108,7 @@
       </nav>
     </div>
   </div>
-  <div class="sidebar" id="wrapper">
+  <div class="sidebar shown" id="wrapper">
     <div class="sidebar__btn-area">
       <button class="btn btn--submit">
         Join Fiverr
@@ -1830,14 +1830,21 @@
           // instead of a settings object
         ],
       });
+
       $('.categories__menu-list').slick({
-        dots: false,
-        arrows: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        variableWidth: true,
         centerMode: true,
-        variableWidth: true
+        responsive: [{
+          breakpoint: 1224,
+          settings: {
+            slidesToShow: 6,
+            slidesToScroll: 6,
+            infinite: true,
+            arrows: true,
+          }
+        }, ]
       });
     });
   </script>

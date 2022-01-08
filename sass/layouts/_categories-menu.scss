@@ -6,12 +6,12 @@
     border-top: 1px solid #999ca150;
     transform: rotateX(90deg);
 
-    nav {
+    nav.categories__menu-list {
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
-        overflow: hidden;
+        overflow: visible;
         z-index: 10;
         width: 100%;
         border-bottom: 1px solid #999ca150;
